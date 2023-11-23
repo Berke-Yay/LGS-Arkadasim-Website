@@ -14,6 +14,22 @@
     <link rel="stylesheet" media="(max-width: 500px)" href="css/anaSayfa/mobile.css">
 </head>
 <body>
+    <nav id="navbar">
+        <img src="assets/lgs_arkadasim_image.png" alt="LGS Arkadaşım">
+        <ul>
+            <a href="anaSayfa.html"><li id="ana-sayfa">Ana Sayfa</li></a>
+            <a href="hakkimizda.html"><li>Hakkımızda</li></a>
+            <a href="egitimYiliSureci.html"><li>2023-2024 Eğitim Yılı Süreci</li></a>
+            <a href="sponsorlarimiz.html"><li>Sponsorlarımız</li></a>
+            <a href="iletisim.html"><li>İletişim</li></a>
+        </ul>
+        <div class="dropdown">
+            <button onclick="createNavbarDropdown()" class="dropbtn">TR <i class="fa-solid fa-caret-down"></i></button>
+            <div id="navbar-dropdown" class="dropdown-content">
+              <a href="#">EN</a>
+            </div>
+        </div>
+    </nav>
 
     <div id="introductory-section">
         <div id="general-part">
