@@ -1,0 +1,54 @@
+body{
+    width: 100%;
+}
+
+/*Navbar Section*/
+#navbar{
+    flex-direction: column;
+    width: 100%;
+    display: none;
+}
+
+#navbar ul{
+    flex-direction: column;
+}
+
+/*Introductory Section*/
+#introductory-section{
+    flex-direction: column;
+    margin-bottom: 0;
+}
+
+#general-part{
+    width: 100%;
+    padding: 0;
+    padding-bottom: 20px;
+}
+
+#mission{
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+/*Mentorship Responsibilities Section*/
+#mentorship-section{
+    flex-direction: column;
+}
+
+#question{
+    width: 100%;
+}
+
+#responsibilities{
+    width: 100%;
+}
+
+/*Available Lessons Section*/
+#lessons-section{
+    flex-wrap: wrap;
+}
+
+.lesson{
+    flex: 0 0 45%;
+    margin-bottom: 10px;
+}
