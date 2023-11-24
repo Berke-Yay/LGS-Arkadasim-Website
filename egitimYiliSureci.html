@@ -11,15 +11,25 @@
     <link rel="stylesheet" href="css/egitimYiliSureci/egitimYiliSureci-page.css">
     <link rel="stylesheet" media="(max-width: 820px)" href="css/egitimYiliSureci/egitimYiliSureci-tablet.css">
     <link rel="stylesheet" media="(max-width: 500px)" href="css/egitimYiliSureci/egitimYiliSureci-mobile.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <nav id="navbar">
         <img src="assets/lgs_arkadasim_image.png" alt="LGS Arkadaşım">
-        <ul>
+        <div class="dropdown-mobile">
+            <button onclick="createNavbarDropdownMobile()" class="dropbtn-mobile">TR <i class="fa-solid fa-caret-down"></i></button>
+            <div id="navbar-dropdown-mobile" class="dropdown-content-mobile">
+              <a href="#">EN</a>
+            </div>
+        </div>
+        <ul id="main-menu">
             <a href="anaSayfa.html"><li>Ana Sayfa</li></a>
             <a href="hakkimizda.html"><li>Hakkımızda</li></a>
-            <a href="egitimYiliSureci.html"><li id="chosen">2023-2024 Eğitim Yılı Süreci</li></a>
+            <a href="egitimYiliSureci.html"><li class="chosen">2023-2024 Eğitim Yılı Süreci</li></a>
             <a href="sponsorlarimiz.html"><li>Sponsorlarımız</li></a>
             <a href="iletisim.html"><li>İletişim</li></a>
         </ul>
@@ -28,6 +38,21 @@
             <div id="navbar-dropdown" class="dropdown-content">
               <a href="#">EN</a>
             </div>
+        </div>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div id="bar-container">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul class="mobile-menu">
+                <a href="anaSayfa.html"><li class="ana-sayfa">Ana Sayfa</li></a>
+                <a href="hakkimizda.html"><li>Hakkımızda</li></a>
+                <a href="#"><li>Tarihçe ve Gelecek Planları</li></a>
+                <a href="egitimYiliSureci.html"><li class="chosen">2023-2024 Eğitim Yılı Süreci</li></a>
+                <a href="sponsorlarimiz.html"><li>Sponsorlarımız</li></a>
+                <a href="iletisim.html"><li>İletişim</li></a>
+            </ul>
         </div>
     </nav>
 
@@ -78,6 +103,46 @@
                 }
             }
         }
+        }
+
+        function createNavbarDropdownMobile() {
+            document.getElementById("navbar-dropdown-mobile").classList.toggle("show");
+        }
+        window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn-mobile')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content-mobile");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+        }
+
+        var isMobileMenuOpen = false;
+        function toggleMobileMenu(menu){
+            var navbar = document.querySelector("#navbar");
+            var barContainer = document.querySelector("#bar-container");
+            var dropdownMobile = document.querySelector(".dropdown-mobile");
+            menu.classList.toggle("open");
+            if(isMobileMenuOpen==false){
+            navbar.style.height = "430px";
+            navbar.style.flexDirection = "column";
+            barContainer.style.top = "125px";
+            barContainer.style.marginRight = "0";
+            dropdownMobile.style.top = "0";
+            isMobileMenuOpen = true;
+            }
+            else{
+                navbar.style.height = "100px";
+                navbar.style.flexDirection = "row";
+                barContainer.style.top = "0";
+                barContainer.style.marginRight = "20px";
+                dropdownMobile.style.top = "5px";
+                isMobileMenuOpen = false;
+            }
         }
     </script>
 </body>
