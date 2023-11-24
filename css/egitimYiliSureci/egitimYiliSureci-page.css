@@ -12,27 +12,27 @@
     height: 110px;
 }
 
-#navbar ul{
+#main-menu{
     display: flex;
     justify-content: space-between;
 }
 
-#navbar ul li{
+#main-menu li{
     font-size: 1.2em;
     font-weight: bold;
 }
 
-#navbar ul #chosen{
+#navbar .chosen{
     color: green;
 }
 
-#navbar ul a{
+#navbar #main-menu a{
     margin: 0 10px;
     padding: 10px;
     border-radius: 6px;
 }
 
-#navbar ul a:hover{
+#navbar #main-menu a:hover{
    background-color: lightcyan;
 }
 
@@ -50,14 +50,14 @@
 #navbar .dropdown-content {
     display: none;
     position: absolute;
-    max-width: 70px;
+    width: 100%;
     background-color: #f1f1f1;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
 #navbar .dropdown-content a {
-    width: 40px;
+    width: 100%;
     color: black;
     padding: 12px 16px;
     text-decoration: none;
@@ -71,6 +71,79 @@
 
 #navbar .show {
     display:block;
+}
+
+#hamburger-icon{
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+}
+
+#hamburger-icon div:not(#bar-container){
+    width: 35px;
+    height: 3px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+#bar-container{
+    position: relative;
+    margin-right: 20px;
+}
+
+.open .bar1{
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2{
+    opacity: 0;
+}
+
+.open .bar3{
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.mobile-menu{
+    margin-top: 20px;
+    display: none;
+    position: absolute;
+    top: 120px;
+    left: 0;
+    height: calc(100vh-50px);
+    width: 100%;
+}
+
+.mobile-menu li{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.open .mobile-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#navbar .mobile-menu a{
+    margin: 0 10px;
+    padding: 8px 10px;
+    border-radius: 6px;
+}
+
+#navbar .mobile-menu a:hover{
+   background-color: lightcyan;
+}
+
+.dropdown-mobile{
+    display: none;
+}
+
+.dropdown-mobile button{
+    display: none;
 }
 
 /*Main Section*/
