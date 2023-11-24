@@ -1,0 +1,124 @@
+/*Navbar Section*/
+#navbar{
+    width: 100%;
+}
+
+#navbar img{
+    width: 50%;
+}
+
+#navbar #main-menu{
+    display: none;
+    flex-direction: column;
+}
+
+
+#hamburger-icon{
+    display: block;
+}
+
+.dropdown{
+    display: none;
+}
+
+.dropdown button{
+    display: none;
+}
+
+#navbar .dropdown-mobile {
+    margin-right: 10px;
+    position: relative;
+    display: inline-block;
+    top: 5px;
+    left: 10px;
+}
+
+#navbar .dropbtn-mobile {
+    padding: 6px 25px;
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+#navbar .dropdown-content-mobile {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+#navbar .dropdown-content-mobile a {
+    width: 100%;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+#navbar .dropdown-content-mobile a:hover{
+    background-color: rgb(165, 165, 165);
+}
+
+#navbar .show {
+    display:block;
+}
+
+/*Main Section*/
+#main-section{
+    padding: 5px;
+    padding-bottom: 110px;
+}
+
+#main-section h1{
+    font-size: 2.8em;
+}
+
+#main-section hr{
+    width: 90%;
+    border: 2px solid black;
+}
+
+#img1{
+    width: 100%;
+    border-radius: 25px;
+}
+
+#img2{
+    width: 100%;
+    border-radius: 25px;
+}
+
+/*Contact Us*/
+#form-part{
+    padding: 5px;
+}
+
+#form-part h2{
+    font-size: 1.5em;
+}
+
+#form-part {
+    font-size: 0.9em;
+    line-height: 1.7em;
+}
+
+#form-part a{
+    font-size: 1em;
+    padding: 10px 25px;
+}
+
+#info-part img{
+    height: 100px;
+    margin-top: -25px;
+}
+
+#info-part a{
+    font-size: 0.9em;
+}
+
+#bottom-navbar{
+    display: none;
+}
