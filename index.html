@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Berke Yay">
+    <meta name="keywords" content="LGS, LGS Arkadaşım, Mentörlük, Rehberlik">
+    <script src="https://kit.fontawesome.com/b79607bc01.js" crossorigin="anonymous"></script>
+    <title>LGS Arkadaşım</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/anaSayfa/main.css">
+    <link rel="stylesheet" media="(max-width: 920px)" href="css/anaSayfa/tablet.css">
+    <link rel="stylesheet" media="(max-width: 500px)" href="css/anaSayfa/mobile.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="navbar">
+        <a href="index.html"><img src="assets/lgs_arkadasim_image.png" alt="LGS Arkadaşım"></a>
+        <div class="dropdown-mobile">
+            <button onclick="createNavbarDropdownMobile()" class="dropbtn-mobile">TR <i class="fa-solid fa-caret-down"></i></button>
+            <div id="navbar-dropdown-mobile" class="dropdown-content-mobile">
+              <a href="en/anaSayfa.html">EN</a>
+            </div>
+        </div>
+        <ul id="main-menu">
+            <a href="index.html"><li class="ana-sayfa">Ana Sayfa</li></a>
+            <a href="hakkimizda.html"><li>Hakkımızda</li></a>
+            <a href="egitimYiliSureci.html"><li>2023-2024 Eğitim Yılı Süreci</li></a>
+            <a href="sponsorlarimiz.html"><li>Sponsorlarımız</li></a>
+            <a href="iletisim.html"><li>İletişim</li></a>
+        </ul>
+        <div class="dropdown">
+            <button onclick="createNavbarDropdown()" class="dropbtn">TR <i class="fa-solid fa-caret-down"></i></button>
+            <div id="navbar-dropdown" class="dropdown-content">
+              <a href="en/anaSayfa.html">EN</a>
+            </div>
+        </div>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div id="bar-container">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul class="mobile-menu">
+                <a href="index.html"><li class="ana-sayfa">Ana Sayfa</li></a>
+                <a href="hakkimizda.html"><li>Hakkımızda</li></a>
+                <a href="egitimYiliSureci.html"><li>2023-2024 Eğitim Yılı Süreci</li></a>
+                <a href="sponsorlarimiz.html"><li>Sponsorlarımız</li></a>
+                <a href="iletisim.html"><li>İletişim</li></a>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="introductory-section">
+        <div id="general-part">
+            <h1>LGS <br> Arkadaşım</h1>
+            <h3>Birlikte Başaralım!</h3>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScRdUYUYqTR5jsJMis0dlOV8qFySFNuNOAtudRVcLYZaajSDQ/viewform" target="_blank">Başvur</a>
+        </div>
+
+        <div id="mission">
+            <p><b>Projenin misyonu</b>; <br> devlet okulunda okuyan veya özel okulda burslu olan öğrencilere:</p><br>
+                <ul>
+                    <li>özel ders,</li>
+                    <li>bire bir mentorluk</li>
+                    <li>ve çok daha fazlasını sağlamaktır.</li>
+                </ul>
+            <center><a href="hakkimizda.html">Daha Fazla Bilgi edinin <i class="fa-solid fa-arrow-right"></i></a></center>
+        </div>
+    </div>
+
+    <div id="mentorship-section">
+        <div id="question">
+            <h2>Mentor Görevleri <br>Nelerdir?</h2>
+        </div>
+
+        <div id="responsibilities">
+            <div class="responsibility">
+                <table>
+                    <tr>
+                        <td><i class="fa-solid fa-phone"></i></td>
+                        <td><span>Öğrencisi ile her hafta iletişim kuracak.</span></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="responsibility">
+                <table>
+                    <tr>
+                        <td><i class="fa-solid fa-clipboard-list"></i></td>
+                        <td><span>Haftalık yapılacak olan online denemelerin online sistemimiz  üzerinden hazırlanan 
+                                kazanım analizlerine bakarak öğrencilerine ödev verirler.</span></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="responsibility">
+                <table>
+                    <tr>
+                        <td><i class="fa-solid fa-thumbs-up"></i></td>
+                        <td><span>Öğrencisine moral ve motivasyon verecektir.</span></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <h2 id="lessons-section-title">Öğrencilerin Destek Alabileceği Dersler</h2>
+    <div id="lessons-section">
+        <div class="lesson" id="turkish">
+            <i class="fa-solid fa-book"></i>
+            <span>Türkçe</span>
+        </div>
+        <div class="lesson" id="maths">
+            <i class="fa-solid fa-calculator"></i>
+            <span>Matematik</span>
+        </div>
+        <div class="lesson" id="science">
+            <i class="fa-solid fa-flask"></i>
+            <span>Fen Bilimleri</span>
+        </div>
+        <div class="lesson" id="social-studies-turkiye">
+            <img src="assets/map.png">
+            <span>T.C. İnkılap Tarihi ve Atatürkçülük</span>
+        </div>
+        <div class="lesson" id="religion">
+            <i class="fa-solid fa-mosque"></i>
+            <span>Din Kültürü ve Ahlak Bilgisi</span>
+        </div>
+        <div class="lesson" id="english">
+            <i class="fa-solid fa-language"></i>
+            <span>İngilizce</span>
+        </div>
+    </div>
+
+    <div id="comments-section">
+        <div id="section-title">
+            <h2>Geçmiş Öğrencilerimizin <br>Yorumları</h2>
+        </div>
+        <div class="slider">
+            <div class="comments-all">
+                <!--Radio buttons-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <!--Comments-->
+                <div class="comment first">
+                    <p>
+                        “Gerek mentörlerimizin ilgisi gerekse arkadaşlarımla aramızdaki etkileşimle sınav sürecinde bana 
+                        yardımcı oldu. Sınav sonrasında da mentörlerimiz tercih sürecinde bize destek oldular.”
+                    </p> <hr>
+                    <span>Defne Demirci - 500 puan (LGS 2023)</span>
+                </div>
+        
+                <div class="comment">
+                    <p>
+                        “Online denemelerde hangi konuda eksiğin olduğunu anlayabiliyorsun ve eksik konu tamamlama konusunda
+                        çok yardımcı bir program.”
+                    </p> <hr>
+                    <span>Erkan Yuşa Özgöç - 494 puan (LGS 2023)</span>
+                </div>
+                <!--Auto Navigation-->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                </div>
+            </div>
+            <!--Manual Navigation-->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer-section">
+        <div id="contact-us-section">
+            <div id="info-part">
+                <img src="assets/lgs_arkadasim_image.png">
+                <a href="mailto:lgsarkadasimprojesi@gmail.com">lgsarkadasimprojesi@gmail.com</a>
+                <ul>
+                    <li><a href="https://www.instagram.com/lgsarkadasimprojesi/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/99830699/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul> 
+            </div>
+            <div id="form-part">
+                <h2>Bize Ulaşın: </h2>
+                <span>Herhangi bir sorunuz olursa aşağıdaki linkte bulunan formu doldurabilirsiniz.</span> <br>
+                <div><a href="iletisim.html">İletişim Formu</a></div>
+            </div>
+        </div>
+        <ul id="bottom-navbar">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="hakkimizda.html">Hakkımızda</a></li>
+            <li><a href="egitimYiliSureci.html">2023-2024 Eğitim Yılı Süreci</a></li>
+            <li><a href="sponsorlarimiz.html">Sponsorlarımız</a></li>
+        </ul>
+    </footer>
+
+
+    <script>
+        function createNavbarDropdown() {
+            document.getElementById("navbar-dropdown").classList.toggle("show");
+        }
+        window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+        }
+
+        function createNavbarDropdownMobile() {
+            document.getElementById("navbar-dropdown-mobile").classList.toggle("show");
+        }
+        window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn-mobile')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content-mobile");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+        }
+
+        var counter = 1;
+        setInterval(function(){
+            document.getElementById("radio"+counter).checked = true;
+            counter++;
+            if(counter>2){
+                counter = 1;
+            }
+        }, 6500);
+
+        var isMobileMenuOpen = false;
+        function toggleMobileMenu(menu){
+            var navbar = document.querySelector("#navbar");
+            var barContainer = document.querySelector("#bar-container");
+            var dropdownMobile = document.querySelector(".dropdown-mobile");
+            menu.classList.toggle("open");
+            if(isMobileMenuOpen==false){
+            navbar.style.height = "430px";
+            navbar.style.flexDirection = "column";
+            barContainer.style.top = "105px";
+            barContainer.style.marginRight = "0";
+            dropdownMobile.style.top = "0";
+            dropdownMobile.style.marginLeft = "0";
+            isMobileMenuOpen = true;
+            }
+            else{
+                navbar.style.height = "12vh";
+                navbar.style.flexDirection = "row";
+                barContainer.style.top = "0";
+                barContainer.style.marginRight = "20px";
+                dropdownMobile.style.top = "5px";
+                dropdownMobile.style.marginLeft = "auto";
+                isMobileMenuOpen = false;
+            }
+        }
+    </script>
+</body>
+</html>

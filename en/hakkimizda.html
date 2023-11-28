@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Berke Yay">
+    <script src="https://kit.fontawesome.com/b79607bc01.js" crossorigin="anonymous"></script>
+    <title>About Us | LGS Arkadaşım</title>
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.png">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/hakkimizda/hakkimizda-page.css">
+    <link rel="stylesheet" media="(max-width: 920px)" href="../css/hakkimizda/hakkimizda-tablet.css">
+    <link rel="stylesheet" media="(max-width: 500px)" href="../css/hakkimizda/hakkimizda-mobile.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="navbar">
+        <a href="anaSayfa.html"><img src="../assets/lgs_arkadasim_image.png" alt="LGS Arkadaşım"></a>
+        <div class="dropdown-mobile">
+            <button onclick="createNavbarDropdownMobile()" class="dropbtn-mobile">EN <i class="fa-solid fa-caret-down"></i></button>
+            <div id="navbar-dropdown-mobile" class="dropdown-content-mobile">
+              <a href="../hakkimizda.html">TR</a>
+            </div>
+        </div>
+        <ul id="main-menu">
+            <a href="anaSayfa.html"><li>Main Page</li></a>
+            <a href="hakkimizda.html"><li class="chosen">About Us</li></a>
+            <a href="egitimYiliSureci.html"><li>Academic Year Schedule</li></a>
+            <a href="sponsorlarimiz.html"><li>Sponsors</li></a>
+            <a href="iletisim.html"><li>Contact Us</li></a>
+        </ul>
+        <div class="dropdown">
+            <button onclick="createNavbarDropdown()" class="dropbtn">EN <i class="fa-solid fa-caret-down"></i></button>
+            <div id="navbar-dropdown" class="dropdown-content">
+              <a href="../hakkimizda.html">TR</a>
+            </div>
+        </div>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div id="bar-container">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul class="mobile-menu">
+                <a href="anaSayfa.html"><li class="ana-sayfa">Main Page</li></a>
+                <a href="hakkimizda.html"><li class="chosen">About Us</li></a>
+                <a href="egitimYiliSureci.html"><li>Academic Year Schedule</li></a>
+                <a href="sponsorlarimiz.html"><li>Sponsors</li></a>
+                <a href="iletisim.html"><li>Contact Us</li></a>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="introductory-part">
+        <h1>About Us</h1> <hr>
+        <div class="info-section">
+            <div class="question">
+                <h2>Who Are We?</h2>
+            </div>
+            <div>
+                <p>LGS My Friend project is a Koç High School based project established in 2021. We have laid the foundations
+                    of the program in the first two years and started narrowly, but we plan to receive applications from all 
+                    over Turkey next year.  The program was founded by Ayşesu Özdoğan and now Ömer Öztok is continuing it.
+                </p>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <div>
+                <p>After the mentor selection made every year, we identify the students who are selected through application and
+                    who have scholarships from public or private schools. Right after we accept them to the program, we provide
+                    one-to-one matches with the mentors. The student is called and contacted by his mentor every week. 
+                    In addition, by looking at the analysis from the exams every week, the mentor determines the student's 
+                    lack of topic and gives homework about that. We put these students in classes according to the courses they
+                    want to take. The mentors solve the LGS questions they send to the mentors in small lesson groups over Zoom.
+                    In addition, the program provides books for the students.
+                </p>
+            </div>
+            <div class="question">
+                <h2>What are We Doing?</h2>
+            </div>
+        </div>
+    </div>
+
+    <div id="what-makes-us-different-section">
+        <h2>What separates us from the other projects?</h2>
+        <div id="differences-part">
+            <div class="element">
+                <img src="../assets/mentorluk.png" class="element-img">
+                <span class="text-element">Mentorship</span>
+                <p class="text-element">Each student has their own mentor. Mentors help the students more than just academics.
+                    After the LGS exam, the mentors help their students to pick the right school for them.
+                </p>
+            </div>
+            <div class="element">
+                <div class="img-container"><img src="../assets/denemeler.png" class="element-img"></div>
+                <span class="text-element">Exams</span>
+                <p class="text-element">There is an exam every week and the mentors gives homework to their students based on 
+                    the exam analysis.</p>
+            </div>
+            <div class="element">
+                <div class="img-container"><img src="../assets/küçük-siniflar.png" class="element-img"></div>
+                <span class="text-element">Lessons in small classes</span>
+                <p class="text-element">A separate class is opened for each subject, the students send the questions they cannot
+                    do, and these questions are solved in a small class on Zoom in weekly lessons.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <footer id="footer-section">
+        <div id="contact-us-section">
+            <div id="info-part">
+                <img src="../assets/lgs_arkadasim_image.png">
+                <a href="mailto:lgsarkadasimprojesi@gmail.com">lgsarkadasimprojesi@gmail.com</a>
+                <ul>
+                    <li><a href="https://www.instagram.com/lgsarkadasimprojesi/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/99830699/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul> 
+            </div>
+            <div id="form-part">
+                <h2>Contact Us: </h2>
+                <span>If you have any questions, you can fill out the form in the link below.</span> <br>
+                <div><a href="iletisim.html">Message Form</a></div>
+            </div>
+        </div>
+        <ul id="bottom-navbar">
+            <li><a href="anaSayfa.html">Main Page</a></li>
+            <li><a href="hakkimizda.html">About Us</a></li>
+            <li><a href="egitimYiliSureci.html">Academic Year Schedule</a></li>
+            <li><a href="sponsorlarimiz.html">Sponsors</a></li>
+        </ul>
+    </footer>
+
+    <script>
+        function createNavbarDropdown() {
+            document.getElementById("navbar-dropdown").classList.toggle("show");
+        }
+        window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+        }
+
+        function createNavbarDropdownMobile() {
+            document.getElementById("navbar-dropdown-mobile").classList.toggle("show");
+        }
+        window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn-mobile')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content-mobile");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+        }
+
+        var isMobileMenuOpen = false;
+        function toggleMobileMenu(menu){
+            var navbar = document.querySelector("#navbar");
+            var barContainer = document.querySelector("#bar-container");
+            var dropdownMobile = document.querySelector(".dropdown-mobile");
+            menu.classList.toggle("open");
+            if(isMobileMenuOpen==false){
+            navbar.style.height = "430px";
+            navbar.style.flexDirection = "column";
+            barContainer.style.top = "105px";
+            barContainer.style.marginRight = "0";
+            dropdownMobile.style.top = "0";
+            dropdownMobile.style.marginLeft = "0";
+            isMobileMenuOpen = true;
+            }
+            else{
+                navbar.style.height = "12vh";
+                navbar.style.flexDirection = "row";
+                barContainer.style.top = "0";
+                barContainer.style.marginRight = "20px";
+                dropdownMobile.style.top = "5px";
+                dropdownMobile.style.marginLeft = "auto";
+                isMobileMenuOpen = false;
+            }
+        }
+
+        function createBackgroundColors(){
+            var elements = document.querySelectorAll(".element");
+            var colorList = ["lightblue", "lightgreen", "pink"];
+            for(var i=0;i<elements.length;i++){
+                elements[i].style.backgroundColor = colorList[i];
+            }
+        }
+        createBackgroundColors();
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const elements = document.querySelectorAll(".element-img");
+        const textElements = document.querySelectorAll(".text-element");
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                }
+            });
+        });
+
+        elements.forEach(element => {
+            observer.observe(element);
+        });
+        textElements.forEach(element => {
+            observer.observe(element);
+        });
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Berke Yay">
+    <script src="https://kit.fontawesome.com/b79607bc01.js" crossorigin="anonymous"></script>
+    <title>İletişim Formu | LGS Arkadaşım</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/iletisim/iletisim-page.css">
+    <link rel="stylesheet" media="(max-width: 920px)" href="css/iletisim/iletisim-tablet.css">
+    <link rel="stylesheet" media="(max-width: 500px)" href="css/iletisim/iletisim-mobile.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="navbar">
+        <a href="index.html"><img src="assets/lgs_arkadasim_image.png" alt="LGS Arkadaşım"></a>
+        <div class="dropdown-mobile">
+            <button onclick="createNavbarDropdownMobile()" class="dropbtn-mobile">TR <i class="fa-solid fa-caret-down"></i></button>
+            <div id="navbar-dropdown-mobile" class="dropdown-content-mobile">
+              <a href="en/iletisim.html">EN</a>
+            </div>
+        </div>
+        <ul id="main-menu">
+            <a href="index.html"><li>Ana Sayfa</li></a>
+            <a href="hakkimizda.html"><li>Hakkımızda</li></a>
+            <a href="egitimYiliSureci.html"><li>2023-2024 Eğitim Yılı Süreci</li></a>
+            <a href="sponsorlarimiz.html"><li>Sponsorlarımız</li></a>
+            <a href="iletisim.html"><li class="chosen">İletişim</li></a>
+        </ul>
+        <div class="dropdown">
+            <button onclick="createNavbarDropdown()" class="dropbtn">TR <i class="fa-solid fa-caret-down"></i></button>
+            <div id="navbar-dropdown" class="dropdown-content">
+              <a href="en/iletisim.html">EN</a>
+            </div>
+        </div>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div id="bar-container">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul class="mobile-menu">
+                <a href="index.html"><li class="ana-sayfa">Ana Sayfa</li></a>
+                <a href="hakkimizda.html"><li>Hakkımızda</li></a>
+                <a href="egitimYiliSureci.html"><li>2023-2024 Eğitim Yılı Süreci</li></a>
+                <a href="sponsorlarimiz.html"><li>Sponsorlarımız</li></a>
+                <a href="iletisim.html"><li class="chosen">İletişim</li></a>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+    <footer id="footer-section">
+        <div id="contact-us-section">
+            <div id="form-part">
+                <h2>Bize Ulaşın: </h2>
+                <span>Herhangi bir sorunuz olursa aşağıdaki iletişim formunu doldurabilirsiniz.</span>
+                <div id="form-section">
+                    <form id="message-form" action="https://formsubmit.co/el/kexoto" method="POST" >
+                        <label for="name">Adınız ve Soyadınız: </label>
+                        <input id="name" type="text" name="Name" placeholder="Lütfen adınızı ve soyadınızı girin" required>
+            
+                        <label for="email">E-posta Adresiniz: </label>
+                        <input id="email" type="email" name="Email" placeholder="Lütfen e-posta adresinizi girin" required>
+            
+                        <label for="message">Mesajınız: </label>
+                        <textarea name="Message" id="message" cols="20" rows="10" placeholder="Mesajınızı bu alana yazabilirsiniz"
+                         required maxlength="500"></textarea>
+            
+                        <input id="submit-btn" type="submit" value="Gönder" style="width: 100%;">
+                    </form>
+                </div>
+            </div>
+            <div id="info-part">
+                <img src="assets/lgs_arkadasim_image.png">
+                <a href="mailto:lgsarkadasimprojesi@gmail.com">lgsarkadasimprojesi@gmail.com</a>
+                <ul>
+                    <li><a href="https://www.instagram.com/lgsarkadasimprojesi/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/99830699/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul> 
+            </div>
+        </div>
+        <ul id="bottom-navbar">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="hakkimizda.html">Hakkımızda</a></li>
+            <li><a href="egitimYiliSureci.html">2023-2024 Eğitim Yılı Süreci</a></li>
+            <li><a href="sponsorlarimiz.html">Sponsorlarımız</a></li>
+        </ul>
+    </footer>
+
+
+    <script>
+        function createNavbarDropdown() {
+            document.getElementById("navbar-dropdown").classList.toggle("show");
+        }
+        window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+        }
+
+        function createNavbarDropdownMobile() {
+            document.getElementById("navbar-dropdown-mobile").classList.toggle("show");
+        }
+        window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn-mobile')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content-mobile");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+        }
+
+        var isMobileMenuOpen = false;
+        function toggleMobileMenu(menu){
+            var navbar = document.querySelector("#navbar");
+            var barContainer = document.querySelector("#bar-container");
+            var dropdownMobile = document.querySelector(".dropdown-mobile");
+            menu.classList.toggle("open");
+            if(isMobileMenuOpen==false){
+            navbar.style.height = "430px";
+            navbar.style.flexDirection = "column";
+            barContainer.style.top = "105px";
+            barContainer.style.marginRight = "0";
+            dropdownMobile.style.top = "0";
+            dropdownMobile.style.marginLeft = "0";
+            isMobileMenuOpen = true;
+            }
+            else{
+                navbar.style.height = "12vh";
+                navbar.style.flexDirection = "row";
+                barContainer.style.top = "0";
+                barContainer.style.marginRight = "20px";
+                dropdownMobile.style.top = "5px";
+                dropdownMobile.style.marginLeft = "auto";
+                isMobileMenuOpen = false;
+            }
+        }
+    </script>
+</body>
+</html>
