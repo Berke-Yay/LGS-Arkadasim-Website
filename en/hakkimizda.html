@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Berke Yay">
+    <script src="https://kit.fontawesome.com/b79607bc01.js" crossorigin="anonymous"></script>
+    <title>About Us | LGS Arkadaşım</title>
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.png">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/hakkimizda/hakkimizda-redesign-page.css">
+    <link rel="stylesheet" media="(max-width: 920px)" href="../css/hakkimizda/hakkimizda-tablet.css">
+    <link rel="stylesheet" media="(max-width: 500px)" href="../css/hakkimizda/hakkimizda-mobile.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="navbar">
+        <a href="anaSayfa.html"><img src="../assets/lgs_arkadasim_image.png" alt="LGS Arkadaşım"></a>
+        <div class="dropdown-mobile">
+            <button onclick="createNavbarDropdownMobile()" class="dropbtn-mobile">EN <i class="fa-solid fa-caret-down"></i></button>
+            <div id="navbar-dropdown-mobile" class="dropdown-content-mobile">
+              <a href="../hakkimizda.html">TR</a>
+            </div>
+        </div>
+        <ul id="main-menu">
+            <a href="anaSayfa.html"><li>Main Page</li></a>
+            <a href="hakkimizda.html"><li class="chosen">About Us</li></a>
+            <a href="egitimYiliSureci.html"><li>Academic Year Schedule</li></a>
+            <a href="sponsorlarimiz.html"><li>Sponsors</li></a>
+            <a href="iletisim.html"><li>Contact Us</li></a>
+        </ul>
+        <div class="dropdown">
+            <button onclick="createNavbarDropdown()" class="dropbtn">EN <i class="fa-solid fa-caret-down"></i></button>
+            <div id="navbar-dropdown" class="dropdown-content">
+              <a href="../hakkimizda.html">TR</a>
+            </div>
+        </div>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div id="bar-container">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul class="mobile-menu">
+                <a href="anaSayfa.html"><li class="ana-sayfa">Main Page</li></a>
+                <a href="hakkimizda.html"><li class="chosen">About Us</li></a>
+                <a href="egitimYiliSureci.html"><li>Academic Year Schedule</li></a>
+                <a href="sponsorlarimiz.html"><li>Sponsors</li></a>
+                <a href="iletisim.html"><li>Contact Us</li></a>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="introductory-part">
+        <h1>About Us</h1> <hr>
+        <div class="info-section">
+            <p>Initiated from Koç High School and established in 2021, LGS Arkadaşım(My LGS Friend) is a project that aims to 
+                help 8th graders all around Turkey to reach their full potentials in their LGS(High School Entrance Exam) journey
+                via offering students a free of cost one-to-one mentorship and lots of exam practices.
+            </p>
+        </div>
+    </div>
+
+    <div id="img-slider">
+        <div class="images">
+            <img src="../assets/hakkımızda-img-1.JPG">
+            <img src="../assets/hakkımızda-img-2.JPG">
+            <img src="../assets/hakkımızda-img-3.JPG">
+            <img src="../assets/hakkımızda-img-4.JPG">
+            <img src="../assets/hakkımızda-img-5.JPG">
+        </div>
+    </div>
+
+    <div id="what-makes-us-different-section">
+        <h2>What Seperates Us from Other Programs?</h2>
+        <div id="elements">
+            <div class="element">
+                <i class="fa-solid fa-people-group"></i>
+                <span>A Qualified Team</span>
+                <p>Mentors in our team are selected after a careful process of interviews from outstanding high schools of Turkey
+                    such as Koç High School, Galatasaray High School and Robert College.
+                </p>
+            </div>
+            <div class="element">
+                <i class="fa-regular fa-compass"></i>
+                <span>Mentorship</span>
+                <p>Each student has their own mentor. Mentors contact their students on a regular basis, and they answer the
+                    students' questions, giving them some advice. Mentors also help their students outside of academics.
+                </p>
+            </div>
+            <div class="element">
+                <i class="fa-solid fa-list-check"></i>
+                <span>Exams</span>
+                <p>There is an exam every week and the mentors give homework to their students based on the exam analysis.</p>
+            </div>
+            <div class="element">
+                <i class="fa-solid fa-computer"></i>
+                <span>Lessons in small classes</span>
+                <p>A separate class is opened for each subject, the students send the questions they cannot do, and these 
+                    questions are solved in a small class on Zoom in weekly lessons.</p>
+            </div>
+            <div class="element">
+                <i class="fa-solid fa-route"></i>
+                <span>Support on Decision Period</span>
+                <p>Mentors keep guiding their students after the exam, helping them to choose the right high school for their
+                    interests and goals.</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="timeline">
+        <div class="info">
+            <h2>History and Future Plans</h2>
+        </div>
+        
+        <ol>
+            <li>
+            <div>
+                <time>2021</time> Under the leadership of Ayşesu Özdoğan, the program was established with a few friends of her from Koç High School.
+            </div>
+            </li>
+            <li>
+            <div>
+                <time>2022</time> After its first year, the program has grown within The Koç High School, and therefore the number of students and mentors has increased significantly compared to the first year. 
+            </div>
+            </li>
+            <li>
+            <div>
+                <time>2023</time> Our bright students in the program this year have achieved many successes. Defne Demirci, one of our students, is one of the 562 students in Turkey and got 500 points in the exam. She will study at Koç High School with a full scholarship next year.
+            </div>
+            </li>
+            <li>
+            <div>
+                <time>2024</time> Although we have been receiving mentors only from The Koç High School for the last two years, our plan for next year is to receive applications from other successful high schools in Istanbul. Also, unlike in previous years, we plan to take our students from all over Turkey.
+            </div>
+            </li>
+    
+            <li></li>
+        </ol>
+        
+        </section>
+
+
+    <footer id="footer-section">
+        <div id="contact-us-section">
+            <div id="info-part">
+                <img src="../assets/lgs_arkadasim_image.png">
+                <a href="mailto:lgsarkadasimprojesi@gmail.com">lgsarkadasimprojesi@gmail.com</a>
+                <ul>
+                    <li><a href="https://www.instagram.com/lgsarkadasimprojesi/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/99830699/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul> 
+            </div>
+            <div id="form-part">
+                <h2>Contact Us: </h2>
+                <span>If you have any questions, you can fill out the form in the link below.</span> <br>
+                <div><a href="iletisim.html">Message Form</a></div>
+            </div>
+        </div>
+        <ul id="bottom-navbar">
+            <li><a href="index.html">Main Page</a></li>
+            <li><a href="hakkimizda.html">About Us</a></li>
+            <li><a href="egitimYiliSureci.html">Academic Year Schedule</a></li>
+            <li><a href="sponsorlarimiz.html">Sponsors</a></li>
+        </ul>
+    </footer>
+
+    <script>
+        function createNavbarDropdown() {
+            document.getElementById("navbar-dropdown").classList.toggle("show");
+        }
+        window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+        }
+
+        function createNavbarDropdownMobile() {
+            document.getElementById("navbar-dropdown-mobile").classList.toggle("show");
+        }
+        window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn-mobile')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content-mobile");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+        }
+
+        var isMobileMenuOpen = false;
+        function toggleMobileMenu(menu){
+            var navbar = document.querySelector("#navbar");
+            var barContainer = document.querySelector("#bar-container");
+            var dropdownMobile = document.querySelector(".dropdown-mobile");
+            menu.classList.toggle("open");
+            if(isMobileMenuOpen==false){
+            navbar.style.height = "430px";
+            navbar.style.flexDirection = "column";
+            barContainer.style.top = "105px";
+            barContainer.style.marginRight = "0";
+            dropdownMobile.style.top = "0";
+            dropdownMobile.style.marginLeft = "0";
+            isMobileMenuOpen = true;
+            }
+            else{
+                navbar.style.height = "12vh";
+                navbar.style.flexDirection = "row";
+                barContainer.style.top = "0";
+                barContainer.style.marginRight = "20px";
+                dropdownMobile.style.top = "5px";
+                dropdownMobile.style.marginLeft = "auto";
+                isMobileMenuOpen = false;
+            }
+        }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const elements = document.querySelectorAll(".element-img");
+        const textElements = document.querySelectorAll(".text-element");
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                }
+            });
+        });
+
+        elements.forEach(element => {
+            observer.observe(element);
+        });
+        textElements.forEach(element => {
+            observer.observe(element);
+        });
+    });
+
+
+    //Demo
+    // VARIABLES
+    const elH = document.querySelectorAll(".timeline li > div");
+
+    // START
+    window.addEventListener("load", init);
+
+    function init() {
+    setEqualHeights(elH);
+    }
+
+    // SET EQUAL HEIGHTS
+    function setEqualHeights(el) {
+    let counter = 0;
+    for (let i = 0; i < el.length; i++) {
+        const singleHeight = el[i].offsetHeight;
+
+        if (counter < singleHeight) {
+        counter = singleHeight;
+        }
+    }
+
+    for (let i = 0; i < el.length; i++) {
+        el[i].style.height = `${counter}px`;
+    }
+    }
+    </script>
+</body>
+</html>
