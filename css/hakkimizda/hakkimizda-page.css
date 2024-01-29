@@ -210,21 +210,6 @@
     margin-bottom: 100px;
 }
 
-.info-section div{
-    width: 50%;
-}
-
-.info-section .question{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.info-section .question h2{
-    font-size: 2.5em;
-    font-style: italic;
-}
-
 .info-section p{
     font-size: 1.25em;
     padding: 10px;
