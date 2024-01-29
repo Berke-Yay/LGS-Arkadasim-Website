@@ -9,8 +9,7 @@
 }
 
 #navbar img{
-    width: 250px;
-    height: 110px;
+    max-width: 240px;
 }
 
 #main-menu{
