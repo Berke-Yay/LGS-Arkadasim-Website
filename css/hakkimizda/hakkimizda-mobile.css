@@ -3,10 +3,6 @@
     width: 100%;
 }
 
-#navbar img{
-    width: 100%;
-}
-
 #navbar #main-menu{
     display: none;
     flex-direction: column;
