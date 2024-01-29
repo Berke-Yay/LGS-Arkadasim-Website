@@ -8,10 +8,6 @@ body{
     height: 12vh;
 }
 
-#navbar img{
-    width: 100%;
-}
-
 #navbar #main-menu{
     display: none;
     flex-direction: column;
