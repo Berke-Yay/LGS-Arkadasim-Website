@@ -1,7 +1,6 @@
 input[type=text], input[type=button] {
     -webkit-appearance: none;
     -webkit-border-radius: 0;
-    -moz-appearance: none;
     color: black;
 }
 
@@ -41,6 +40,7 @@ input[type=text], input[type=button] {
     display: flex;
     justify-content: space-around;
     cursor: pointer;
+    border:0.5px solid black;
 }
 
 #navbar .dropdown-content-mobile {
