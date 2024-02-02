@@ -2,6 +2,11 @@ body{
     width: 100%;
 }
 
+input[type=text], input[type=button] {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+}
+
 /*Navbar Section*/
 #navbar{
     width: 100%;
