@@ -41,6 +41,10 @@ input[type=text], input[type=button] {
     display: flex;
     justify-content: space-around;
     cursor: pointer;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    -moz-appearance: none;
+    color: black;
 }
 
 #navbar .dropdown-content-mobile {
