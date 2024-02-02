@@ -1,3 +1,10 @@
+input[type=text], input[type=button] {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    -moz-appearance: none;
+    color: black;
+}
+
 /*Navbar Section*/
 #navbar{
     width: 100%;
