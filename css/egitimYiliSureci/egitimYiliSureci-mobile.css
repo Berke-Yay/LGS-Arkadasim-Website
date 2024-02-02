@@ -1,7 +1,6 @@
 input[type=text], input[type=button] {
     -webkit-appearance: none;
     -webkit-border-radius: 0;
-    -moz-appearance: none;
     color: black;
 }
 
@@ -40,6 +39,7 @@ input[type=text], input[type=button] {
     padding: 6px 25px;
     display: flex;
     justify-content: space-around;
+    border:0.5px solid black;
     cursor: pointer;
 }
 
