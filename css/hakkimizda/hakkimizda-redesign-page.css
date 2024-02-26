@@ -1,0 +1,180 @@
+body{
+    background-color: cornsilk;
+}
+/*Navbar Section*/
+#navbar .chosen{
+    color: green;
+}
+
+/*Introductory Part*/
+#introductory-part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    padding-bottom: 30px;
+    background-color: cornsilk;
+}
+
+#introductory-part h1{
+    font-size: 3.7em;
+    margin-bottom: 10px;
+}
+
+#introductory-part hr{
+    width: 40%;
+    border: 3px solid black;
+    margin-bottom: 40px;
+    border-radius: 3px;
+    animation: hrAnimation 0.3s ease forwards;
+}
+
+@keyframes hrAnimation{
+    0%{
+        width: 0;
+    }
+    10%{
+        width: 4%;
+    }
+    20%{
+        width: 8%;
+    }
+    30%{
+        width: 12%;
+    }
+    40%{
+        width: 16%;
+    }
+    50%{
+        width: 20%;
+    }
+    60%{
+        width: 24%;
+    }
+    70%{
+        width: 28%;
+    }
+    80%{
+        width: 32%;
+    }
+    90%{
+        width: 36%;
+    }
+    100%{
+        width: 40%;
+    }
+}
+
+.info-section{
+    width: 50%;
+    margin-bottom: 100px;
+}
+
+.info-section p{
+    font-size: 1.75em;
+    line-height: 1.5em;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/*What makes us different section*/
+#what-makes-us-different-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: cornsilk;
+    margin-bottom: 100px;
+}
+
+#what-makes-us-different-section h2{
+    font-size: 2.5em;
+    margin-bottom: 25px;
+}
+
+#elements{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+#elements .element{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    margin: 25px 25px;
+}
+
+#elements .element i{
+    font-size: 4em;
+    margin-bottom: 16px;
+}
+
+#elements .element span{
+    align-self: center;
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+#elements .element p{
+    padding: 10px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+/*Image slider*/
+#img-slider{
+    margin-bottom: 50px;
+    background-color: cornsilk;
+}
+
+#img-slider .images{
+    display: flex;
+    width: 100%;
+    animation: slide 40s infinite;
+}
+
+
+@keyframes slide {
+    0%{
+        transform: translateX(0);
+    }
+    10%{
+        transform: translateX(-25%);
+    }
+    20%{
+        transform: translateX(-50%);
+    }
+    30%{
+        transform: translateX(-75%);
+    }
+    40%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-125%);
+    }
+    60%{
+        transform: translateX(-100%);
+    }
+    70%{
+        transform: translateX(-75%);
+    }
+    80%{
+        transform: translateX(-50%);
+    }
+    90%{
+        transform: translateX(-25%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+#img-slider img{
+    width: 30%;
+    margin: 0 20px;
+    height: 400px;
+}

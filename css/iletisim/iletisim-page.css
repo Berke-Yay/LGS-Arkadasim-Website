@@ -1,0 +1,183 @@
+/*Navbar Section*/
+#navbar .chosen{
+    color: green;
+}
+
+/*Form Section*/
+#form-section{
+    display: flex;
+    justify-content: center;
+    background-color: antiquewhite;
+    width: 100%;
+}
+
+#message-form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 15px;
+    border: 1px solid black;
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+#message-form input{
+    margin: 15px 0;
+    padding: 15px;
+    border: none;
+    border-bottom: 2px solid black;
+    width: 95%;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+#message-form input:focus::placeholder{
+    color: transparent;
+}
+
+#message{
+    margin: 15px 0;
+    padding: 15px;
+    height: 180px;
+    width: 95%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    resize: none;
+    border: none;
+    border-bottom: 2px solid black;
+    border-radius: 15px;
+}
+
+#message:focus::placeholder{
+    color: transparent;
+}
+
+#submit-btn{
+    background-color: lightblue;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit-btn:hover{
+    background-color: rgb(255, 192, 75);
+    color: white;
+    border: 1px solid white;
+}
+
+/*Contact Us*/
+#contact-us-section{
+    display: flex;
+    background-color: antiquewhite;
+    height: 88vh;
+}
+
+#form-part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 200px;
+    padding: 10px;
+    line-height: 35px;
+}
+
+#form-part h2{
+    font-size: 2em;
+    margin-top: 15px;
+}
+
+#info-part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    border-left: 2px solid black;
+    padding: 10px;
+    
+}
+
+#info-part img{
+    height: 225px;
+    margin-top: -45px;
+}
+
+#info-part a{
+    margin-top: -20px;
+    margin-bottom: 20px;
+    font-size: 1.4em;
+}
+
+#info-part ul{
+    display: flex;
+}
+
+#info-part i{
+    font-size: 2.6em;
+}
+
+#info-part ul li:not(:last-child){
+    margin-right: 35px;
+}
+
+#footer-section{
+    width: 100%;
+    background-color: black;
+}
+
+#bottom-navbar{
+    padding: 15px;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#bottom-navbar li a{
+    color: white;
+    font-size: 1.25em;
+    padding: 10px;
+}
+
+#bottom-navbar li a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 1080px){
+
+    #form-part{
+        padding: 5px;
+    }
+
+    #form-part h2{
+        font-size: 1.5em;
+    }
+
+    #form-part {
+        line-height: 1.7em;
+    }
+
+    #form-part a{
+        font-size: 1em;
+        padding: 10px 25px;
+    }
+
+    #message-form{
+        width: 95%;
+    }
+
+    #info-part img{
+        height: 250px;
+        margin-top: -25px;
+    }
+
+    #info-part a{
+        font-size: 2em;
+    }
+
+    #bottom-navbar{
+        display: none;
+    }
+}
