@@ -32,7 +32,7 @@ function configurePageLanguage(language){
         mobileDropbtn.innerHTML = '<img src="assets/flags/turkey.png">'+language+'<i class="fa-solid fa-caret-down"></i>';
 
         //Changing the language of the navbar menu items
-        var newNavbarMenuItems = ["Ana Sayfa", "Hakkımızda", "2023-2024 Eğitim Yılı Süreci", "Sponsorlarımız", "İletişim"];
+        var newNavbarMenuItems = ["Ana Sayfa", "Hakkımızda", "2024-2025 Eğitim Yılı Süreci", "Sponsorlarımız", "İletişim"];
         for(var i=0;i<navbarMenuItems.length;i++){
             navbarMenuItems[i].innerText = newNavbarMenuItems[i];
         }
@@ -41,13 +41,13 @@ function configurePageLanguage(language){
         }
 
         //Changing the language of title
-        mainSectionTitle.innerHTML = "2023 - 2024 <br>Eğitim Yılı Süreci";
+        mainSectionTitle.innerHTML = "2024 - 2025 <br>Eğitim Yılı Süreci";
 
         //Changing the language of the footer section
         formPartTitle.innerText = "Bize Ulaşın:";
         formPartSpan.innerText = "Herhangi bir sorunuz olursa aşağıdaki linkte bulunan formu doldurabilirsiniz.";
         formPartA.innerText = "İletişim Formu";
-        var newBottomNavbarElements = ["Ana Sayfa", "Hakkımızda", "2023-2024 Eğitim Yılı Süreci", "Sponsorlarımız"];
+        var newBottomNavbarElements = ["Ana Sayfa", "Hakkımızda", "2024-2025 Eğitim Yılı Süreci", "Sponsorlarımız"];
         for(var i=0;i<bottomNavbarElements.length;i++){
             bottomNavbarElements[i].innerText = newBottomNavbarElements[i];
         }
@@ -67,7 +67,7 @@ function configurePageLanguage(language){
         }
 
         //Changing the language of title
-        mainSectionTitle.innerHTML = "2023 - 2024 <br>Academic Year Schedule";
+        mainSectionTitle.innerHTML = "2024 - 2025 <br>Academic Year Schedule";
 
         //Changing the language of the footer section
         formPartTitle.innerText = "Contact Us:";
@@ -93,7 +93,7 @@ function configurePageLanguage(language){
         }
 
         //Changing the language of title
-        mainSectionTitle.innerHTML = "2023 - 2024 Kalender <br>des akademischen Jahres";
+        mainSectionTitle.innerHTML = "2024 - 2025 Kalender <br>des akademischen Jahres";
 
         //Changing the language of the footer section
         formPartTitle.innerText = "Kontakt:";
@@ -119,7 +119,7 @@ function configurePageLanguage(language){
         }
 
         //Changing the language of title
-        mainSectionTitle.innerHTML = "2023 - 2024 Calendario<br> del Año Académico";
+        mainSectionTitle.innerHTML = "2024 - 2025 Calendario<br> del Año Académico";
 
         //Changing the language of the footer section
         formPartTitle.innerText = "Contacto:";
@@ -145,7 +145,7 @@ function configurePageLanguage(language){
         }
 
         //Changing the language of title
-        mainSectionTitle.innerHTML = "2023 - 2024 Calendrier<br> de l’année Scolaire";
+        mainSectionTitle.innerHTML = "2024 - 2025 Calendrier<br> de l’année Scolaire";
 
         //Changing the language of the footer section
         formPartTitle.innerText = "Nous Contacter:";
