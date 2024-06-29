@@ -400,7 +400,7 @@
         })
         .then(res => res.json())
         .then(data => console.log(data))
-        .catch(err => console.log("Error: ", err));
+        .catch(err => alert("Error: Unable to connect to the server"));
 
         form.reset();
         chosen.style.backgroundColor = 'gray';
