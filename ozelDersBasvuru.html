@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Berke Yay">
+    <meta name="keywords" content="LGS, LGS Arkadaşım, Mentörlük, Rehberlik">
+    <script src="https://kit.fontawesome.com/b79607bc01.js" crossorigin="anonymous"></script>
+    <title>Özel Ders | LGS Arkadaşım</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/ozelDersBasvuru/ozelDersBasvuru-page.css">
+    <link rel="stylesheet" media="(max-width: 920px)" href="css/ozelDersBasvuru/ozelDersBasvuru-tablet.css">
+    <link rel="stylesheet" media="(max-width: 500px)" href="css/ozelDersBasvuru/ozelDersBasvuru-mobile.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="navbar">
+        <a href="index.html"><img src="assets/lgs_arkadasim_image.png" alt="LGS Arkadaşım"></a>
+        <div class="dropdown-mobile">
+            <button onclick="createNavbarDropdownMobile()" class="dropbtn-mobile"><img src="assets/flags/turkey.png">TR <i class="fa-solid fa-caret-down"></i></button>
+            <div id="navbar-dropdown-mobile" class="dropdown-content-mobile">
+                <a href="#" language="TR"><img src="assets/flags/turkey.png">TR</a>
+                <a href="#" language="EN"><img src="assets/flags/united-states.png">EN</a>
+                <a href="#" language="DE"><img src="assets/flags/germany.png">DE</a>
+                <a href="#" language="ES"><img src="assets/flags/spain.png">ES</a>
+                <a href="#" language="FR"><img src="assets/flags/france.png">FR</a>
+            </div>
+        </div>
+        <ul id="main-menu">
+            <a href="index.html"><li>Ana Sayfa</li></a>
+            <a href="hakkimizda.html"><li>Hakkımızda</li></a>
+            <a href="egitimYiliSureci.html"><li>2024-2025 Eğitim Yılı Süreci</li></a>
+            <a href="sponsorlarimiz.html"><li>Sponsorlarımız</li></a>
+            <a href="iletisim.html"><li>İletişim</li></a>
+        </ul>
+        <div class="dropdown">
+            <button onclick="createNavbarDropdown()" class="dropbtn"><img src="assets/flags/turkey.png">TR <i class="fa-solid fa-caret-down"></i></button>
+            <div id="navbar-dropdown" class="dropdown-content">
+              <a href="#" language="TR"><img src="assets/flags/turkey.png">TR</a>
+              <a href="#" language="EN"><img src="assets/flags/united-states.png">EN</a>
+              <a href="#" language="DE"><img src="assets/flags/germany.png">DE</a>
+              <a href="#" language="ES"><img src="assets/flags/spain.png">ES</a>
+              <a href="#" language="FR"><img src="assets/flags/france.png">FR</a>
+            </div>
+        </div>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div id="bar-container">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul class="mobile-menu">
+                <a href="index.html"><li>Ana Sayfa</li></a>
+                <a href="hakkimizda.html"><li>Hakkımızda</li></a>
+                <a href="egitimYiliSureci.html"><li>2024-2025 Eğitim Yılı Süreci</li></a>
+                <a href="sponsorlarimiz.html"><li>Sponsorlarımız</li></a>
+                <a href="iletisim.html"><li>İletişim</li></a>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="introductory-part">
+        <h1>Özel Ders Başvuruları</h1><hr>
+        <p>2024 - 2025 Eğitim Yılı'ndan itibaren projemize dahil olmayan 8. sınıf öğrencileri, LGS'de başarılı olmuş mentorlerimizden belirli
+            bir ücret karşılığı özel ders alabilecektir. Özel derslerden elde edilen gelir, projenin ihtiyacı olan öğrencilere sunduğu 
+            olanakları arttırmak ve geliştirmek için kullanılacaktır. </p>
+    </div>
+    
+    <h2>Öğrencilerimizin Yorumları</h2>
+    <div id="comments-section">
+        <div class="comment">
+            <img src="assets/anonymous-person-img.jpeg">
+            <span>İsim Soyisim</span>
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto minima atque vitae blanditiis impedit quis? Ut sed amet recusandae odio!</p>
+        </div>
+        <div class="comment">
+            <img src="assets/anonymous-person-img.jpeg">
+            <span>İsim Soyisim</span>
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto minima atque vitae blanditiis impedit quis? Ut sed amet recusandae odio!</p>
+        </div>
+        <div class="comment">
+            <img src="assets/anonymous-person-img.jpeg">
+            <span>İsim Soyisim</span>
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto minima atque vitae blanditiis impedit quis? Ut sed amet recusandae odio!</p>
+        </div>
+    </div>
+
+    <h2>Ücret Bilgisi</h2>
+    <div id="price-info-section">
+        <div class="classes">
+            <h3>Ana Dersler</h3>
+            <span>Saatlik Özel Ders Ücreti 500 TL</span>
+            <ul>
+                <li>Türkçe</li>
+                <li>Matematik</li>
+                <li>Fen Bilimleri</li>
+            </ul>
+        </div>
+        <div class="classes">
+            <h3>Ara Dersler</h3>
+            <span>Saatlik Özel Ders Ücreti 400 TL</span>
+            <ul>
+                <li>T. C. İnkılap Tarihi ve Atatürkçülük</li>
+                <li>Din Kültürü ve Ahlak Bilgisi</li>
+                <li>İngilizce</li>
+            </ul>
+        </div>
+    </div>
+
+    <form>
+        <h2>Başvuru Oluşturma</h2>
+        <h3>Adım 1 - Ders Seçimi</h3>
+        <div id="lessons-section">
+            <label for="Türkçe">
+                <div class="lesson" id="turkish">
+                    <i class="fa-solid fa-book"></i>
+                    <span>Türkçe</span>
+                </div>
+            </label>
+            <label for="Matematik">
+                <div class="lesson" id="maths">
+                    <i class="fa-solid fa-calculator"></i>
+                    <span>Matematik</span>
+                </div>
+            </label>
+            <label for="Fen-Bilimleri">
+                <div class="lesson" id="science">
+                    <i class="fa-solid fa-flask"></i>
+                    <span>Fen Bilimleri</span>
+                </div>
+            </label>
+            <label for="İnkılap-Tarihi-ve-Atatürkçülük">
+                <div class="lesson" id="social-studies-turkiye">
+                    <img src="assets/map.png">
+                    <span>T.C. İnkılap Tarihi ve Atatürkçülük</span>
+                </div>
+            </label>
+            <label for="Din-Kültürü-ve-Ahlak-Bilgisi">
+                <div class="lesson" id="religion">
+                    <i class="fa-solid fa-mosque"></i>
+                    <span>Din Kültürü ve Ahlak Bilgisi</span>
+                </div>
+            </label>
+            <label for="İngilizce">
+                <div class="lesson" id="english">
+                    <i class="fa-solid fa-language"></i>
+                    <span>İngilizce</span>
+                </div>
+            </label>
+
+            <div class="radio-buttons">
+                <input type="radio" id="Türkçe" name="chosenClass" value="Türkçe" required>
+                <input type="radio" id="Matematik" name="chosenClass" value="Matematik">
+                <input type="radio" id="Fen-Bilimleri" name="chosenClass" value="Fen Bilimleri">
+                <input type="radio" id="İnkılap-Tarihi-ve-Atatürkçülük" name="chosenClass" value="T. C. İnkılap Tarihi ve Atatürkçülük">
+                <input type="radio" id="Din-Kültürü-ve-Ahlak-Bilgisi" name="chosenClass" value="Din Kültürü ve Ahlak Bilgisi">
+                <input type="radio" id="İngilizce" name="chosenClass" value="İngilizce">
+            </div>
+        </div>
+
+        <div class="container">
+            <div id="container-step-two">
+                <h3>Adım 2 - Gün ve Saat Seçimi</h3>
+                <div class="wrapper">
+                    <header>
+                        <p class="current-date"></p>
+                        <div class="icons">
+                            <i id="prev" class="fa-solid fa-chevron-left"></i>
+                            <i id="next" class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </header>
+        
+                    <div class="calendar">
+                        <ul class="weeks">
+                            <li>Pzt</li>
+                            <li>Sal</li>
+                            <li>Çar</li>
+                            <li>Per</li>
+                            <li>Cum</li>
+                            <li>Cmt</li>
+                            <li>Paz</li>
+                        </ul>
+                        <ul class="days"></ul>
+                    </div>
+                    <div class="time-input">
+                        <span>Saat Seçimi: </span>
+                        <input type="time" name="time" required>
+                    </div>
+                </div>
+            </div>
+
+            <input id="date" type="date" name="date" required>
+    
+            <div id="container-step-three">
+                <h3>Adım 3 - İletişim Bilgileri</h3>
+                <div class="communication-info">
+                    
+                    <label for="parent-name">Velinin Adı ve Soyadı: </label>
+                    <input type="text" id="parent-name" name="parentName" required>
+                    <label for="student-name">Öğrencinin Adı ve Soyadı: </label>
+                    <input type="text" id="student-name" name="studentName" required>
+                    <label for="email">E-posta Adresi: </label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="phone">Telefon Numarası: </label>
+                    <input type="tel" id="phone" name="phoneNumber" required>
+                </div>
+            </div>
+        </div>
+
+
+        <h3>Adım 4 - Detaylar</h3>
+        <span class="step-four-span">Özel dersi verecek öğrencinin hangi liseden olmasını istediğinizi belirtebilirsiniz: </span>
+        <select name="preferredSchool" id="preferredSchool">
+            <option value="Tercih Edilmedi">Tercih Edilmedi</option>
+            <option value="Galatasaray Lisesi">Galatasaray Lisesi</option>
+            <option value="Koç Lisesi">Koç Lisesi</option>
+            <option value="Robert Koleji">Robert Koleji</option>
+        </select> <br>
+
+        <span class="step-four-span">Derste çözülmesini istediğiniz sorular varsa soruların fotoğraflarını ilgili alana yükleyebilirsiniz: </span>
+        <input id="file-input" name="questions" type="file" accept="image/jpeg, image/jpg, image/png" multiple> <br>
+
+       <center><input id="submit-btn" type="submit" value="Başvuru Oluştur"></center> 
+    </form>
+
+    <footer id="footer-section">
+        <div id="contact-us-section">
+            <div id="info-part">
+                <img src="assets/lgs_arkadasim_image.png">
+                <a href="mailto:lgsarkadasimprojesi@gmail.com">lgsarkadasimprojesi@gmail.com</a>
+                <ul>
+                    <li><a href="https://www.instagram.com/lgsarkadasimprojesi/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/99830699/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul> 
+            </div>
+            <div id="form-part">
+                <h2>Bize Ulaşın: </h2>
+                <span>Herhangi bir sorunuz olursa aşağıdaki linkte bulunan formu doldurabilirsiniz.</span> <br>
+                <div><a href="iletisim.html">İletişim Formu</a></div>
+            </div>
+        </div>
+        <ul id="bottom-navbar">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="hakkimizda.html">Hakkımızda</a></li>
+            <li><a href="egitimYiliSureci.html">2024-2025 Eğitim Yılı Süreci</a></li>
+            <li><a href="sponsorlarimiz.html">Sponsorlarımız</a></li>
+        </ul>
+    </footer>
+
+
+    <script src="languageTranslationJS/ozelDersBasvuru.js"></script>
+    <script src="languageTranslationJS/global.js"></script>
+    <script>
+    //Class Selection Part
+        let lessons = document.querySelectorAll(".lesson");
+        var chosen;
+        var bgColors = {"turkish":"rgb(0, 125, 215)", "maths":"rgb(255, 40, 40)", "science":"rgb(0, 140, 0)",
+        "social-studies-turkiye":"orange", "religion":"brown", "english":"purple"};
+
+        lessons.forEach(lesson =>{
+            lesson.addEventListener('click', ()=>{
+                if(chosen!=null){
+                    chosen.style.backgroundColor = 'gray';
+                }
+                lesson.style.backgroundColor = bgColors[lesson.id];
+                chosen = lesson;
+            });
+        })
+    
+    //Calendar Formation
+        const currentDate = document.querySelector(".current-date");
+        const daysTag = document.querySelector(".days");
+        const prevNextIcons = document.querySelectorAll(".icons i");
+
+        let date = new Date(),
+        currYear = date.getFullYear(),
+        currMonth = date.getMonth();
+        var activeDay = document.querySelector(".active");
+        var dateInput = document.querySelector("#date");
+
+        const MONTHS = ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"];
+
+        const renderCalendar = () => {
+            currentDate.innerText = MONTHS[currMonth] +" "+ currYear;
+
+            let firstDayOfMonth = new Date(currYear, currMonth, 1).getDay()-1;
+            let lastDateOfMonth = new Date(currYear, currMonth+1, 0).getDate();
+            let lastDateOfLastMonth = new Date(currYear, currMonth, 0).getDate();
+            let lastDayOfMonth = new Date(currYear, currMonth, lastDateOfMonth).getDay();
+
+            let liTag = "";
+            if(firstDayOfMonth==-1){firstDayOfMonth=6}
+            for(var i=firstDayOfMonth; i>0; i--){
+                liTag += "<li class='inactive'>"+(lastDateOfLastMonth-i+1)+"</li>";
+            }
+
+            //Adding the days of the current (main) month to the calendar
+            for(var i=1; i<=lastDateOfMonth; i++){ 
+                liTag += "<li>"+i+"</li>";
+            }
+
+            for(var i=lastDayOfMonth; i<7;i++){
+                if(lastDayOfMonth==0){break;}
+                liTag+="<li class='inactive'>"+(i-lastDayOfMonth+1)+"</li>";
+            }
+
+            daysTag.innerHTML=liTag;
+
+            const dayButtons = document.querySelectorAll(".days li");
+            
+
+            dayButtons.forEach(day =>{
+            day.addEventListener('click', ()=>{ 
+                if(activeDay!==null){
+                    activeDay.classList.toggle("active");
+                }
+                if(!day.classList.contains('inactive')){
+                    day.classList.toggle("active");
+                    activeDay = day;
+                    var formattedMonth = currMonth+1<10? "0"+(currMonth+1) : currMonth+1;
+                    dateInput.value = currYear+ "-" + formattedMonth + "-" + activeDay.innerText;
+                }
+                else{
+                    activeDay.classList.toggle("active");
+                }
+                });
+            });
+
+
+        }
+        renderCalendar();
+
+        //Updating the month that is shown by the calendar via previous and next icons
+        prevNextIcons.forEach(icon =>{
+            icon.addEventListener('click', ()=>{
+                
+                currMonth = icon.id==="prev"? currMonth - 1 : currMonth + 1;
+                if(currMonth < new Date().getMonth() && currYear<=new Date().getFullYear()){
+                    currMonth = new Date().getMonth();
+                }
+
+                if(currMonth<0 || currMonth>11){
+                    date = new Date(currYear, currMonth);
+                    currYear = date.getFullYear();
+                    currMonth = date.getMonth();
+                }
+                else{
+                    date = new Date();
+                }
+                renderCalendar();
+            });
+        });
+
+    //Sending form data of the application to the server
+    let form = document.querySelector("form");
+    let questionsInput = document.querySelector("#file-input");
+
+    form.addEventListener('submit', (e)=>{
+        e.preventDefault();
+        const formData = new FormData(form);
+        formData.delete("questions");
+
+        var questions = questionsInput.files;
+        for(var i=0;i<questions.length;i++){
+            formData.append("questions", questions[i]);
+        }
+
+        for (var pair of formData.entries()) {
+            console.log(pair[0]+ ', ' + pair[1]); 
+        }
+
+        fetch("http://localhost:8080/applications", {
+            method: "POST",
+            body: formData
+        })
+        .then(res => res.json())
+        .then(data => console.log(data))
+        .catch(err => console.log("Error: ", err));
+
+        form.reset();
+        chosen.style.backgroundColor = 'gray';
+        renderCalendar();
+    });
+    
+
+    </script>
+</body>
+</html>
