@@ -313,6 +313,9 @@
             let lastDateOfLastMonth = new Date(currYear, currMonth, 0).getDate();
             let lastDayOfMonth = new Date(currYear, currMonth, lastDateOfMonth).getDay();
 
+            let minDate = new Date();
+            minDate.setDate(minDate.getDate()+2);
+
             let liTag = "";
             if(firstDayOfMonth==-1){firstDayOfMonth=6}
             for(var i=firstDayOfMonth; i>0; i--){
@@ -321,7 +324,13 @@
 
             //Adding the days of the current (main) month to the calendar
             for(var i=1; i<=lastDateOfMonth; i++){ 
-                liTag += "<li>"+i+"</li>";
+                var x = new Date(currYear, currMonth, i, 23);
+                if(x < minDate){
+                    liTag += "<li class='inactive'>"+i+"</li>";
+                }
+                else{
+                    liTag += "<li>"+i+"</li>";
+                }
             }
 
             for(var i=lastDayOfMonth; i<7;i++){
@@ -336,22 +345,18 @@
 
             dayButtons.forEach(day =>{
             day.addEventListener('click', ()=>{ 
-                if(activeDay!==null){
-                    activeDay.classList.toggle("active");
-                }
-                if(!day.classList.contains('inactive')){
+                if(!day.classList.contains('inactive') ){
                     day.classList.toggle("active");
+                    if(activeDay!==null){
+                    activeDay.classList.toggle("active");
+                    }
                     activeDay = day;
                     var formattedMonth = currMonth+1<10? "0"+(currMonth+1) : currMonth+1;
-                    dateInput.value = currYear+ "-" + formattedMonth + "-" + activeDay.innerText;
-                }
-                else{
-                    activeDay.classList.toggle("active");
+                    var formattedDay = Number(activeDay.innerText)<10? "0"+activeDay.innerText : activeDay.innerText;
+                    dateInput.value = currYear+ "-" + formattedMonth + "-" + formattedDay;
                 }
                 });
             });
-
-
         }
         renderCalendar();
 
