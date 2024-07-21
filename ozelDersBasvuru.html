@@ -555,19 +555,31 @@
     <script>
     //Class Selection Part
         let lessons = document.querySelectorAll(".lesson");
+        let allTopics = document.querySelectorAll(".topics-list");
         var chosen;
+        var activeTopics;
         var bgColors = {"turkish":"rgb(0, 125, 215)", "maths":"rgb(255, 40, 40)", "science":"rgb(0, 140, 0)",
         "social-studies-turkiye":"orange", "religion":"brown", "english":"purple"};
+        var topicNums = {"turkish":0, "maths":1, "science":2, "social-studies-turkiye":3, "religion":4, "english":5};
+
+        var topicsSpan = document.querySelector("#topics-span");
+        topicsSpan.style.display = "none";
 
         lessons.forEach(lesson =>{
             lesson.addEventListener('click', ()=>{
                 if(chosen!=null){
                     chosen.style.backgroundColor = 'gray';
                 }
+                if(activeTopics!=null){
+                    activeTopics.classList.toggle("active-topic");
+                }
                 lesson.style.backgroundColor = bgColors[lesson.id];
+                allTopics[topicNums[lesson.id]].classList.toggle("active-topic");
+                topicsSpan.style.display = "block";
+                activeTopics = allTopics[topicNums[lesson.id]];
                 chosen = lesson;
             });
-        })
+        });
     
     //Calendar Formation
         const currentDate = document.querySelector(".current-date");
