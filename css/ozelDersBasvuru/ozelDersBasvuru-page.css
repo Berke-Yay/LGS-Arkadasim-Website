@@ -207,6 +207,48 @@ form{
 #lessons-section .radio-buttons{
     display: none;
 }
+
+/*Topic Selection*/
+#topics-section{
+    margin-bottom: 40px;
+}
+
+#topics-section span{
+    font-size: 1.2em;
+}
+
+.topics-list{
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    margin-top: 12px;
+}
+
+.column1{
+    display: flex;
+    flex-direction: column;
+}
+
+.column1 div{
+    margin-bottom: 16px;
+}
+
+.column2 div{
+    margin-bottom: 16px;
+}
+
+.topics-list label{
+    font-size: 1.15em;
+}
+
+.topics-list{
+    display: none;
+}
+
+.active-topic{
+    display: flex;
+}
+
 /*Step 2*/
 /*Calendar*/
 .wrapper{
