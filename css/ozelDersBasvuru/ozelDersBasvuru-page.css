@@ -95,11 +95,17 @@ h3{
     border-radius: 50%;
     width: 150px;
     height: 150px;
+    object-fit: cover;
 }
 
 #comments-section .comment span{
     font-size: 1.2em;
     margin: 8px 0;
+}
+
+#comments-section .comment .point{
+    font-size: 1.1em;
+    font-style: italic;
 }
 
 #comments-section .comment p{
