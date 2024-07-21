@@ -571,6 +571,7 @@
     //Class Selection Part
         let lessons = document.querySelectorAll(".lesson");
         let allTopics = document.querySelectorAll(".topics-list");
+        var topicRadioButtons = document.getElementsByName("chosenTopic");
         var chosen;
         var activeTopics;
         var bgColors = {"turkish":"rgb(0, 125, 215)", "maths":"rgb(255, 40, 40)", "science":"rgb(0, 140, 0)",
@@ -588,6 +589,10 @@
                 if(activeTopics!=null){
                     activeTopics.classList.toggle("active-topic");
                 }
+                for(var i=0;i<topicRadioButtons.length;i++){
+                    topicRadioButtons[i].checked = false;
+                }
+                
                 lesson.style.backgroundColor = bgColors[lesson.id];
                 allTopics[topicNums[lesson.id]].classList.toggle("active-topic");
                 topicsSpan.style.display = "block";
