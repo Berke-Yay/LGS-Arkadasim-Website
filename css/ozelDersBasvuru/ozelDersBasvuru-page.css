@@ -421,7 +421,16 @@ select{
 
 .step-four-span{
     font-size: 1.2em;
-    margin-right: 12px;
+    margin-bottom: 16px;
+}
+
+.step-four-span:first-of-type{
+    display: block;
+}
+
+.preference-span{
+    margin-left: 20px;
+    font-size: 1.1em;
 }
 
 #file-input{
