@@ -71,8 +71,6 @@
     </div>
     
     <h2>Öğrencilerimizin Yorumları</h2>
-    <button onclick="translateCommentsBackward()">Önceki Yorum</button>
-    <button onclick="translateCommentsForward()">Sıradaki Yorum</button>
     <div id="comments-section">
         <div class="comment">
             <img src="assets/comment-images/comment-images1.jpeg">
@@ -643,6 +641,27 @@
             }
             commentsSection.style.transform = "translateX(" + counter + "%)";
         }
+
+        let touchstartX = 0
+        let touchendX = 0
+            
+        function checkDirection() {
+            if (touchendX < touchstartX){
+                translateCommentsForward();
+            }
+            if (touchendX > touchstartX){
+                translateCommentsBackward();
+            }
+        }
+
+        commentsSection.addEventListener('touchstart', e => {
+            touchstartX = e.changedTouches[0].screenX;
+        });
+
+        commentsSection.addEventListener('touchend', e => {
+            touchendX = e.changedTouches[0].screenX;
+            checkDirection();
+        });
         
     //Class Selection Part
         let lessons = document.querySelectorAll(".lesson");
