@@ -80,7 +80,7 @@ h3{
 /*Comments Section*/
 #comments-section{
     display: flex;
-    justify-content: space-around;
+    width: 200%;
     margin-bottom: 80px;
 }
 
@@ -88,7 +88,15 @@ h3{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 30%;
+    width: 15%;
+}
+
+#comments-section .comment:first-of-type{
+    margin-left: 24px;
+}
+
+#comments-section .comment:not(:last-of-type){
+    margin-right: 48px;
 }
 
 #comments-section .comment img{
