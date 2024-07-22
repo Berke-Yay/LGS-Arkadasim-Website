@@ -133,7 +133,7 @@ h3{
 #price-info-section{
     display: flex;
     justify-content: center;
-    margin-bottom: 80px;
+    margin-bottom: 16px;
 }
 
 #price-info-section h3{
@@ -167,6 +167,14 @@ h3{
 
 #price-info-section .classes ul li{
     font-size: 1.2em;
+}
+
+#price-info-span{
+    margin-bottom: 80px;
+    display: block;
+    font-size: 1.1em;
+    font-style: italic;
+    text-align: center;
 }
 
 /*Application Section*/
@@ -366,11 +374,12 @@ header .icons i:hover{
 }
 
 /*Time Input*/
+/*Time Input*/
 .wrapper .time-input{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 16px;
+    padding-bottom: 8px;
 }
 
 .wrapper .time-input input{
@@ -383,6 +392,13 @@ header .icons i:hover{
 .wrapper .time-input span{
     font-size: 1.3em;
     margin-right: 20px;
+}
+
+.wrapper #time-explanation{
+    display: block;
+    padding-bottom: 20px;
+    text-align: center;
+    font-style: italic;
 }
 
 /*Step 3*/
