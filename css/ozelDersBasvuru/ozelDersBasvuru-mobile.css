@@ -137,12 +137,21 @@ h3{
 
 /*Comments Section*/
 #comments-section{
-    flex-direction: column;
+    width: 600%;
+    justify-content: space-around;
 }
 
 #comments-section .comment{
-    width: 100%;
+    width: 15%;
     padding: 10px;
+}
+
+#comments-section .comment:first-of-type{
+    margin-left: 0;
+}
+
+#comments-section .comment:not(:last-of-type){
+    margin-right: 0;
 }
 
 #comments-section .comment span{
