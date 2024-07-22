@@ -219,6 +219,10 @@ select{
     margin-top: 12px;
 }
 
+#additionalInformation{
+    width: 95%;
+}
+
 /*Submission Part*/
 #submit-btn{
     width: 60%;
