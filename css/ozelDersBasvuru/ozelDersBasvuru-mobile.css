@@ -162,6 +162,12 @@ h3{
     font-size: 1em;
 }
 
+#comments-mobile-span{
+    display: block;
+    margin-top: -76px;
+    margin-bottom: 80px;
+}
+
 /*Price Info Section*/
 #price-info-section{
     flex-direction: column;
