@@ -71,6 +71,8 @@
     </div>
     
     <h2>Öğrencilerimizin Yorumları</h2>
+    <button onclick="translateCommentsBackward()">Önceki Yorum</button>
+    <button onclick="translateCommentsForward()">Sıradaki Yorum</button>
     <div id="comments-section">
         <div class="comment">
             <img src="assets/comment-images/comment-images1.jpeg">
@@ -497,7 +499,7 @@
                     </div>
                     <div class="time-input">
                         <span>Saat Seçimi: </span>
-                        <input type="time" name="time" required>
+                        <input type="time" name="time" min="12:00" max="21:00" step="1800" required>
                     </div>
                 </div>
             </div>
@@ -582,6 +584,24 @@
     <script src="languageTranslationJS/ozelDersBasvuru.js"></script>
     <script src="languageTranslationJS/global.js"></script>
     <script>
+    //Translation of Comments Section
+        var commentsSection = document.querySelector("#comments-section");
+        var allComments = document.querySelectorAll(".comment");
+        var counter = 0;
+        function translateCommentsForward(){
+            if(counter>(allComments.length-3)*-33/2){
+                counter -=33/2;
+            }
+
+            commentsSection.style.transform = "translateX(" + counter + "%)";
+        }
+        function translateCommentsBackward(){
+            if(counter<0){
+                counter +=33/2;
+            }
+            commentsSection.style.transform = "translateX(" + counter + "%)";
+        }
+        
     //Class Selection Part
         let lessons = document.querySelectorAll(".lesson");
         let allTopics = document.querySelectorAll(".topics-list");
