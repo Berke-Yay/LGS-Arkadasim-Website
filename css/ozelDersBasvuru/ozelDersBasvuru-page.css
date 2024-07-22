@@ -442,7 +442,19 @@ select{
 
 #file-input{
     font-size: 1em;
+    margin-bottom: 24px;
+}
+
+#additionalInformation{
+    margin-top: 12px;
     margin-bottom: 40px;
+    width: 50%;
+    height: 200px;
+    font-size: 1.15em;
+    padding: 12px;
+    resize: none;
+    background-color: cornsilk;
+    border: 1.5px solid black;
 }
 
 /*Submission Part*/
