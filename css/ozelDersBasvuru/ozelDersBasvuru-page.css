@@ -129,6 +129,13 @@ h3{
     color: green;
 }
 
+#comments-mobile-span{
+    text-align: center;
+    font-size: 1em;
+    font-style: italic;
+    display: none;
+}
+
 /*Price Info Section*/
 #price-info-section{
     display: flex;
