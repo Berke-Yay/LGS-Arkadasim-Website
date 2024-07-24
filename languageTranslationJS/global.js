@@ -57,7 +57,7 @@ function toggleMobileMenu(menu){
     var dropdownMobile = document.querySelector(".dropdown-mobile");
     menu.classList.toggle("open");
     if(isMobileMenuOpen==false){
-    navbar.style.height = "430px";
+    navbar.style.height = "470px";
     navbar.style.flexDirection = "column";
     barContainer.style.top = "105px";
     barContainer.style.marginRight = "0";
