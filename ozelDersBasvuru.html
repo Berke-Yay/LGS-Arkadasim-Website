@@ -65,9 +65,9 @@
 
     <div id="introductory-part">
         <h1>Özel Ders Başvuruları</h1><hr>
-        <p>2024 - 2025 Eğitim Yılı'ndan itibaren projemize dahil olmayan 8. sınıf öğrencileri, LGS'de başarılı olmuş mentorlerimizden belirli
-            bir ücret karşılığı özel ders alabilecektir. Özel derslerden elde edilen gelirin %20’si dersi veren mentora sunulacak,
-            %80’i projede bulunan öğrencilere sunulan olanakları arttırmak ve geliştirmek için kullanılacaktır. </p>
+        <p>LGS Arkadaşım sayesinde 8. sınıf öğrencileri LGS'de başarılı olup Türkiye'nin en nitelikli liselerine yerleşmiş mentörlerden uygun
+            fiyata özel ders alabilecek. Türkiye'de bir ilk olarak, dersinizi anlatacak mentörü hangi okuldan istediğinizi seçebiliyorsunuz!
+            Özel ders gelirinin %20'si mentöre, %80'i ise projedeki ögrencilere sunulan olanakları arttırmak icin kullanılacak. </p>
     </div>
     
     <h2>Öğrencilerimizin Yorumları</h2>
@@ -163,6 +163,16 @@
         </div>
     </div>
     <span id="comments-mobile-span">Diğer yorumları görmek için yana kaydırınız</span>
+    <div class="comment-buttons">
+        <div class="previous-comments">
+            <a onclick="translateCommentsBackwardViaButton()"><i class="fa-solid fa-chevron-left"></i> Önceki Yorumlar</a>
+        </div>
+
+        <div class="next-comments">
+            <a onclick="translateCommentsForwardViaButton()">Sıradaki Yorumlar <i class="fa-solid fa-chevron-right"></i></a>
+            
+        </div>
+    </div>
 
     <h2>Ücret Bilgisi (1 Saat)</h2>
     <div id="price-info-section">
@@ -633,14 +643,14 @@
         var counter = 0;
         function translateCommentsForward(){
             if(counter>(allComments.length-3)*-33/2){
-                counter -=33/2;
+                counter -=100/6;
             }
 
             commentsSection.style.transform = "translateX(" + counter + "%)";
         }
         function translateCommentsBackward(){
             if(counter<0){
-                counter +=33/2;
+                counter +=100/6;
             }
             commentsSection.style.transform = "translateX(" + counter + "%)";
         }
@@ -665,6 +675,21 @@
             touchendX = e.changedTouches[0].screenX;
             checkDirection();
         });
+
+        function translateCommentsForwardViaButton(){
+            if(counter>(allComments.length/3-1)*-100/6){
+                counter -=100/2;
+            }
+
+            commentsSection.style.transform = "translateX(" + counter + "%)";
+        }
+
+        function translateCommentsBackwardViaButton(){
+            if(counter<0){
+                counter +=100/2;
+            }
+            commentsSection.style.transform = "translateX(" + counter + "%)";
+        }
         
     //Class Selection Part
         let lessons = document.querySelectorAll(".lesson");
