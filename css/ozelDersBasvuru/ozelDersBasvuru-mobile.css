@@ -168,6 +168,10 @@ h3{
     margin-bottom: 80px;
 }
 
+.comment-buttons{
+    display: none;
+}
+
 /*Price Info Section*/
 #price-info-section{
     flex-direction: column;
