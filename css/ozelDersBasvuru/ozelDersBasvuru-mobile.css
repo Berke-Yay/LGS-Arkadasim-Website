@@ -137,12 +137,12 @@ h3{
 
 /*Comments Section*/
 #comments-section{
-    width: 600%;
+    width: 1500%;
     justify-content: space-around;
 }
 
 #comments-section .comment{
-    width: 15%;
+    width: 6.66%;
     padding: 10px;
 }
 
