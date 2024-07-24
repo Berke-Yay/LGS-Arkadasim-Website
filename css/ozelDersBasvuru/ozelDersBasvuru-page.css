@@ -12,6 +12,11 @@ h3{
     font-size: 1.6em;
 }
 
+/*Navbar*/
+#navbar .chosen{
+    color: green;
+}
+
 /*Introductory Section*/
 #introductory-part{
     display: flex;
