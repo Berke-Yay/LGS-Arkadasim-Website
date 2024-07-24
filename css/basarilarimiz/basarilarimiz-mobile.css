@@ -1,0 +1,193 @@
+body{
+    width: 100%;
+}
+
+h2{
+    font-size: 1.8em;
+}
+
+h3{
+    font-size: 1.3em;
+}
+/*Navbar Section*/
+#navbar{
+    width: 100%;
+    height: 12vh;
+}
+
+#navbar #main-menu{
+    display: none;
+    flex-direction: column;
+}
+
+
+#hamburger-icon{
+    display: block;
+}
+
+.dropdown{
+    display: none;
+}
+
+#navbar .dropdown .dropbtn{
+    display: none;
+}
+
+#navbar .dropdown-mobile {
+    margin-right: 10px;
+    position: relative;
+    display: inline-block;
+    top: 5px;
+    left: 10px;
+}
+
+#navbar .dropdown-mobile img{
+    height: 24px;
+    width: 24px;
+}
+
+#navbar .dropbtn-mobile {
+    padding: 6px 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    color: black;
+    border: 0.5px solid black;
+
+}
+
+#navbar .dropdown-content-mobile {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+#navbar .dropdown-content-mobile a {
+    width: 100%;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+#navbar .dropdown-content-mobile a:hover{
+    background-color: rgb(165, 165, 165);
+}
+
+#navbar .show {
+    display:block;
+}
+
+/*Introductory Section*/
+#introductory-section h1{
+    font-size: 3em;
+}
+
+#introductory-section span{
+    font-size: 1.2em;
+    width: 90%;
+    text-align: justify;
+}
+
+#introductory-section hr{
+    border: 2px solid black;
+    width: 95%;
+}
+
+/*First Section*/
+#first-section{
+    flex-direction: column;
+}
+
+#first-section img{
+    width: 80%;
+    margin-bottom: 16px;
+}
+
+#first-section p{
+    width: 90%;
+}
+
+/*Schools Section*/
+#schools-section{
+    margin-bottom: 40px;
+}
+
+.schools-list{
+    flex-wrap: wrap;
+}
+
+.schools-list li{
+    padding: 36px;
+    margin-bottom: 16px;
+}
+
+#schools-section span{
+    text-align: center;
+    margin-right: 0;
+    margin-top: 0;
+}
+
+/*This year section*/
+#this-year-section img{
+    width: 80%;
+}
+
+#this-year-section span{
+    font-size: 1.2em;
+    width: 95%;
+    text-align: center;
+    margin: 16px 0;
+}
+
+#this-year-section .container{
+    flex-wrap: wrap;
+}
+
+/*Contact Us*/
+#form-part{
+    padding: 5px;
+}
+
+#form-part h2{
+    font-size: 1.5em;
+}
+
+#form-part {
+    font-size: 0.9em;
+    line-height: 1.7em;
+}
+
+#form-part a{
+    font-size: 1em;
+    padding: 10px 25px;
+}
+
+#info-part img{
+    height: 100px;
+    margin-top: -25px;
+}
+
+#info-part a{
+    font-size: 0.9em;
+}
+
+#bottom-navbar{
+    display: none;
+}
+
+@media only screen and (max-width: 391px){
+    #info-part img{
+        height: 80px;
+    }
+    #info-part a{
+        font-size: 0.75em;
+    }
+}
