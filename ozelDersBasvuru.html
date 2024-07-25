@@ -1005,6 +1005,7 @@
         });
 
     //Sending form data of the application to the server
+    const BASE_API_URL = "https://lgsarkadasimozeldersservice.onrender.com";
     let form = document.querySelector("form");
     let questionsInput = document.querySelector("#file-input");
 
@@ -1030,7 +1031,7 @@
             console.log(pair[0]+ ', ' + pair[1]); 
         }
 
-        fetch("http://localhost:8080/applications", {
+        fetch(BASE_API_URL, {
             method: "POST",
             body: formData
         })
