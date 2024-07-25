@@ -985,6 +985,25 @@
             });
         });
 
+    //Validity messages of time input
+        var timeInput = document.getElementsByName("time")[0];
+        timeInput.addEventListener("input", ()=>{
+            var value = timeInput.value;
+            if(value < "12:00" || value > "21:00"){
+                timeInput.setCustomValidity("Saat seçimi 12.00 ile 21.00 arasında olmalıdır");
+            }
+            else if(value==""){
+                timeInput.setCustomValidity("Bu alanın doldurulması zorunludur");
+            }
+            else if(Number(value[3]+value[4])%15!=0){
+                timeInput.setCustomValidity("12.00'den başlayarak 15 dakikalık aralıklarla saat seçimi yapabilirsiniz. Örnek: 12.00, 14.15, 16.30, 19.45...");
+            }
+            else{
+                timeInput.setCustomValidity("");
+            }
+
+        });
+
     //Sending form data of the application to the server
     let form = document.querySelector("form");
     let questionsInput = document.querySelector("#file-input");
