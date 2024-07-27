@@ -71,6 +71,7 @@ body{
 }
 
 .info-section p{
+    text-align: justify;
     font-size: 1.75em;
     line-height: 1.5em;
     padding: 10px;
