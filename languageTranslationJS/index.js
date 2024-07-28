@@ -40,7 +40,7 @@ function configurePageLanguage(language){
         mobileDropbtn.innerHTML = '<img src="assets/flags/turkey.png">'+language+'<i class="fa-solid fa-caret-down"></i>';
 
         //Changing the language of the navbar menu items
-        var enNavbarMenuItems = ["Ana Sayfa", "Hakkımızda", "2024-2025 Eğitim Yılı Süreci", "Sponsorlarımız", "İletişim"];
+        var enNavbarMenuItems = ["Ana Sayfa", "Hakkımızda", "2024-2025 Eğitim Yılı Süreci", "Özel Ders", "Sponsorlarımız", "İletişim"];
         for(var i=0;i<navbarMenuItems.length;i++){
             navbarMenuItems[i].innerText = enNavbarMenuItems[i];
         }
@@ -77,19 +77,19 @@ function configurePageLanguage(language){
             lessons[i].innerText = enLessons[i];
         }
 
-        //Changing the language of the comments section
+        /*Changing the language of the comments section
         commentsTitle.innerHTML = "Geçmiş Öğrencilerimizin <br>Yorumları";
         var enCommentsP = ['“Gerek mentörlerimizin ilgisi gerekse arkadaşlarımla aramızdaki etkileşimle sınav sürecinde bana yardımcı oldu. Sınav sonrasında da mentörlerimiz tercih sürecinde bize destek oldular.”',
         '“Online denemelerde hangi konuda eksiğin olduğunu anlayabiliyorsun ve eksik konu tamamlama konusunda çok yardımcı bir program.”'];
         for(var i=0;i<commentsP.length;i++){
             commentsP[i].innerText = enCommentsP[i];
-        }
+        }*/
 
         //Changing the language of the footer section
         formPartTitle.innerText = "Bize Ulaşın:";
         formPartSpan.innerText = "Herhangi bir sorunuz olursa aşağıdaki linkte bulunan formu doldurabilirsiniz.";
         formPartA.innerText = "İletişim Formu";
-        var enBottomNavbarElements = ["Ana Sayfa", "Hakkımızda", "2024-2025 Eğitim Yılı Süreci", "Sponsorlarımız"];
+        var enBottomNavbarElements = ["Ana Sayfa", "Hakkımızda", "2024-2025 Eğitim Yılı Süreci", "Özel Ders", "Sponsorlarımız"];
         for(var i=0;i<bottomNavbarElements.length;i++){
             bottomNavbarElements[i].innerText = enBottomNavbarElements[i];
         }
@@ -100,7 +100,7 @@ function configurePageLanguage(language){
         mobileDropbtn.innerHTML = '<img src="assets/flags/united-states.png">'+language+'<i class="fa-solid fa-caret-down"></i>';
 
         //Changing the language of the navbar menu items
-        var enNavbarMenuItems = ["Main Page", "About Us", "Academic Year Schedule", "Sponsors", "Contact Us"];
+        var enNavbarMenuItems = ["Main Page", "About Us", "Academic Year Schedule", "Private Lesson", "Sponsors", "Contact Us"];
         for(var i=0;i<navbarMenuItems.length;i++){
             navbarMenuItems[i].innerText = enNavbarMenuItems[i];
         }
@@ -137,19 +137,19 @@ function configurePageLanguage(language){
             lessons[i].innerText = enLessons[i];
         }
 
-        //Changing the language of the comments section
+        /*Changing the language of the comments section
         commentsTitle.innerHTML = "Comments from our <br>Students";
         var enCommentsP = ['“Both the interest of our mentors and the interaction with my friends helped me during the exam year. After the exam, our mentors supported us during the high school selection process.”',
         '“You could understand what topics you are missing from the online exams and it is a very advantegous program for completing missing topics.”'];
         for(var i=0;i<commentsP.length;i++){
             commentsP[i].innerText = enCommentsP[i];
-        }
+        }*/
 
         //Changing the language of the footer section
         formPartTitle.innerText = "Contact Us:";
         formPartSpan.innerText = "If you have any questions, you can fill out the form in the link below.";
         formPartA.innerText = "Message Form";
-        var enBottomNavbarElements = ["Main Page", "About Us", "Academic Year Schedule", "Sponsors"];
+        var enBottomNavbarElements = ["Main Page", "About Us", "Academic Year Schedule", "Private Lesson", "Sponsors"];
         for(var i=0;i<bottomNavbarElements.length;i++){
             bottomNavbarElements[i].innerText = enBottomNavbarElements[i];
         }
@@ -160,7 +160,7 @@ function configurePageLanguage(language){
         mobileDropbtn.innerHTML = '<img src="assets/flags/germany.png">'+language+'<i class="fa-solid fa-caret-down"></i>';
 
         //Changing the language of the navbar menu items
-        var enNavbarMenuItems = ["Startseite", "Über Uns", "Kalender des akademischen Jahres", "Sponsoren", "Kontakt"];
+        var enNavbarMenuItems = ["Startseite", "Über Uns", "Kalender des akademischen Jahres", "Privatunterricht", "Sponsoren", "Kontakt"];
         for(var i=0;i<navbarMenuItems.length;i++){
             navbarMenuItems[i].innerText = enNavbarMenuItems[i];
         }
@@ -197,19 +197,19 @@ function configurePageLanguage(language){
             lessons[i].innerText = enLessons[i];
         }
 
-        //Changing the language of the comments section
+        /*Changing the language of the comments section
         commentsTitle.innerHTML = "Bewertungen von ehemaligen <br>Studenten";
         var enCommentsP = ['“Sowohl das Interesse unserer Mentoren als auch die Interaktion mit meinen Freunden halfen mir während des Prüfungsjahres. Nach der Prüfung unterstützten uns unsere Mentoren während des Auswahlprozesses.”',
         '"Sie könnten verstehen, welche Themen Sie in den Online-Prüfungen vermissen, und es ist ein sehr vorteilhaftes Programm zum Ausfüllen fehlender Themen."'];
         for(var i=0;i<commentsP.length;i++){
             commentsP[i].innerText = enCommentsP[i];
-        }
+        }*/
 
         //Changing the language of the footer section
         formPartTitle.innerText = "Kontakt:";
         formPartSpan.innerText = "Wenn Sie Fragen haben, können Sie das Formular auf dem Link unten ausfüllen.";
         formPartA.innerText = "Kontaktformular";
-        var enBottomNavbarElements = ["Startseite", "Über Uns", "Kalender des akademischen Jahres", "Sponsoren", "Kontakt"];
+        var enBottomNavbarElements = ["Startseite", "Über Uns", "Kalender des akademischen Jahres", "Privatunterricht", "Sponsoren"];
         for(var i=0;i<bottomNavbarElements.length;i++){
             bottomNavbarElements[i].innerText = enBottomNavbarElements[i];
         }
@@ -220,7 +220,7 @@ function configurePageLanguage(language){
         mobileDropbtn.innerHTML = '<img src="assets/flags/spain.png">'+language+'<i class="fa-solid fa-caret-down"></i>';
 
         //Changing the language of the navbar menu items
-        var enNavbarMenuItems = ["Página de Inicio", "Sobre Nosotros", "Calendario del Año Académico", "Patrocinadores", "Contacto"];
+        var enNavbarMenuItems = ["Página de Inicio", "Sobre Nosotros", "Calendario del Año Académico", "Lección Privada", "Patrocinadores", "Contacto"];
         for(var i=0;i<navbarMenuItems.length;i++){
             navbarMenuItems[i].innerText = enNavbarMenuItems[i];
         }
@@ -257,19 +257,19 @@ function configurePageLanguage(language){
             lessons[i].innerText = enLessons[i];
         }
 
-        //Changing the language of the comments section
+        /*Changing the language of the comments section
         commentsTitle.innerHTML = "Reseñas de Nuestros <br>Estudiantes Anteriores";
         var enCommentsP = ['“Tanto el interés de nuestros mentores como la interacción con mis amigos me ayudaron durante el año del examen. Después del examen, nuestros mentores nos apoyaron durante el proceso de selección de la escuela secundaria.”',
         '"Podría entender qué temas le faltan en los exámenes en línea y es un programa muy ventajoso para completar los temas que faltan."'];
         for(var i=0;i<commentsP.length;i++){
             commentsP[i].innerText = enCommentsP[i];
-        }
+        }*/
 
         //Changing the language of the footer section
         formPartTitle.innerText = "Contacto:";
         formPartSpan.innerText = "Si tiene alguna pregunta, puede rellenar el formulario en el siguiente enlace.";
         formPartA.innerText = "Formulario de Mensaje";
-        var enBottomNavbarElements = ["Página de Inicio", "Sobre Nosotros", "Calendario del Año Académico", "Patrocinadores", "Contacto"];
+        var enBottomNavbarElements = ["Página de Inicio", "Sobre Nosotros", "Calendario del Año Académico", "Lección Privada", "Patrocinadores"];
         for(var i=0;i<bottomNavbarElements.length;i++){
             bottomNavbarElements[i].innerText = enBottomNavbarElements[i];
         }  
@@ -280,7 +280,7 @@ function configurePageLanguage(language){
         mobileDropbtn.innerHTML = '<img src="assets/flags/france.png">'+language+'<i class="fa-solid fa-caret-down"></i>';
 
         //Changing the language of the navbar menu items
-        var enNavbarMenuItems = ["Page d’accueil", "Sur Nous", "Calendrier de l’année Scolaire", "Sponsors", "Nous Contacter"];
+        var enNavbarMenuItems = ["Page d’accueil", "Sur Nous", "Calendrier de l’année Scolaire", "Cours Privé", "Sponsors", "Nous Contacter"];
         for(var i=0;i<navbarMenuItems.length;i++){
             navbarMenuItems[i].innerText = enNavbarMenuItems[i];
         }
@@ -317,19 +317,19 @@ function configurePageLanguage(language){
             lessons[i].innerText = enLessons[i];
         }
 
-        //Changing the language of the comments section
+        /*Changing the language of the comments section
         commentsTitle.innerHTML = "Commentaires de nos <br>étudiants";
         var enCommentsP = ['“L’intérêt de nos mentors et l’interaction avec mes amis m’ont aidé pendant l’année d’examen. Après l’examen, nos mentors nous ont soutenus pendant le processus de sélection du lycée.”',
         '“Vous pourriez comprendre quels sujets vous manquent dans les examens en ligne et c’est un programme très avantageux pour compléter les sujets manquants.”'];
         for(var i=0;i<commentsP.length;i++){
             commentsP[i].innerText = enCommentsP[i];
-        }
+        }*/
 
         //Changing the language of the footer section
         formPartTitle.innerText = "Nous Contacter:";
         formPartSpan.innerText = "Si vous avez des questions, vous pouvez remplir le formulaire ci-dessous.";
         formPartA.innerText = "Formulaire de Message";
-        var enBottomNavbarElements = ["Page d’accueil", "Sur Nous", "Calendrier de l’année Scolaire", "Sponsors"];
+        var enBottomNavbarElements = ["Page d’accueil", "Sur Nous", "Calendrier de l’année Scolaire", "Cours Privé", "Sponsors"];
         for(var i=0;i<bottomNavbarElements.length;i++){
             bottomNavbarElements[i].innerText = enBottomNavbarElements[i];
         }
