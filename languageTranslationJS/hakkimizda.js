@@ -41,16 +41,16 @@ function configurePageLanguage(language){
 
         //Changing the language of the title and info section
         introductoryTitle.innerText = "Hakkımızda";
-        introductoryP.innerText = "Koç Lisesi tabanlı, 2021'de kurulmuş bir proje olan ​LGS Arkadaşım, Türkiye'nin dört bir yanından aldığı 8. sınıf öğrencilerine ücretsiz bir şekilde bire bir mentorluk hizmeti sunarak ve deneme pratiği kazandırarak öğrencilerin LGS yolculuklarında tam potansiyellerine ulaşmalarını sağlıyor.";
+        introductoryP.innerText = "2021'de kurulmuş bir proje olan ​LGS Arkadaşım, Türkiye'nin dört bir yanından aldığı 8. sınıf öğrencilerine ücretsiz bir şekilde bire bir mentorluk hizmeti sunarak ve deneme pratiği kazandırarak öğrencilerin LGS yolculuklarında tam potansiyellerine ulaşmalarını sağlıyor.";
 
         //Changing the language of what makes us different section
         differentSectionTitle.innerText = "Bizi diğer programlardan neler ayırır?";
-        var newDifferentSectionSpans = ["Kaliteli bir Ekip", "Mentorluk", "Denemeler", "Küçük Sınıflarda Dersler", "Tercih Sürecinde Destek"];
-        var newDifferentSectionPs = ["Ekibimizdeki mentorlar; yapılan mülakatlar sonucunda Koç Lisesi, Galatasaray Lisesi, Robert Koleji gibi Türkiye'nin en seçkin liselerinden seçilir.",
-        "Her öğrencinin kendi mentoru vardır. Mentorlar, öğrencileriyle düzenli olarak iletişim kurup onların sorularını cevaplar, tavsiyelerde bulunur. Mentorlar aynı zamanda öğrencilere dersleri dışında da yardımcı olur.",
-        "Her hafta çeşitli yayınlardan deneme olunur ve mentorlar öğrencilerine bu denemelerin kazanım analizlerine göre soru verir.",
+        var newDifferentSectionSpans = ["Kaliteli bir Ekip", "Mentörlük", "Denemeler", "Küçük Sınıflarda Dersler", "Tercih Sürecinde Destek"];
+        var newDifferentSectionPs = ["Ekibimizdeki mentörler; yapılan mülakatlar sonucunda Koç Lisesi, Galatasaray Lisesi, Robert Koleji gibi Türkiye'nin en seçkin liselerinden seçilir.",
+        "Her öğrencinin kendi mentörü vardır. Mentörler, öğrencileriyle düzenli olarak iletişim kurup onların sorularını cevaplar, tavsiyelerde bulunur. Mentörler aynı zamanda öğrencilere dersleri dışında da yardımcı olur.",
+        "Her hafta çeşitli yayınlardan deneme olunur ve mentörler öğrencilerine bu denemelerin kazanım analizlerine göre soru verir.",
         "Her ders için ayrı bir sınıf açılır, öğrenciler yapamadıkları soruları atarlar ve Zoom'da küçük bir sınıf halinde o sınıftaki öğrencilerin soruları haftalık derslerde çözülür.",
-        "Mentorlar öğrencilerine sınav bittikten sonra tercih döneminde de yardımcı olurlar, hangi liseyi seçecekleri konusunda yol gösterirler."];
+        "Mentörler öğrencilerine sınav bittikten sonra tercih döneminde de yardımcı olurlar, hangi liseyi seçecekleri konusunda yol gösterirler."];
         for(var i=0;i<differentSectionSpans.length;i++){
             differentSectionSpans[i].innerText = newDifferentSectionSpans[i];
             differentSectionPs[i].innerText = newDifferentSectionPs[i];
@@ -81,7 +81,7 @@ function configurePageLanguage(language){
 
         //Changing the language of the title and info section
         introductoryTitle.innerText = "About Us";
-        introductoryP.innerText = "Initiated from Koç High School and established in 2021, LGS Arkadaşım (My LGS Friend) is a project that aims to help 8th graders all around Turkey to reach their full potentials in their LGS(High School Entrance Exam) journey via offering students a free of cost one-to-one mentorship and lots of exam practices.";
+        introductoryP.innerText = "Established in 2021, LGS Arkadaşım (My LGS Friend) is a project that aims to help 8th graders all around Turkey to reach their full potentials in their LGS(High School Entrance Exam) journey via offering students a free of cost one-to-one mentorship and lots of exam practices.";
 
         //Changing the language of what makes us different section
         differentSectionTitle.innerText = "What Seperates Us from Other Programs?";
@@ -121,7 +121,7 @@ function configurePageLanguage(language){
 
         //Changing the language of the title and info section
         introductoryTitle.innerText = "Über Uns";
-        introductoryP.innerText = "LGS Arkadaşım (Mein LGS Freund) wurde 2021 von der Koç High School initiiert und ist ein Projekt, das Achtklässlern in der ganzen Türkei helfen soll, ihr volles Potenzial in ihrer High School Aufnahmeprüfung zu erreichen, indem sie den Schülern eine kostenlose Mentorenschaft und viele Prüfungspraktiken anbieten.";
+        introductoryP.innerText = "LGS Arkadaşım (Mein LGS Freund) wurde 2021 initiiert und ist ein Projekt, das Achtklässlern in der ganzen Türkei helfen soll, ihr volles Potenzial in ihrer High School Aufnahmeprüfung zu erreichen, indem sie den Schülern eine kostenlose Mentorenschaft und viele Prüfungspraktiken anbieten.";
 
         //Changing the language of what makes us different section
         differentSectionTitle.innerText = "Was unterscheidet uns von anderen Programmen?";
@@ -162,7 +162,7 @@ function configurePageLanguage(language){
 
         //Changing the language of the title and info section
         introductoryTitle.innerText = "Sobre Nosotros";
-        introductoryP.innerText = "Iniciado por Koç High School en 2021, LGS Arkadaşım (Mi LGS Amigo) es un proyecto que tiene como objetivo ayudar a los estudiantes de octavo grado de todo Turquía a alcanzar su máximo potencial en su examen de ingreso a la escuela secundaria a través de ofrecer a los estudiantes una tutoría gratuita y muchas prácticas de exámenes.";
+        introductoryP.innerText = "Iniciado en 2021, LGS Arkadaşım (Mi LGS Amigo) es un proyecto que tiene como objetivo ayudar a los estudiantes de octavo grado de todo Turquía a alcanzar su máximo potencial en su examen de ingreso a la escuela secundaria a través de ofrecer a los estudiantes una tutoría gratuita y muchas prácticas de exámenes.";
 
         //Changing the language of what makes us different section
         differentSectionTitle.innerText = "Qué nos separa de otros programas?";
@@ -203,7 +203,7 @@ function configurePageLanguage(language){
 
         //Changing the language of the title and info section
         introductoryTitle.innerText = "Sur Nous";
-        introductoryP.innerText = "Initié à partir du lycée Koç en 2021, LGS Arkadaşım (Mon LGS Ami) est un projet qui vise à aider les élèves de 8e année de toute la Turquie à atteindre leur plein potentiel dans leur parcours LGS (Examen d’entrée au Secondaire) en offrant aux étudiants unun mentorat et beaucoup de pratiques d’examen.";
+        introductoryP.innerText = "Créé en 2021, LGS Arkadaşım (Mon LGS Ami) est un projet qui vise à aider les élèves de 8e année de toute la Turquie à atteindre leur plein potentiel dans leur parcours LGS (Examen d’entrée au Secondaire) en offrant aux étudiants unun mentorat et beaucoup de pratiques d’examen.";
 
         //Changing the language of what makes us different section
         differentSectionTitle.innerText = "Qu’est-ce Qui Nous Sépare des Autres Programmes?";
