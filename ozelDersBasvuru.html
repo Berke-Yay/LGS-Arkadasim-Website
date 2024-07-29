@@ -1058,8 +1058,8 @@
             body: formData
         })
         .then(res => res.json())
-        .then(data => console.log(data))
-        .catch(err => alert("Error: Unable to connect to the server"));
+        .then(data => alert("Başvurunuz başarıyla oluşturuldu. Lütfen gelen e-postalarınızı kontrol edin."))
+        .catch(err => alert("Sunucuda bir hata oluştu. Lütfen daha sonra tekrar deneyin."));
 
         form.reset();
         chosen.style.backgroundColor = 'gray';
