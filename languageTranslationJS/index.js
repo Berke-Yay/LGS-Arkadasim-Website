@@ -51,7 +51,7 @@ function configurePageLanguage(language){
         //Changing the language of the introductory section
         introductoryH1.innerHTML = "LGS <br> Arkadaşım";
         introductoryH3.innerText = "Birlikte Başaralım!";
-        missionP.innerHTML = "<b>Projenin misyonu</b>; <br> devlet okulunda okuyan veya özel okulda burslu olan öğrencilere:";
+        missionP.innerHTML = "<b>Projenin misyonu</b>; <br> Türkiye’nin dört bir yanındaki LGS öğrencilerine::";
 
         var enMissionLi = ["özel ders,", "bire bir mentorluk,", "deneme tecrübesi", "ve çok daha fazlasını sağlamaktır."];
         for(var i=0;i<missionLi.length;i++){
@@ -111,7 +111,7 @@ function configurePageLanguage(language){
         //Changing the language of the introductory section
         introductoryH1.innerHTML = "My LGS <br> Friend";
         introductoryH3.innerText = "Let's Achieve Together!";
-        missionP.innerHTML = "<b>The mission of the project</b>; <br> is to provide to scholarship students in public and private schools with:";
+        missionP.innerHTML = "<b>The mission of the project</b>; <br> is to provide to 8th grade students from all over Turkey:";
 
         var enMissionLi = ["private tuition,", "one on one mentoring,", "exam practice", "and so much more"];
         for(var i=0;i<missionLi.length;i++){
@@ -171,7 +171,7 @@ function configurePageLanguage(language){
         //Changing the language of the introductory section
         introductoryH1.innerHTML = "Mein LGS <br> Freund";
         introductoryH3.innerText = "Lasst uns gemeinsam erfolgreich sein!";
-        missionP.innerHTML = "<b>Die Mission des Projekts</b>; <br> ist, Stipendiaten in öffentlichen und privaten Schulen zu versorgen mit:";
+        missionP.innerHTML = "<b>Die Mission des Projekts</b>; <br> ist, an Achtklässler in der ganzen Türkei zu versorgen mit:";
 
         var enMissionLi = ["Privatunterricht,", "Einzelmentoring,", "Prüfungspraxis", "und vielem mehr"];
         for(var i=0;i<missionLi.length;i++){
@@ -231,7 +231,7 @@ function configurePageLanguage(language){
         //Changing the language of the introductory section
         introductoryH1.innerHTML = "Mi LGS <br> Amigo";
         introductoryH3.innerText = "Vamos a lograr juntos!";
-        missionP.innerHTML = "<b>La misión del proyecto</b>; <br> proporcionar a los estudiantes que estudian en la escuela pública o tienen una beca en la escuela privada:";
+        missionP.innerHTML = "<b>La misión del proyecto</b>; <br> proporcionar a estudiantes de octavo grado en toda Turquía:";
 
         var enMissionLi = ["clases particulares,", "tutoría individual,", "práctica de examen", "y mucho más"];
         for(var i=0;i<missionLi.length;i++){
@@ -291,7 +291,7 @@ function configurePageLanguage(language){
         //Changing the language of the introductory section
         introductoryH1.innerHTML = "Mon LGS <br> Ami";
         introductoryH3.innerText = "Réussissons Ensemble!";
-        missionP.innerHTML = "<b>La mission du projet</b>; <br> est de fournir aux étudiants boursiers dans les écoles publiques et privées avec:";
+        missionP.innerHTML = "<b>La mission du projet</b>; <br> est aux élèves de huitième année dans toute la Turquie:";
 
         var enMissionLi = ["cours particulier,", "un sur un mentorat,", "pratique des examens", "et bien plus encore"];
         for(var i=0;i<missionLi.length;i++){
