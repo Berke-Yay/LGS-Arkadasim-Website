@@ -51,7 +51,7 @@ function configurePageLanguage(language){
         //Changing the language of the introductory section
         introductoryH1.innerHTML = "LGS <br> Arkadaşım";
         introductoryH3.innerText = "Birlikte Başaralım!";
-        missionP.innerHTML = "<b>Projenin misyonu</b>; <br> Türkiye’nin dört bir yanındaki LGS öğrencilerine::";
+        missionP.innerHTML = "<b>Projenin misyonu</b>; <br> Türkiye’nin dört bir yanındaki LGS öğrencilerine:";
 
         var enMissionLi = ["özel ders,", "bire bir mentorluk,", "deneme tecrübesi", "ve çok daha fazlasını sağlamaktır."];
         for(var i=0;i<missionLi.length;i++){
