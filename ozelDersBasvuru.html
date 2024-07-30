@@ -6,7 +6,7 @@
     <meta name="author" content="Berke Yay">
     <meta name="keywords" content="LGS, LGS Arkadaşım, Mentörlük, Rehberlik">
     <script src="https://kit.fontawesome.com/b79607bc01.js" crossorigin="anonymous"></script>
-    <title>Özel Ders | LGS Arkadaşım</title>
+    <title>Hizmetlerimiz | LGS Arkadaşım</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.png">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/ozelDersBasvuru/ozelDersBasvuru-page.css">
@@ -34,7 +34,7 @@
             <a href="index.html"><li>Ana Sayfa</li></a>
             <a href="hakkimizda.html"><li>Hakkımızda</li></a>
             <a href="egitimYiliSureci.html"><li>2024-2025 Eğitim Yılı Süreci</li></a>
-            <a href="ozelDersBasvuru.html"><li class="chosen">Özel Ders</li></a>
+            <a href="ozelDersBasvuru.html"><li class="chosen">Hizmetlerimiz</li></a>
             <a href="sponsorlarimiz.html"><li>Sponsorlarımız</li></a>
             <a href="iletisim.html"><li>İletişim</li></a>
         </ul>
@@ -58,7 +58,7 @@
                 <a href="index.html"><li>Ana Sayfa</li></a>
                 <a href="hakkimizda.html"><li>Hakkımızda</li></a>
                 <a href="egitimYiliSureci.html"><li>2024-2025 Eğitim Yılı Süreci</li></a>
-                <a href="ozelDersBasvuru.html"><li class="chosen">Özel Ders</li></a>
+                <a href="ozelDersBasvuru.html"><li class="chosen">Hizmetlerimiz</li></a>
                 <a href="sponsorlarimiz.html"><li>Sponsorlarımız</li></a>
                 <a href="iletisim.html"><li>İletişim</li></a>
             </ul>
@@ -66,11 +66,11 @@
     </nav>
 
     <div id="introductory-part">
-        <h1>Özel Ders Başvuruları</h1><hr>
+        <h1>Özel Hizmetlerimiz</h1><hr>
         <p>LGS Arkadaşım sayesinde 8. sınıf öğrencileri LGS'de başarılı olup Türkiye'nin en nitelikli liselerine yerleşmiş mentörlerden uygun
-            fiyata özel ders alabilecek. Türkiye'de bir ilk olarak, dersinizi anlatacak mentörü hangi okuldan istediğinizi seçebiliyorsunuz!
-            Özel ders gelirinin %80'i dezavantajlı öğrencilere kitap bağışı yapmak için kullanılacak. İlk ders deneme dersidir,
-            herhangi bir ücret ödenmez.</p>
+            fiyata özel ders ve bire bir mentörlük alabilecek. Türkiye'de bir ilk olarak, dersinizi anlatacak mentörü hangi okuldan
+            istediğinizi seçebiliyorsunuz! Hizmetlerimizin gelirinin %80'i dezavantajlı öğrencilere kitap bağışı yapmak
+            için kullanılacak. İlk ders deneme dersidir, herhangi bir ücret ödenmez.</p>
     </div>
     
     <h2>Öğrencilerimizin Yorumları</h2>
@@ -330,8 +330,17 @@
         </div>
     </div>
 
-    <h2>Ücret Bilgisi (1 Saat)</h2>
+    <h2>Ücret Bilgisi</h2>
     <div id="price-info-section">
+        <div class="classes">
+            <h3>Bire Bir Mentörlük</h3>
+            <span>Haftalık Mentörlük Ücreti 399 TL</span>
+            <ul>
+                <li>Haftada iki kez telefon ve Zoom üzerinden iletişim</li>
+                <li>Öğrenciye ödev verme ve çalışma planı oluşturma</li>
+                <li>Moral, motivasyon ve psikolojik konularda yardım</li>
+            </ul>
+        </div>
         <div class="classes">
             <h3>Ana Dersler</h3>
             <span>Saatlik Özel Ders Ücreti 399 TL</span>
@@ -393,6 +402,12 @@
                     <span>İngilizce</span>
                 </div>
             </label>
+            <label for="Bire-Bir-Mentörlük">
+                <div class="lesson" id="mentorship">
+                    <i class="fa-regular fa-compass"></i>
+                    <span>Bire Bir Mentörlük</span>
+                </div>
+            </label>
 
             <div class="radio-buttons">
                 <input type="radio" id="Türkçe" name="chosenClass" value="Türkçe" required>
@@ -401,6 +416,7 @@
                 <input type="radio" id="İnkılap-Tarihi-ve-Atatürkçülük" name="chosenClass" value="T. C. İnkılap Tarihi ve Atatürkçülük">
                 <input type="radio" id="Din-Kültürü-ve-Ahlak-Bilgisi" name="chosenClass" value="Din Kültürü ve Ahlak Bilgisi">
                 <input type="radio" id="İngilizce" name="chosenClass" value="İngilizce">
+                <input type="radio" name="chosenClass" id="Bire-Bir-Mentörlük" value="mentorship">
             </div>
         </div>
 
@@ -679,6 +695,12 @@
                     </div>
                 </div>
             </div>
+            <div class="topics-list">
+                <div>
+                    <input type="checkbox" name="chosenTopic" value="Bire Bir Mentörlük Hizmeti" id="mentorship-topic">
+                    <label for="mentorship-topic">Bire Bir Mentörlük Hizmeti</label>       
+                </div>
+            </div>
         </div>
 
         <div class="container">
@@ -733,7 +755,7 @@
 
 
         <h3>Adım 4 - Detaylar</h3>
-        <span class="step-four-span">Özel dersi verecek öğrencinin hangi liseden olmasını istediğinizi belirtebilirsiniz: </span>
+        <span class="step-four-span">Özel dersi veya mentörlüğü verecek mentörün hangi liseden olmasını istediğinizi belirtebilirsiniz: </span>
         <span class="preference-span">1. Tercih: </span>
         <select name="firstPreferredSchool" class="preferredSchool">
             <option value="Tercih Edilmedi">Tercih Edilmedi</option>
@@ -877,7 +899,7 @@
         var activeTopics;
         var chosenTopicsList = [];
         var bgColors = {"turkish":"rgb(0, 125, 215)", "maths":"rgb(255, 40, 40)", "science":"rgb(0, 140, 0)",
-        "social-studies-turkiye":"orange", "religion":"brown", "english":"purple"};
+        "social-studies-turkiye":"orange", "religion":"brown", "english":"purple", "mentorship":"cadetblue"};
         var topicNums = {"turkish":0, "maths":1, "science":2, "social-studies-turkiye":3, "religion":4, "english":5};
 
         var topicsSpan = document.querySelector("#topics-span");
@@ -896,10 +918,18 @@
                 }
 
                 lesson.style.backgroundColor = bgColors[lesson.id];
-                allTopics[topicNums[lesson.id]].classList.toggle("active-topic");
-                chosenTopicsList = [];
-                topicsSpan.style.display = "block";
-                activeTopics = allTopics[topicNums[lesson.id]];
+                if(lesson.id == "mentorship"){
+                    var topic = document.querySelector("#mentorship-topic");
+                    chosenTopicsList = [topic];
+                    topicsSpan.style.display = "none";
+                    activeTopics = null;
+                }
+                else{
+                    allTopics[topicNums[lesson.id]].classList.toggle("active-topic");
+                    chosenTopicsList = [];
+                    topicsSpan.style.display = "block";
+                    activeTopics = allTopics[topicNums[lesson.id]];
+                }
                 chosen = lesson;
             });
         });
