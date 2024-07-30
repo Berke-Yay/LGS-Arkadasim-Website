@@ -178,7 +178,7 @@ h3{
     align-items: center;
 }
 
-#price-info-section .classes:first-child{
+#price-info-section .classes:not(:last-of-type){
     margin-right: 0;
     margin-bottom: 20px;
 }
@@ -193,6 +193,10 @@ h3{
 #lessons-section label{
     flex: 0 0 45%;
     margin-bottom: 10px;
+}
+
+#lessons-section label:last-of-type{
+    flex: 0 0 70%;
 }
 
 /*Topic selection*/
