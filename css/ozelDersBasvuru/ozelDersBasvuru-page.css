@@ -213,6 +213,11 @@ h3{
     font-size: 1.2em;
 }
 
+#price-info-section .classes p{
+    font-size: 1.2em;
+    text-align: center;
+}
+
 #price-info-span{
     margin-bottom: 80px;
     display: block;
