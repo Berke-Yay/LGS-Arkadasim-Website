@@ -184,19 +184,34 @@ h3{
 }
 
 /*Application Section*/
+form{
+    padding: 0 16px;
+}
 /*Step 1*/
 #lessons-section{
-    flex-wrap: wrap;
+    flex-direction: column;
     margin-bottom: 20px;
+    padding: 0;
 }
 
-#lessons-section label{
+#lessons-section .lessons-container{
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#lessons-section .lessons-container label{
     flex: 0 0 45%;
     margin-bottom: 10px;
+    margin-right: 12px;
 }
 
-#lessons-section label:last-of-type{
-    flex: 0 0 70%;
+#lessons-section > label{
+    width: 60%;
+}
+
+.lesson{
+    margin-bottom: 16px;
 }
 
 /*Topic selection*/
