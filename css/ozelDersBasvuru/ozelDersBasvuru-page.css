@@ -296,6 +296,10 @@ form{
     display: none;
 }
 
+#mentorship-label{
+    display: none;
+}
+
 /*Topic Selection*/
 #topics-section{
     margin-bottom: 40px;
