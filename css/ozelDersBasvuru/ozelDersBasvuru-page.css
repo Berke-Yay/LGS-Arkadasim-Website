@@ -192,6 +192,10 @@ h3{
     line-height: 2em;
 }
 
+#price-info-section .classes:first-of-type{
+    display: none;
+}
+
 #price-info-section .classes:not(:last-of-type){
     margin-right: 60px;
 }
