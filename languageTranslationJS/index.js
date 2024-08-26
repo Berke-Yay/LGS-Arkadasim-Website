@@ -40,7 +40,7 @@ function configurePageLanguage(language){
         mobileDropbtn.innerHTML = '<img src="assets/flags/turkey.png">'+language+'<i class="fa-solid fa-caret-down"></i>';
 
         //Changing the language of the navbar menu items
-        var enNavbarMenuItems = ["Ana Sayfa", "Hakkımızda", "2024-2025 Eğitim Yılı Süreci", "Hizmetlerimiz", "Sponsorlarımız", "İletişim"];
+        var enNavbarMenuItems = ["Ana Sayfa", "Hakkımızda", "2024-2025 Eğitim Yılı Süreci", "Sponsorlarımız", "İletişim"];
         for(var i=0;i<navbarMenuItems.length;i++){
             navbarMenuItems[i].innerText = enNavbarMenuItems[i];
         }
@@ -53,7 +53,7 @@ function configurePageLanguage(language){
         introductoryH3.innerText = "Birlikte Başaralım!";
         missionP.innerHTML = "<b>Projenin misyonu</b>; <br> Türkiye’nin dört bir yanındaki LGS öğrencilerine:";
 
-        var enMissionLi = ["özel ders,", "bire bir mentorluk,", "deneme tecrübesi", "ve çok daha fazlasını sağlamaktır."];
+        var enMissionLi = ["özel ders,", "bire bir mentörlük,", "deneme tecrübesi", "ve çok daha fazlasını sağlamaktır."];
         for(var i=0;i<missionLi.length;i++){
             missionLi[i].innerText = enMissionLi[i];
         }
@@ -89,7 +89,7 @@ function configurePageLanguage(language){
         formPartTitle.innerText = "Bize Ulaşın:";
         formPartSpan.innerText = "Herhangi bir sorunuz olursa aşağıdaki linkte bulunan formu doldurabilirsiniz.";
         formPartA.innerText = "İletişim Formu";
-        var enBottomNavbarElements = ["Ana Sayfa", "Hakkımızda", "2024-2025 Eğitim Yılı Süreci", "Hizmetlerimiz", "Sponsorlarımız"];
+        var enBottomNavbarElements = ["Ana Sayfa", "Hakkımızda", "2024-2025 Eğitim Yılı Süreci", "Sponsorlarımız"];
         for(var i=0;i<bottomNavbarElements.length;i++){
             bottomNavbarElements[i].innerText = enBottomNavbarElements[i];
         }
@@ -100,7 +100,7 @@ function configurePageLanguage(language){
         mobileDropbtn.innerHTML = '<img src="assets/flags/united-states.png">'+language+'<i class="fa-solid fa-caret-down"></i>';
 
         //Changing the language of the navbar menu items
-        var enNavbarMenuItems = ["Main Page", "About Us", "Academic Year Schedule", "Private Lesson", "Sponsors", "Contact Us"];
+        var enNavbarMenuItems = ["Main Page", "About Us", "Academic Year Schedule", "Sponsors", "Contact Us"];
         for(var i=0;i<navbarMenuItems.length;i++){
             navbarMenuItems[i].innerText = enNavbarMenuItems[i];
         }
@@ -149,7 +149,7 @@ function configurePageLanguage(language){
         formPartTitle.innerText = "Contact Us:";
         formPartSpan.innerText = "If you have any questions, you can fill out the form in the link below.";
         formPartA.innerText = "Message Form";
-        var enBottomNavbarElements = ["Main Page", "About Us", "Academic Year Schedule", "Private Lesson", "Sponsors"];
+        var enBottomNavbarElements = ["Main Page", "About Us", "Academic Year Schedule", "Sponsors"];
         for(var i=0;i<bottomNavbarElements.length;i++){
             bottomNavbarElements[i].innerText = enBottomNavbarElements[i];
         }
@@ -160,7 +160,7 @@ function configurePageLanguage(language){
         mobileDropbtn.innerHTML = '<img src="assets/flags/germany.png">'+language+'<i class="fa-solid fa-caret-down"></i>';
 
         //Changing the language of the navbar menu items
-        var enNavbarMenuItems = ["Startseite", "Über Uns", "Kalender des akademischen Jahres", "Privatunterricht", "Sponsoren", "Kontakt"];
+        var enNavbarMenuItems = ["Startseite", "Über Uns", "Kalender des akademischen Jahres", "Sponsoren", "Kontakt"];
         for(var i=0;i<navbarMenuItems.length;i++){
             navbarMenuItems[i].innerText = enNavbarMenuItems[i];
         }
@@ -209,7 +209,7 @@ function configurePageLanguage(language){
         formPartTitle.innerText = "Kontakt:";
         formPartSpan.innerText = "Wenn Sie Fragen haben, können Sie das Formular auf dem Link unten ausfüllen.";
         formPartA.innerText = "Kontaktformular";
-        var enBottomNavbarElements = ["Startseite", "Über Uns", "Kalender des akademischen Jahres", "Privatunterricht", "Sponsoren"];
+        var enBottomNavbarElements = ["Startseite", "Über Uns", "Kalender des akademischen Jahres", "Sponsoren"];
         for(var i=0;i<bottomNavbarElements.length;i++){
             bottomNavbarElements[i].innerText = enBottomNavbarElements[i];
         }
@@ -220,7 +220,7 @@ function configurePageLanguage(language){
         mobileDropbtn.innerHTML = '<img src="assets/flags/spain.png">'+language+'<i class="fa-solid fa-caret-down"></i>';
 
         //Changing the language of the navbar menu items
-        var enNavbarMenuItems = ["Página de Inicio", "Sobre Nosotros", "Calendario del Año Académico", "Lección Privada", "Patrocinadores", "Contacto"];
+        var enNavbarMenuItems = ["Página de Inicio", "Sobre Nosotros", "Calendario del Año Académico", "Patrocinadores", "Contacto"];
         for(var i=0;i<navbarMenuItems.length;i++){
             navbarMenuItems[i].innerText = enNavbarMenuItems[i];
         }
@@ -269,7 +269,7 @@ function configurePageLanguage(language){
         formPartTitle.innerText = "Contacto:";
         formPartSpan.innerText = "Si tiene alguna pregunta, puede rellenar el formulario en el siguiente enlace.";
         formPartA.innerText = "Formulario de Mensaje";
-        var enBottomNavbarElements = ["Página de Inicio", "Sobre Nosotros", "Calendario del Año Académico", "Lección Privada", "Patrocinadores"];
+        var enBottomNavbarElements = ["Página de Inicio", "Sobre Nosotros", "Calendario del Año Académico", "Patrocinadores"];
         for(var i=0;i<bottomNavbarElements.length;i++){
             bottomNavbarElements[i].innerText = enBottomNavbarElements[i];
         }  
@@ -280,7 +280,7 @@ function configurePageLanguage(language){
         mobileDropbtn.innerHTML = '<img src="assets/flags/france.png">'+language+'<i class="fa-solid fa-caret-down"></i>';
 
         //Changing the language of the navbar menu items
-        var enNavbarMenuItems = ["Page d’accueil", "Sur Nous", "Calendrier de l’année Scolaire", "Cours Privé", "Sponsors", "Nous Contacter"];
+        var enNavbarMenuItems = ["Page d’accueil", "Sur Nous", "Calendrier de l’année Scolaire", "Sponsors", "Nous Contacter"];
         for(var i=0;i<navbarMenuItems.length;i++){
             navbarMenuItems[i].innerText = enNavbarMenuItems[i];
         }
@@ -329,7 +329,7 @@ function configurePageLanguage(language){
         formPartTitle.innerText = "Nous Contacter:";
         formPartSpan.innerText = "Si vous avez des questions, vous pouvez remplir le formulaire ci-dessous.";
         formPartA.innerText = "Formulaire de Message";
-        var enBottomNavbarElements = ["Page d’accueil", "Sur Nous", "Calendrier de l’année Scolaire", "Cours Privé", "Sponsors"];
+        var enBottomNavbarElements = ["Page d’accueil", "Sur Nous", "Calendrier de l’année Scolaire", "Sponsors"];
         for(var i=0;i<bottomNavbarElements.length;i++){
             bottomNavbarElements[i].innerText = enBottomNavbarElements[i];
         }
