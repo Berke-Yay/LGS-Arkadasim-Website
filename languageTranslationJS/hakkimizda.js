@@ -46,7 +46,7 @@ function configurePageLanguage(language){
         //Changing the language of what makes us different section
         differentSectionTitle.innerText = "Bizi diğer programlardan neler ayırır?";
         var newDifferentSectionSpans = ["Kaliteli bir Ekip", "Mentörlük", "Denemeler", "Bire Bir Özel Dersler", "Tercih Sürecinde Destek"];
-        var newDifferentSectionPs = ["Ekibimizdeki mentörler; yapılan mülakatlar sonucunda Koç Lisesi, Galatasaray Lisesi, Robert Koleji gibi Türkiye'nin en seçkin liselerinden seçilir.",
+        var newDifferentSectionPs = ["Ekibimizdeki mentörler; yapılan mülakatlar sonucunda Koç Lisesi, Galatasaray Lisesi, Robert Koleji, İstanbul Erkek Lisesi ve Kabataş Erkek Lisesi gibi Türkiye'nin en seçkin liselerinden seçilir.",
         "Her öğrencinin kendi mentörü vardır. Mentörler, öğrencileriyle düzenli olarak iletişim kurup onların sorularını cevaplar, tavsiyelerde bulunur. Mentörler aynı zamanda öğrencilere dersleri dışında da yardımcı olur.",
         "Her hafta çeşitli yayınlardan deneme olunur ve mentörler öğrencilerine bu denemelerin kazanım analizlerine göre soru verir.",
         "Öğrenciler, Türkiye'nin nitelikli liselerinde okuyan mentörlerimizden belirli bir ücret karşılığında özel ders alabilmektedir. Özel ders gelirleri, dezavantajlı öğrencilere kitap bağışı yapmak için kullanılacaktır.",
