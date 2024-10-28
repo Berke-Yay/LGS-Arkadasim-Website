@@ -85,11 +85,11 @@ function configurePageLanguage(language){
 
         //Changing the language of what makes us different section
         differentSectionTitle.innerText = "What Seperates Us from Other Programs?";
-        var newDifferentSectionSpans = ["A Qualified Team", "Mentorship", "Exams", "Private Lessons", "Support on Decision Period"];
+        var newDifferentSectionSpans = ["A Qualified Team", "Mentorship", "Exams", "Weekly Lessons", "Support on Decision Period"];
         var newDifferentSectionPs = ["Mentors in our team are selected after a careful process of interviews from outstanding high schools of Turkey such as Koç High School, Galatasaray High School and Robert College.",
         "Each student has their own mentor. Mentors contact their students on a regular basis, and they answer the students' questions, giving them some advice. Mentors also help their students outside of academics.",
         "There is an exam every week and the mentors give homework to their students based on the exam analysis.",
-        "Students can take private lessons for a certain fee from our mentors studying in qualified high schools in Turkey. Private lesson income will be used to donate books to disadvantaged students.",
+        "There will be weekly classes held on Zoom for each lesson where our mentors will help the students solve the questions they had a hard time with.",
         "Mentors keep guiding their students after the exam, helping them to choose the right high school for their interests and goals."];
         for(var i=0;i<differentSectionSpans.length;i++){
             differentSectionSpans[i].innerText = newDifferentSectionSpans[i];
