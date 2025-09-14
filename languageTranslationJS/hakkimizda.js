@@ -31,7 +31,7 @@ function configurePageLanguage(language){
         mobileDropbtn.innerHTML = '<img src="assets/flags/turkey.png">'+language+'<i class="fa-solid fa-caret-down"></i>';
 
         //Changing the language of the navbar menu items
-        var newNavbarMenuItems = ["Ana Sayfa", "Hakkımızda", "2024-2025 Eğitim Yılı Süreci", "Sponsorlarımız", "İletişim"];
+        var newNavbarMenuItems = ["Ana Sayfa", "Hakkımızda", "2025-2026 Eğitim Yılı Süreci", "Sponsorlarımız", "İletişim"];
         for(var i=0;i<navbarMenuItems.length;i++){
             navbarMenuItems[i].innerText = newNavbarMenuItems[i];
         }
@@ -60,7 +60,7 @@ function configurePageLanguage(language){
         formPartTitle.innerText = "Bize Ulaşın:";
         formPartSpan.innerText = "Herhangi bir sorunuz olursa aşağıdaki linkte bulunan formu doldurabilirsiniz.";
         formPartA.innerText = "İletişim Formu";
-        var newBottomNavbarElements = ["Ana Sayfa", "Hakkımızda", "2024-2025 Eğitim Yılı Süreci", "Sponsorlarımız"];
+        var newBottomNavbarElements = ["Ana Sayfa", "Hakkımızda", "2025-2026 Eğitim Yılı Süreci", "Sponsorlarımız"];
         for(var i=0;i<bottomNavbarElements.length;i++){
             bottomNavbarElements[i].innerText = newBottomNavbarElements[i];
         }
