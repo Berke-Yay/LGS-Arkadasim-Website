@@ -186,6 +186,11 @@
     el.setAttribute('data-scrub', '');
     scrubs.push(el);
   }
+  function transitionEnd(el) {
+    var cs = window.getComputedStyle(el), d = cs.transitionDuration.split(','), l = cs.transitionDelay.split(','), m = 0;
+    for (var i = 0; i < d.length; i++) m = Math.max(m, (parseFloat(d[i]) + parseFloat(l[i % l.length] || 0)) * 1000);
+    return m || 0;
+  }
   function formatInt(n, sep) {
     var s = String(n);
     if (!sep) return s;
@@ -212,16 +217,26 @@
 
   function initMotion() {
     scrubs = [];
-    if (reduce || !('IntersectionObserver' in window)) return;
-    var marked = [];
+    var root = doc.documentElement;
+    if (reduce || !('IntersectionObserver' in window)) { root.classList.add('motion-ready'); return; }
+    var marked = [], queue = [], seen = new Set();
+    /* İşaretlemeler önce sıraya alınır, sonra toplu uygulanır: tüm okumalar (getComputedStyle) tek seferde,
+       ardından tüm yazmalar. Okuma/yazma iç içe olunca tarayıcı her öğede stili baştan hesaplar ve açılış takılır. */
     function mark(el, kind, delay) {
-      if (!el || el.hasAttribute('data-rv')) return;
-      /* Öğenin kendi eğimi/dönüşü varsa (ör. optik form) animasyon o konuma oturur, sonda sıçramaz */
-      var rest = window.getComputedStyle(el).transform;
-      if (rest && rest !== 'none') el.style.setProperty('--rest', rest);
-      el.setAttribute('data-rv', kind);
-      if (delay != null) { el.style.setProperty('--d', delay + 'ms'); el.setAttribute('data-fixed', ''); }
-      marked.push(el);
+      if (!el || seen.has(el) || el.hasAttribute('data-rv')) return;
+      seen.add(el); queue.push([el, kind, delay]);
+    }
+    function flush() {
+      var rests = queue.map(function (q) { return window.getComputedStyle(q[0]).transform; });
+      queue.forEach(function (q, i) {
+        var el = q[0];
+        /* Öğenin kendi eğimi/dönüşü varsa (ör. optik form) animasyon o konuma oturur, sonda sıçramaz */
+        if (rests[i] && rests[i] !== 'none') el.style.setProperty('--rest', rests[i]);
+        el.setAttribute('data-rv', q[1]);
+        if (q[2] != null) { el.style.setProperty('--d', q[2] + 'ms'); el.setAttribute('data-fixed', ''); }
+        marked.push(el);
+      });
+      queue = [];
     }
     var all = function (sel, fn) { Array.prototype.forEach.call(doc.querySelectorAll(sel), fn); };
     try {
@@ -230,7 +245,7 @@
       if (hero) {
         mark(hero.querySelector('.hero__badge'), 'fade', 0);
         mark(hero.querySelector('.wm__lgs') || hero.querySelector('.hero__title'), 'chars', 140);
-        mark(hero.querySelector('.wm__ark'), 'wipe', 520);
+        mark(hero.querySelector('.wm__arkwrap'), 'brush', 480);
         mark(hero.querySelector('.hero__tagline'), 'wipe', 760);
         mark(hero.querySelector('.hero__lead'), 'fade', 900);
         all('.hero .mission li', function (li, i) { mark(li, 'slide', 1000 + i * 90); });
@@ -252,6 +267,7 @@
       scrubUpdate();
       if (!scrubBound) { scrubBound = true; window.addEventListener('scroll', function () { if (scrubs.length) requestAnimationFrame(scrubUpdate); }, { passive: true }); window.addEventListener('resize', scrubUpdate); }
 
+      flush();
       /* Bölme işlemleri */
       var splits = new Map();
       marked.forEach(function (el) {
@@ -263,6 +279,8 @@
       });
       all('.books__amount, .books__card-amount', function (el) { el.setAttribute('data-num', ''); });
       if (doc.querySelector('.books__card-amount') && !doc.querySelector('.books__card-amount').hasAttribute('data-rv')) mark(doc.querySelector('.books__card-amount'), 'fade');
+      flush();
+      root.classList.add('motion-ready'); /* açılış öğeleri artık data-rv ile gizli; boot.js gizlemesi devreden çıkar */
 
       var pending = new Set(marked);
       function reveal(el, delay, instant) {
@@ -273,7 +291,8 @@
         if (instant) el.setAttribute('data-instant', '');
         el.classList.add('is-in');
         if (el.hasAttribute('data-num')) setTimeout(function () { countNum(el); }, (instant ? 0 : delay) + 250);
-        var total = instant ? 60 : delay + 1500 + (info ? info.count * 60 : 0);
+        /* Temizlik, öğenin kendi geçişi bittikten sonra yapılır; yarıda kesilirse öğe son konumuna "zıplar" */
+        var total = instant ? 60 : Math.max(transitionEnd(el), info ? delay + 1150 + info.count * 66 : 0, delay + 1000) + 150;
         setTimeout(function () {
           el.removeAttribute('data-rv'); el.removeAttribute('data-fixed'); el.removeAttribute('data-instant');
           el.style.removeProperty('--d'); el.style.removeProperty('--rest');
@@ -299,6 +318,7 @@
     } catch (e) {
       /* Bir şey ters giderse içerik görünür kalsın */
       marked.forEach(function (el) { el.removeAttribute('data-rv'); });
+      root.classList.add('motion-ready');
     }
   }
 

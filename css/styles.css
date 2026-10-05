@@ -791,6 +791,11 @@ a.sponsor-tile:hover { background: var(--orange-soft); transform: translateY(-2p
 
 
 /* ---------- Yazı animasyonları (main.js → initMotion) ---------- */
+/* Açılış öğeleri, main.js devralana kadar gizli başlar (boot.js → html.motion). JS hiç gelmezse 2,5 sn sonra kendiliğinden görünür. */
+html.motion:not(.motion-ready) :is(.hero__badge, .wm__lgs, .wm__arkwrap, .hero__tagline, .hero__lead, .mission li, .hero__cta, .hero__grid > :last-child, .page-hero__title, .page-hero__lead) {
+  opacity: 0; animation: lgs-failsafe 0.4s 2.5s forwards;
+}
+@keyframes lgs-failsafe { to { opacity: 1; } }
 /* =========================================================
    Renk paletleri — turuncu (logo rengi) her palette sabit; koyu zemin,
    kağıt tonu ve griler değişir. Seçim: yönetim paneli → Ayarlar → Renk paleti
@@ -819,7 +824,7 @@ a.sponsor-tile:hover { background: var(--orange-soft); transform: translateY(-2p
 :root { --ease-out: cubic-bezier(0.16, 1, 0.3, 1); }
 [data-rv] { will-change: opacity, transform; }
 [data-rv="fade"], [data-rv="up"], [data-rv="slide"] { opacity: 0; }
-[data-rv="fade"] { transform: translateY(20px); filter: blur(9px); }
+[data-rv="fade"] { transform: translateY(18px); }
 [data-rv="up"] { transform: translateY(36px) scale(0.985); }
 [data-rv="slide"] { transform: translateX(-28px); }
 [data-rv="wipe"] { clip-path: inset(-0.3em 100% -0.3em -0.05em); transform: translateX(-14px); opacity: 0.2; }
@@ -843,7 +848,7 @@ a.sponsor-tile:hover { background: var(--orange-soft); transform: translateY(-2p
 .sw { opacity: clamp(0.16, calc((var(--p, 0) * 1.22 - var(--k, 0)) * 6 + 0.16), 1); transition: opacity 0.35s linear; }
 
 @media (prefers-reduced-motion: reduce) {
-  [data-rv], [data-rv] .wi { opacity: 1 !important; transform: none !important; filter: none !important; clip-path: none !important; }
+  [data-rv], [data-rv] .wi, [data-rv] > img { opacity: 1 !important; transform: none !important; filter: none !important; clip-path: none !important; }
   .sw { opacity: 1; }
 }
 
@@ -860,11 +865,14 @@ a.sponsor-tile:hover { background: var(--orange-soft); transform: translateY(-2p
 /* Hero marka yazısı: logodaki gibi "LGS" kalın eğik + "arkadaşım" fırça yazısı (logodan vektörleştirildi) */
 .hero__title.wm { display: flex; flex-direction: column; align-items: flex-start; gap: 0.04em; font-size: clamp(4.2rem, 19vw, 8.4rem); line-height: 0.8; margin-bottom: 0.3em; }
 .wm__lgs { font-family: "Arimo Wordmark", "Helvetica Neue", Arial, sans-serif; font-style: italic; font-weight: 700; letter-spacing: -0.045em; line-height: 0.84; padding-right: 0.06em; color: var(--white); }
-.wm__ark { display: block; width: min(100%, 4.5em); height: auto; margin-left: 0.02em; }
+.wm__arkwrap { display: block; width: min(100%, 4.5em); margin-left: 0.02em; overflow: hidden; }
+.wm__ark { display: block; width: 100%; height: auto; }
 .hero__tagline { color: var(--white); }
 .wm .w { padding-right: 0.12em; margin-right: -0.12em; }
-.wm__ark[data-rv="wipe"] { clip-path: inset(-10% 100% -10% 0); transform: translateX(-10px); opacity: 1; }
-.wm__ark[data-rv="wipe"].is-in { clip-path: inset(-10% -2% -10% 0); transition: clip-path 1.5s cubic-bezier(0.65, 0, 0.35, 1) var(--d, 0ms), transform 1.5s var(--ease-out) var(--d, 0ms); }
+/* Fırça yazısı soldan sağa "boyanır": yalnızca transform ile (pencere sağa kayar, resim ters yönde kayar) — akıcı, sonda kayma yok */
+[data-rv="brush"] { transform: translateX(-101%); }
+[data-rv="brush"] > img { transform: translateX(101%); will-change: transform; }
+[data-rv="brush"].is-in, [data-rv="brush"].is-in > img { transform: none; transition: transform 1.35s cubic-bezier(0.65, 0, 0.35, 1) var(--d, 0ms); }
 .page-hero__title { line-height: 1.02; }
 .finish__title { line-height: 1.02; }
 .mvcard__h { line-height: 1.02; }
