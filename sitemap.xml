@@ -1,46 +1,253 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
-
-<url>
-  <loc>https://lgsarkadasim.com/</loc>
-  <lastmod>2024-08-01T16:11:26+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://lgsarkadasim.com/index.html</loc>
-  <lastmod>2024-08-01T16:11:26+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://lgsarkadasim.com/hakkimizda.html</loc>
-  <lastmod>2024-08-01T16:11:26+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://lgsarkadasim.com/egitimYiliSureci.html</loc>
-  <lastmod>2024-08-01T16:11:26+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://lgsarkadasim.com/hizmetlerimiz.html</loc>
-  <lastmod>2024-08-01T16:11:26+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://lgsarkadasim.com/sponsorlarimiz.html</loc>
-  <lastmod>2024-08-01T16:11:26+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://lgsarkadasim.com/iletisim.html</loc>
-  <lastmod>2024-08-01T16:11:26+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://lgsarkadasim.com/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://lgsarkadasim.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lgsarkadasim.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lgsarkadasim.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lgsarkadasim.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lgsarkadasim.com/fr/"/>
+  </url>
+  <url>
+    <loc>https://lgsarkadasim.com/hakkimizda/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://lgsarkadasim.com/hakkimizda/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lgsarkadasim.com/en/hakkimizda/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lgsarkadasim.com/de/hakkimizda/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lgsarkadasim.com/es/hakkimizda/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lgsarkadasim.com/fr/hakkimizda/"/>
+  </url>
+  <url>
+    <loc>https://lgsarkadasim.com/egitim-yili-sureci/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://lgsarkadasim.com/egitim-yili-sureci/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lgsarkadasim.com/en/egitim-yili-sureci/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lgsarkadasim.com/de/egitim-yili-sureci/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lgsarkadasim.com/es/egitim-yili-sureci/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lgsarkadasim.com/fr/egitim-yili-sureci/"/>
+  </url>
+  <url>
+    <loc>https://lgsarkadasim.com/sponsorlarimiz/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://lgsarkadasim.com/sponsorlarimiz/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lgsarkadasim.com/en/sponsorlarimiz/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lgsarkadasim.com/de/sponsorlarimiz/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lgsarkadasim.com/es/sponsorlarimiz/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lgsarkadasim.com/fr/sponsorlarimiz/"/>
+  </url>
+  <url>
+    <loc>https://lgsarkadasim.com/iletisim/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://lgsarkadasim.com/iletisim/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lgsarkadasim.com/en/iletisim/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lgsarkadasim.com/de/iletisim/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lgsarkadasim.com/es/iletisim/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lgsarkadasim.com/fr/iletisim/"/>
+  </url>
+  <url>
+    <loc>https://lgsarkadasim.com/en/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://lgsarkadasim.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lgsarkadasim.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lgsarkadasim.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lgsarkadasim.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lgsarkadasim.com/fr/"/>
+  </url>
+  <url>
+    <loc>https://lgsarkadasim.com/en/hakkimizda/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://lgsarkadasim.com/hakkimizda/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lgsarkadasim.com/en/hakkimizda/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lgsarkadasim.com/de/hakkimizda/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lgsarkadasim.com/es/hakkimizda/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lgsarkadasim.com/fr/hakkimizda/"/>
+  </url>
+  <url>
+    <loc>https://lgsarkadasim.com/en/egitim-yili-sureci/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://lgsarkadasim.com/egitim-yili-sureci/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lgsarkadasim.com/en/egitim-yili-sureci/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lgsarkadasim.com/de/egitim-yili-sureci/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lgsarkadasim.com/es/egitim-yili-sureci/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lgsarkadasim.com/fr/egitim-yili-sureci/"/>
+  </url>
+  <url>
+    <loc>https://lgsarkadasim.com/en/sponsorlarimiz/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://lgsarkadasim.com/sponsorlarimiz/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lgsarkadasim.com/en/sponsorlarimiz/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lgsarkadasim.com/de/sponsorlarimiz/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lgsarkadasim.com/es/sponsorlarimiz/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lgsarkadasim.com/fr/sponsorlarimiz/"/>
+  </url>
+  <url>
+    <loc>https://lgsarkadasim.com/en/iletisim/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://lgsarkadasim.com/iletisim/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lgsarkadasim.com/en/iletisim/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lgsarkadasim.com/de/iletisim/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lgsarkadasim.com/es/iletisim/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lgsarkadasim.com/fr/iletisim/"/>
+  </url>
+  <url>
+    <loc>https://lgsarkadasim.com/de/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://lgsarkadasim.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lgsarkadasim.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lgsarkadasim.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lgsarkadasim.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lgsarkadasim.com/fr/"/>
+  </url>
+  <url>
+    <loc>https://lgsarkadasim.com/de/hakkimizda/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://lgsarkadasim.com/hakkimizda/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lgsarkadasim.com/en/hakkimizda/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lgsarkadasim.com/de/hakkimizda/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lgsarkadasim.com/es/hakkimizda/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lgsarkadasim.com/fr/hakkimizda/"/>
+  </url>
+  <url>
+    <loc>https://lgsarkadasim.com/de/egitim-yili-sureci/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://lgsarkadasim.com/egitim-yili-sureci/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lgsarkadasim.com/en/egitim-yili-sureci/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lgsarkadasim.com/de/egitim-yili-sureci/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lgsarkadasim.com/es/egitim-yili-sureci/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lgsarkadasim.com/fr/egitim-yili-sureci/"/>
+  </url>
+  <url>
+    <loc>https://lgsarkadasim.com/de/sponsorlarimiz/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://lgsarkadasim.com/sponsorlarimiz/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lgsarkadasim.com/en/sponsorlarimiz/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lgsarkadasim.com/de/sponsorlarimiz/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lgsarkadasim.com/es/sponsorlarimiz/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lgsarkadasim.com/fr/sponsorlarimiz/"/>
+  </url>
+  <url>
+    <loc>https://lgsarkadasim.com/de/iletisim/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://lgsarkadasim.com/iletisim/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lgsarkadasim.com/en/iletisim/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lgsarkadasim.com/de/iletisim/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lgsarkadasim.com/es/iletisim/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lgsarkadasim.com/fr/iletisim/"/>
+  </url>
+  <url>
+    <loc>https://lgsarkadasim.com/es/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://lgsarkadasim.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lgsarkadasim.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lgsarkadasim.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lgsarkadasim.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lgsarkadasim.com/fr/"/>
+  </url>
+  <url>
+    <loc>https://lgsarkadasim.com/es/hakkimizda/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://lgsarkadasim.com/hakkimizda/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lgsarkadasim.com/en/hakkimizda/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lgsarkadasim.com/de/hakkimizda/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lgsarkadasim.com/es/hakkimizda/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lgsarkadasim.com/fr/hakkimizda/"/>
+  </url>
+  <url>
+    <loc>https://lgsarkadasim.com/es/egitim-yili-sureci/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://lgsarkadasim.com/egitim-yili-sureci/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lgsarkadasim.com/en/egitim-yili-sureci/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lgsarkadasim.com/de/egitim-yili-sureci/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lgsarkadasim.com/es/egitim-yili-sureci/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lgsarkadasim.com/fr/egitim-yili-sureci/"/>
+  </url>
+  <url>
+    <loc>https://lgsarkadasim.com/es/sponsorlarimiz/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://lgsarkadasim.com/sponsorlarimiz/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lgsarkadasim.com/en/sponsorlarimiz/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lgsarkadasim.com/de/sponsorlarimiz/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lgsarkadasim.com/es/sponsorlarimiz/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lgsarkadasim.com/fr/sponsorlarimiz/"/>
+  </url>
+  <url>
+    <loc>https://lgsarkadasim.com/es/iletisim/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://lgsarkadasim.com/iletisim/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lgsarkadasim.com/en/iletisim/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lgsarkadasim.com/de/iletisim/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lgsarkadasim.com/es/iletisim/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lgsarkadasim.com/fr/iletisim/"/>
+  </url>
+  <url>
+    <loc>https://lgsarkadasim.com/fr/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://lgsarkadasim.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lgsarkadasim.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lgsarkadasim.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lgsarkadasim.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lgsarkadasim.com/fr/"/>
+  </url>
+  <url>
+    <loc>https://lgsarkadasim.com/fr/hakkimizda/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://lgsarkadasim.com/hakkimizda/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lgsarkadasim.com/en/hakkimizda/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lgsarkadasim.com/de/hakkimizda/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lgsarkadasim.com/es/hakkimizda/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lgsarkadasim.com/fr/hakkimizda/"/>
+  </url>
+  <url>
+    <loc>https://lgsarkadasim.com/fr/egitim-yili-sureci/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://lgsarkadasim.com/egitim-yili-sureci/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lgsarkadasim.com/en/egitim-yili-sureci/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lgsarkadasim.com/de/egitim-yili-sureci/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lgsarkadasim.com/es/egitim-yili-sureci/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lgsarkadasim.com/fr/egitim-yili-sureci/"/>
+  </url>
+  <url>
+    <loc>https://lgsarkadasim.com/fr/sponsorlarimiz/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://lgsarkadasim.com/sponsorlarimiz/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lgsarkadasim.com/en/sponsorlarimiz/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lgsarkadasim.com/de/sponsorlarimiz/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lgsarkadasim.com/es/sponsorlarimiz/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lgsarkadasim.com/fr/sponsorlarimiz/"/>
+  </url>
+  <url>
+    <loc>https://lgsarkadasim.com/fr/iletisim/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://lgsarkadasim.com/iletisim/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lgsarkadasim.com/en/iletisim/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lgsarkadasim.com/de/iletisim/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lgsarkadasim.com/es/iletisim/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lgsarkadasim.com/fr/iletisim/"/>
+  </url>
 </urlset>

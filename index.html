@@ -1,233 +1,914 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Berke Yay">
-    <meta name="keywords" content="LGS, LGS Arkadaşım, Mentörlük, Rehberlik">
-    <script src="https://kit.fontawesome.com/b79607bc01.js" crossorigin="anonymous"></script>
-    <title>LGS Arkadaşım</title>
-    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/anaSayfa/main.css">
-    <link rel="stylesheet" media="(max-width: 920px)" href="css/anaSayfa/tablet.css">
-    <link rel="stylesheet" media="(max-width: 500px)" href="css/anaSayfa/mobile.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; font-src 'self'; connect-src 'self' https://formspree.io; object-src 'none'; base-uri 'self'; form-action 'self' https://formspree.io">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>LGS Arkadaşım | Birlikte Başaralım!</title>
+<meta name="description" content="LGS Arkadaşım, Türkiye’nin dört bir yanındaki LGS öğrencilerine bire bir mentörlük, haftalık denemeler, kazanım analizleri ve çok daha fazlasını gönüllülük esasıyla sunan, 2021’den beri süren bir projedir. Bugüne kadar 4 Milyon TL değerinde kitap desteği aldık.">
+<meta name="theme-color" content="#000000">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+<link rel="canonical" href="https://lgsarkadasim.com/">
+<link rel="alternate" hreflang="tr" href="https://lgsarkadasim.com/">
+<link rel="alternate" hreflang="en" href="https://lgsarkadasim.com/en/">
+<link rel="alternate" hreflang="de" href="https://lgsarkadasim.com/de/">
+<link rel="alternate" hreflang="es" href="https://lgsarkadasim.com/es/">
+<link rel="alternate" hreflang="fr" href="https://lgsarkadasim.com/fr/">
+<link rel="alternate" hreflang="x-default" href="https://lgsarkadasim.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="LGS Arkadaşım">
+<meta property="og:title" content="LGS Arkadaşım | Birlikte Başaralım!">
+<meta property="og:description" content="LGS Arkadaşım, Türkiye’nin dört bir yanındaki LGS öğrencilerine bire bir mentörlük, haftalık denemeler, kazanım analizleri ve çok daha fazlasını gönüllülük esasıyla sunan, 2021’den beri süren bir projedir. Bugüne kadar 4 Milyon TL değerinde kitap desteği aldık.">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:url" content="https://lgsarkadasim.com/">
+<meta property="og:image" content="https://lgsarkadasim.com/assets/brand/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="./assets/brand/favicon.png">
+<link rel="apple-touch-icon" href="./assets/brand/favicon.png">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="./fonts/newsreader-latin-opsz-normal.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="./fonts/hanken-grotesk-latin-wght-normal.woff2">
+<link rel="stylesheet" href="./css/styles.css">
 </head>
-<body>
-    <nav id="navbar">
-        <a href="index.html"><img src="assets/lgs_arkadasim_image.png" alt="LGS Arkadaşım"></a>
-        <div class="dropdown-mobile">
-            <button onclick="createNavbarDropdownMobile()" class="dropbtn-mobile"><img src="assets/flags/turkey.png">TR <i class="fa-solid fa-caret-down"></i></button>
-            <div id="navbar-dropdown-mobile" class="dropdown-content-mobile">
-                <a href="#" language="TR"><img src="assets/flags/turkey.png">TR</a>
-                <a href="#" language="EN"><img src="assets/flags/united-states.png">EN</a>
-                <a href="#" language="DE"><img src="assets/flags/germany.png">DE</a>
-                <a href="#" language="ES"><img src="assets/flags/spain.png">ES</a>
-                <a href="#" language="FR"><img src="assets/flags/france.png">FR</a>
-            </div>
-        </div>
-        <ul id="main-menu">
-            <a href="index.html"><li class="ana-sayfa">Ana Sayfa</li></a>
-            <a href="hakkimizda.html"><li>Hakkımızda</li></a>
-            <a href="egitimYiliSureci.html"><li>2025-2026 Eğitim Yılı Süreci</li></a>
-            <!--<a href="hizmetlerimiz.html"><li>Hizmetlerimiz</li></a>-->
-            <a href="sponsorlarimiz.html"><li>Sponsorlarımız</li></a>
-            <a href="iletisim.html"><li>İletişim</li></a>
-        </ul>
-        <div class="dropdown">
-            <button onclick="createNavbarDropdown()" class="dropbtn"><img src="assets/flags/turkey.png">TR <i class="fa-solid fa-caret-down"></i></button>
-            <div id="navbar-dropdown" class="dropdown-content">
-              <a href="#" language="TR"><img src="assets/flags/turkey.png">TR</a>
-              <a href="#" language="EN"><img src="assets/flags/united-states.png">EN</a>
-              <a href="#" language="DE"><img src="assets/flags/germany.png">DE</a>
-              <a href="#" language="ES"><img src="assets/flags/spain.png">ES</a>
-              <a href="#" language="FR"><img src="assets/flags/france.png">FR</a>
-            </div>
-        </div>
-        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
-            <div id="bar-container">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
-            <ul class="mobile-menu">
-                <a href="index.html"><li class="ana-sayfa">Ana Sayfa</li></a>
-                <a href="hakkimizda.html"><li>Hakkımızda</li></a>
-                <a href="egitimYiliSureci.html"><li>2025-2026 Eğitim Yılı Süreci</li></a>
-                <!--<a href="hizmetlerimiz.html"><li>Hizmetlerimiz</li></a>-->
-                <a href="sponsorlarimiz.html"><li>Sponsorlarımız</li></a>
-                <a href="iletisim.html"><li>İletişim</li></a>
-            </ul>
-        </div>
-    </nav>
+<body class="page-home" data-lang="tr">
+<a class="skip" href="#main">İçeriğe geç</a>
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+<symbol id="i-mail" viewBox="0 0 24 24"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+  <rect x="2" y="4" width="20" height="16" rx="2" /></symbol>
+<symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 5h16" />
+  <path d="M4 12h16" />
+  <path d="M4 19h16" /></symbol>
+<symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18" />
+  <path d="m6 6 12 12" /></symbol>
+<symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" />
+  <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+  <path d="M2 12h20" /></symbol>
+<symbol id="i-calendar-days" viewBox="0 0 24 24"><path d="M8 2v3" />
+  <path d="M16 2v3" />
+  <rect x="3" y="3" width="18" height="18" rx="2" />
+  <path d="M3 9h18" />
+  <path d="M8 13h.01" />
+  <path d="M12 13h.01" />
+  <path d="M16 13h.01" />
+  <path d="M8 17h.01" />
+  <path d="M12 17h.01" />
+  <path d="M16 17h.01" /></symbol>
+<symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+  <path d="M16 3.128a4 4 0 0 1 0 7.744" />
+  <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+  <circle cx="9" cy="7" r="4" /></symbol>
+<symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" />
+  <path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z" /></symbol>
+<symbol id="i-list-checks" viewBox="0 0 24 24"><path d="M13 5h8" />
+  <path d="M13 12h8" />
+  <path d="M13 19h8" />
+  <path d="m3 17 2 2 4-4" />
+  <path d="m3 7 2 2 4-4" /></symbol>
+<symbol id="i-monitor-play" viewBox="0 0 24 24"><path d="M15.033 9.44a.647.647 0 0 1 0 1.12l-4.065 2.352a.645.645 0 0 1-.968-.56V7.648a.645.645 0 0 1 .967-.56z" />
+  <path d="M12 17v4" />
+  <path d="M8 21h8" />
+  <rect x="2" y="3" width="20" height="14" rx="2" /></symbol>
+<symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="19" r="3" />
+  <path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15" />
+  <circle cx="18" cy="5" r="3" /></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" /></symbol>
+<symbol id="i-clipboard-list" viewBox="0 0 24 24"><rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
+  <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+  <path d="M12 11h4" />
+  <path d="M12 16h4" />
+  <path d="M8 11h.01" />
+  <path d="M8 16h.01" /></symbol>
+<symbol id="i-thumbs-up" viewBox="0 0 24 24"><path d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2a3.13 3.13 0 0 1 3 3.88Z" />
+  <path d="M7 10v12" /></symbol>
+<symbol id="i-book-open" viewBox="0 0 24 24"><path d="M12 5v16" />
+  <path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z" /></symbol>
+<symbol id="i-calculator" viewBox="0 0 24 24"><rect width="16" height="20" x="4" y="2" rx="2" />
+  <line x1="8" x2="16" y1="6" y2="6" />
+  <line x1="16" x2="16" y1="14" y2="18" />
+  <path d="M16 10h.01" />
+  <path d="M12 10h.01" />
+  <path d="M8 10h.01" />
+  <path d="M12 14h.01" />
+  <path d="M8 14h.01" />
+  <path d="M12 18h.01" />
+  <path d="M8 18h.01" /></symbol>
+<symbol id="i-flask-conical" viewBox="0 0 24 24"><path d="M14 2v6a2 2 0 0 0 .245.96l5.51 10.08A2 2 0 0 1 18 22H6a2 2 0 0 1-1.755-2.96l5.51-10.08A2 2 0 0 0 10 8V2" />
+  <path d="M6.453 15h11.094" />
+  <path d="M8.5 2h7" /></symbol>
+<symbol id="i-landmark" viewBox="0 0 24 24"><path d="M10 18v-7" />
+  <path d="M11.119 2.205a2 2 0 0 1 1.762 0l7.84 3.846A.5.5 0 0 1 20.5 7h-17a.5.5 0 0 1-.22-.949z" />
+  <path d="M14 18v-7" />
+  <path d="M18 18v-7" />
+  <path d="M3 22h18" />
+  <path d="M6 18v-7" /></symbol>
+<symbol id="i-languages" viewBox="0 0 24 24"><path d="m5 8 6 6" />
+  <path d="m4 14 6-6 2-3" />
+  <path d="M2 5h12" />
+  <path d="M7 2h1" />
+  <path d="m22 22-5-10-5 10" />
+  <path d="M14 18h6" /></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5" /></symbol>
+<symbol id="i-star" viewBox="0 0 24 24"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></symbol>
+<symbol id="i-flag" viewBox="0 0 24 24"><path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528" /></symbol>
+<symbol id="i-corner-left-up" viewBox="0 0 24 24"><path d="M14 9 9 4 4 9" />
+  <path d="M20 20h-7a4 4 0 0 1-4-4V4" /></symbol>
+<symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14" />
+  <path d="m12 5 7 7-7 7" /></symbol>
+<symbol id="i-arrow-up-right" viewBox="0 0 24 24"><path d="M7 7h10v10" />
+  <path d="M7 17 17 7" /></symbol>
+<symbol id="i-send" viewBox="0 0 24 24"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" />
+  <path d="m21.854 2.147-10.94 10.939" /></symbol>
+<symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6" /></symbol>
+<symbol id="i-graduation-cap" viewBox="0 0 24 24"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" />
+  <path d="M22 10v6" />
+  <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" /></symbol>
+<symbol id="i-handshake" viewBox="0 0 24 24"><path d="m11 17 2 2a1 1 0 1 0 3-3" />
+  <path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4" />
+  <path d="m21 3 1 11h-2" />
+  <path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3" />
+  <path d="M3 4h8" /></symbol>
+<symbol id="i-heart-handshake" viewBox="0 0 24 24"><path d="M19.414 14.414C21 12.828 22 11.5 22 9.5a5.5 5.5 0 0 0-9.591-3.676.6.6 0 0 1-.818.001A5.5 5.5 0 0 0 2 9.5c0 2.3 1.5 4 3 5.5l5.535 5.362a2 2 0 0 0 2.879.052 2.12 2.12 0 0 0-.004-3 2.124 2.124 0 1 0 3-3 2.124 2.124 0 0 0 3.004 0 2 2 0 0 0 0-2.828l-1.881-1.882a2.41 2.41 0 0 0-3.409 0l-1.71 1.71a2 2 0 0 1-2.828 0 2 2 0 0 1 0-2.828l2.823-2.762" /></symbol>
+<symbol id="i-sparkles" viewBox="0 0 24 24"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z" />
+  <path d="M20 2v4" />
+  <path d="M22 4h-4" />
+  <circle cx="4" cy="20" r="2" /></symbol>
+<symbol id="i-message-circle" viewBox="0 0 24 24"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></symbol>
+<symbol id="i-heart" viewBox="0 0 24 24"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" /></symbol>
+<symbol id="i-moon-star" viewBox="0 0 24 24"><path d="M18 5h4" />
+  <path d="M20 3v4" />
+  <path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401" /></symbol>
+<symbol id="i-hourglass" viewBox="0 0 24 24"><path d="M5 22h14" />
+  <path d="M5 2h14" />
+  <path d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22" />
+  <path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2" /></symbol>
+<symbol id="i-circle-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" />
+  <path d="m16 9-5.5 5.5L8 12" /></symbol>
+<symbol id="i-badge-check" viewBox="0 0 24 24"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+  <path d="m16 9-5.5 5.5L8 12" /></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" />
+  <path d="M12 6v6l4 2" /></symbol>
+<symbol id="i-school" viewBox="0 0 24 24"><path d="M14 21v-3a2 2 0 0 0-4 0v3" />
+  <path d="M18 4.933V21" />
+  <path d="m4 6 7.106-3.79a2 2 0 0 1 1.788 0L20 6" />
+  <path d="m6 11-3.52 2.147a1 1 0 0 0-.48.854V19a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5a1 1 0 0 0-.48-.853L18 11" />
+  <path d="M6 4.933V21" />
+  <circle cx="12" cy="9" r="2" /></symbol>
+<symbol id="i-brain" viewBox="0 0 24 24"><path d="M12 18V5" />
+  <path d="M15 13a4.17 4.17 0 0 1-3-4 4.17 4.17 0 0 1-3 4" />
+  <path d="M17.598 6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5" />
+  <path d="M17.997 5.125a4 4 0 0 1 2.526 5.77" />
+  <path d="M18 18a4 4 0 0 0 2-7.464" />
+  <path d="M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517" />
+  <path d="M6 18a4 4 0 0 1-2-7.464" />
+  <path d="M6.003 5.125a4 4 0 0 0-2.526 5.77" /></symbol>
+<symbol id="i-play" viewBox="0 0 24 24"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z" /></symbol>
+<symbol id="i-map-pin" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+  <circle cx="12" cy="10" r="3" /></symbol>
+<symbol id="i-library" viewBox="0 0 24 24"><path d="m16 6 4 14" />
+  <path d="M12 6v14" />
+  <path d="M8 8v12" />
+  <path d="M4 4v16" /></symbol>
+<symbol id="i-plus" viewBox="0 0 24 24"><path d="M5 12h14" />
+  <path d="M12 5v14" /></symbol>
+<symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" />
+  <circle cx="12" cy="12" r="6" />
+  <circle cx="12" cy="12" r="2" /></symbol>
+<symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" />
+  <circle cx="12" cy="12" r="3" /></symbol>
+<symbol id="i-scale" viewBox="0 0 24 24"><path d="M12 3v18" />
+  <path d="m19 8 3 8a5 5 0 0 1-6 0zV7" />
+  <path d="M3 7h1a17 17 0 0 0 8-2 17 17 0 0 0 8 2h1" />
+  <path d="m5 8 3 8a5 5 0 0 1-6 0zV7" />
+  <path d="M7 21h10" /></symbol>
+<symbol id="i-wallet" viewBox="0 0 24 24"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1" />
+  <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4" /></symbol>
+<symbol id="i-quote" viewBox="0 0 24 24"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z" />
+  <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z" /></symbol>
+<symbol id="i-instagram" viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></symbol>
+<symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></symbol>
+</svg>
 
-    <div id="introductory-section">
-        <div id="general-part">
-            <h1>LGS <br> Arkadaşım</h1>
-            <h3>Birlikte Başaralım!</h3>
-            <!--<a href="#" target="_blank">Başvur</a>-->
-        </div>
-
-        <div id="mission">
-            <p><b>Projenin misyonu</b>; <br> Türkiye'nin dört bir yanındaki LGS öğrencilerine:</p><br>
-                <ul>
-                    <li>özel ders,</li>
-                    <li>bire bir mentörlük,</li>
-                    <li>deneme tecrübesi</li>
-                    <li>ve çok daha fazlasını sağlamaktır.</li>
-                </ul>
-            <center><a href="hakkimizda.html">Daha Fazla Bilgi edinin <i class="fa-solid fa-arrow-right"></i></a></center>
-        </div>
-    </div>
-
-    <div id="mentorship-section">
-        <div id="question">
-            <h2>Mentor Görevleri <br>Nelerdir?</h2>
-        </div>
-
-        <div id="responsibilities">
-            <div class="responsibility">
-                <table>
-                    <tr>
-                        <td><i class="fa-solid fa-phone"></i></td>
-                        <td><span>Öğrencisi ile her hafta iletişim kuracak.</span></td>
-                    </tr>
-                </table>
-            </div>
-            <div class="responsibility">
-                <table>
-                    <tr>
-                        <td><i class="fa-solid fa-clipboard-list"></i></td>
-                        <td><span>Haftalık yapılacak olan online denemelerin online sistemimiz  üzerinden hazırlanan 
-                                kazanım analizlerine bakarak öğrencilerine ödev verirler.</span></td>
-                    </tr>
-                </table>
-            </div>
-            <div class="responsibility">
-                <table>
-                    <tr>
-                        <td><i class="fa-solid fa-thumbs-up"></i></td>
-                        <td><span>Öğrencisine moral ve motivasyon verecektir.</span></td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-
-    </div>
-
-    <h2 id="lessons-section-title">Öğrencilerin Destek Alabileceği Dersler</h2>
-    <p id="lesson-section-p">Liseye Geçiş Sınavı'nın içinde olan bütün derslerden programda destek alabiliyorsunuz.</p>
-    <div id="lessons-section">
-        <div class="lesson" id="turkish">
-            <i class="fa-solid fa-book"></i>
-            <span>Türkçe</span>
-        </div>
-        <div class="lesson" id="maths">
-            <i class="fa-solid fa-calculator"></i>
-            <span>Matematik</span>
-        </div>
-        <div class="lesson" id="science">
-            <i class="fa-solid fa-flask"></i>
-            <span>Fen Bilimleri</span>
-        </div>
-        <div class="lesson" id="social-studies-turkiye">
-            <img src="assets/map.png">
-            <span>T.C. İnkılap Tarihi ve Atatürkçülük</span>
-        </div>
-        <div class="lesson" id="religion">
-            <i class="fa-solid fa-mosque"></i>
-            <span>Din Kültürü ve Ahlak Bilgisi</span>
-        </div>
-        <div class="lesson" id="english">
-            <i class="fa-solid fa-language"></i>
-            <span>İngilizce</span>
-        </div>
-    </div>
-
-<!--
-    <div id="comments-section">
-        <div id="section-title">
-            <h2>Geçmiş Öğrencilerimizin <br>Yorumları</h2>
-        </div>
-        <div class="slider">
-            <div class="comments-all">
-                <! --Radio buttons
-                <input type="radio" name="radio-btn" id="radio1">
-                <input type="radio" name="radio-btn" id="radio2">
-                <! --Comments
-                <div class="comment first">
-                    <p>
-                        “Gerek mentörlerimizin ilgisi gerekse arkadaşlarımla aramızdaki etkileşimle sınav sürecinde bana 
-                        yardımcı oldu. Sınav sonrasında da mentörlerimiz tercih sürecinde bize destek oldular.”
-                    </p> <hr>
-                    <span>Defne Demirci - 500 puan (LGS 2023)</span>
-                </div>
+<header class="site-header" data-header data-lang="tr">
+  <div class="wrap header__in">
+    <a class="brand" href="./index.html" aria-label="LGS Arkadaşım ana sayfa">
+      <img src="./assets/brand/logo-light.png" alt="LGS Arkadaşım" width="410" height="108">
+    </a>
+    <nav class="nav" id="site-nav" aria-label="Ana menü" data-nav>
+      <ul>
         
-                <div class="comment">
-                    <p>
-                        “Online denemelerde hangi konuda eksiğin olduğunu anlayabiliyorsun ve eksik konu tamamlama konusunda
-                        çok yardımcı bir program.”
-                    </p> <hr>
-                    <span>Erkan Yuşa Özgöç - 494 puan (LGS 2023)</span>
-                </div>
-                <! --Auto Navigation
-                <div class="navigation-auto">
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn2"></div>
-                </div>
-            </div>
-            <! --Manual Navigation
-            <div class="navigation-manual">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-            </div>
-        </div>
-    </div>    
--->
-
-    <footer id="footer-section">
-        <div id="contact-us-section">
-            <div id="info-part">
-                <img src="assets/lgs_arkadasim_image.png">
-                <a href="mailto:lgsarkadasimprojesi@gmail.com">lgsarkadasimprojesi@gmail.com</a>
-                <ul>
-                    <li><a href="https://www.instagram.com/lgsarkadasimprojesi/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="https://www.linkedin.com/company/99830699/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-                </ul> 
-            </div>
-            <div id="form-part">
-                <h2>Bize Ulaşın: </h2>
-                <span>Herhangi bir sorunuz olursa aşağıdaki linkte bulunan formu doldurabilirsiniz.</span> <br>
-                <div><a href="iletisim.html">İletişim Formu</a></div>
-            </div>
-        </div>
-        <ul id="bottom-navbar">
-            <li><a href="index.html">Ana Sayfa</a></li>
-            <li><a href="hakkimizda.html">Hakkımızda</a></li>
-            <li><a href="egitimYiliSureci.html">2025-2026 Eğitim Yılı Süreci</a></li>
-            <!--<li><a href="hizmetlerimiz.html">Hizmetlerimiz</a></li>-->
-            <li><a href="sponsorlarimiz.html">Sponsorlarımız</a></li>
+        <li><a href="./index.html" aria-current="page"><span>Ana Sayfa</span></a></li>
+        
+        <li><a href="./hakkimizda/index.html"><span>Hakkımızda</span></a></li>
+        
+        <li><a href="./egitim-yili-sureci/index.html"><span>2026-2027 Eğitim Yılı Süreci</span></a></li>
+        
+        <li><a href="./sponsorlarimiz/index.html"><span>Sponsorlarımız</span></a></li>
+        
+        <li><a href="./iletisim/index.html"><span>İletişim</span></a></li>
+        
+      </ul>
+      <div class="nav__foot">
+        <a class="nav__ig" href="https://www.instagram.com/lgsarkadasimprojesi/" target="_blank" rel="noopener">
+          <svg class="ic" aria-hidden="true" focusable="false"><use href="#i-instagram"/></svg><span>Instagram’da takip et</span>
+        </a>
+        <a class="nav__li" href="https://www.linkedin.com/company/99830699/" target="_blank" rel="noopener">
+          <svg class="ic" aria-hidden="true" focusable="false"><use href="#i-linkedin"/></svg><span>LinkedIn’de takip et</span>
+        </a>
+        <a class="nav__mail" href="mailto:lgsarkadasimprojesi@gmail.com"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-mail"/></svg><span>lgsarkadasimprojesi@gmail.com</span></a>
+      </div>
+    </nav>
+    <div class="header__tools">
+      <div class="lang" data-lang-menu>
+        <button class="lang__btn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Dil seç">
+          <img class="flag" src="./assets/flags/tr.png" alt="" width="22" height="22"><span class="lang__code">TR</span><svg class="ic ic--s" aria-hidden="true" focusable="false"><use href="#i-chevron-down"/></svg>
+        </button>
+        <ul class="lang__list" role="list">
+          
+          <li><a href="./index.html" hreflang="tr" lang="tr" aria-current="true"><img class="flag" src="./assets/flags/tr.png" alt="" width="22" height="22"><b>TR</b><span>Türkçe</span><svg class="ic ic--s lang__tick" aria-hidden="true" focusable="false"><use href="#i-check"/></svg></a></li>
+          
+          <li><a href="./en/index.html" hreflang="en" lang="en"><img class="flag" src="./assets/flags/en.png" alt="" width="22" height="22"><b>EN</b><span>English</span></a></li>
+          
+          <li><a href="./de/index.html" hreflang="de" lang="de"><img class="flag" src="./assets/flags/de.png" alt="" width="22" height="22"><b>DE</b><span>Deutsch</span></a></li>
+          
+          <li><a href="./es/index.html" hreflang="es" lang="es"><img class="flag" src="./assets/flags/es.png" alt="" width="22" height="22"><b>ES</b><span>Español</span></a></li>
+          
+          <li><a href="./fr/index.html" hreflang="fr" lang="fr"><img class="flag" src="./assets/flags/fr.png" alt="" width="22" height="22"><b>FR</b><span>Français</span></a></li>
+          
         </ul>
-    </footer>
+      </div>
+      <a class="btn btn--orange btn--sm header__ig" href="https://www.instagram.com/lgsarkadasimprojesi/" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg class="ic" aria-hidden="true" focusable="false"><use href="#i-instagram"/></svg><span>Instagram</span>
+      </a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menü" data-burger>
+        <span class="burger__bars" aria-hidden="true"><i></i><i></i><i></i></span>
+      </button>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+<section class="hero">
+  <div class="wrap hero__grid">
+    <div class="hero__copy">
+      <p class="hero__badge"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-star"/></svg>Türkiye’nin en büyük LGS projesi</p>
+      <h1 class="hero__title wm">
+        <span class="sr-only">LGS Arkadaşım</span>
+        <span class="wm__lgs" aria-hidden="true">LGS</span>
+        <img class="wm__ark" src="./assets/brand/arkadasim.svg" alt="" width="252" height="75">
+      </h1>
+      <p class="hero__tagline">Birlikte Başaralım!</p>
+      <p class="hero__lead">Projenin misyonu; Türkiye’nin dört bir yanındaki LGS öğrencilerine:</p>
+      <ul class="mission">
+        <li>bire bir mentörlük,</li><li>ücretsiz kaynak,</li><li>soru çözümü</li><li>ve çok daha fazlasını sağlamaktır.</li>
+      </ul>
+      <div class="hero__cta">
+        <a class="btn btn--orange btn--lg" href="https://www.instagram.com/lgsarkadasimprojesi/" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-instagram"/></svg>Instagram’da takip et</a>
+        <a class="btn btn--ghost btn--lg" href="./egitim-yili-sureci/index.html">Program sürecini gör</a>
+      </div>
+    </div>
+    <figure class="sheet" role="img" aria-label="Her baloncuk bir öğrencimiz: 146 öğrenciden 24’i %1’lik dilimde, 2’si tam puan yaptı.">
+  <div class="sheet__paper" aria-hidden="true">
+    <span class="reg reg--tl"></span><span class="reg reg--tr"></span><span class="reg reg--bl"></span><span class="reg reg--br"></span>
+    <p class="sheet__title">LGS 2026</p>
+    <ol class="bubbles">
+      <li class="bub bub--perfect" style="--i:0"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-star"/></svg></li><li class="bub bub--perfect" style="--i:1"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-star"/></svg></li><li class="bub bub--top" style="--i:2"></li><li class="bub bub--top" style="--i:3"></li><li class="bub bub--top" style="--i:4"></li><li class="bub bub--top" style="--i:5"></li><li class="bub bub--top" style="--i:6"></li><li class="bub bub--top" style="--i:7"></li><li class="bub bub--top" style="--i:8"></li><li class="bub bub--top" style="--i:9"></li><li class="bub bub--top" style="--i:10"></li><li class="bub bub--top" style="--i:11"></li><li class="bub bub--top" style="--i:12"></li><li class="bub bub--top" style="--i:13"></li><li class="bub bub--top" style="--i:14"></li><li class="bub bub--top" style="--i:15"></li><li class="bub bub--top" style="--i:16"></li><li class="bub bub--top" style="--i:17"></li><li class="bub bub--top" style="--i:18"></li><li class="bub bub--top" style="--i:19"></li><li class="bub bub--top" style="--i:20"></li><li class="bub bub--top" style="--i:21"></li><li class="bub bub--top" style="--i:22"></li><li class="bub bub--top" style="--i:23"></li><li class="bub bub--none" style="--i:24"></li><li class="bub bub--none" style="--i:25"></li><li class="bub bub--none" style="--i:26"></li><li class="bub bub--none" style="--i:27"></li><li class="bub bub--none" style="--i:28"></li><li class="bub bub--none" style="--i:29"></li><li class="bub bub--none" style="--i:30"></li><li class="bub bub--none" style="--i:31"></li><li class="bub bub--none" style="--i:32"></li><li class="bub bub--none" style="--i:33"></li><li class="bub bub--none" style="--i:34"></li><li class="bub bub--none" style="--i:35"></li><li class="bub bub--none" style="--i:36"></li><li class="bub bub--none" style="--i:37"></li><li class="bub bub--none" style="--i:38"></li><li class="bub bub--none" style="--i:39"></li><li class="bub bub--none" style="--i:40"></li><li class="bub bub--none" style="--i:41"></li><li class="bub bub--none" style="--i:42"></li><li class="bub bub--none" style="--i:43"></li><li class="bub bub--none" style="--i:44"></li><li class="bub bub--none" style="--i:45"></li><li class="bub bub--none" style="--i:46"></li><li class="bub bub--none" style="--i:47"></li><li class="bub bub--none" style="--i:48"></li><li class="bub bub--none" style="--i:49"></li><li class="bub bub--none" style="--i:50"></li><li class="bub bub--none" style="--i:51"></li><li class="bub bub--none" style="--i:52"></li><li class="bub bub--none" style="--i:53"></li><li class="bub bub--none" style="--i:54"></li><li class="bub bub--none" style="--i:55"></li><li class="bub bub--none" style="--i:56"></li><li class="bub bub--none" style="--i:57"></li><li class="bub bub--none" style="--i:58"></li><li class="bub bub--none" style="--i:59"></li><li class="bub bub--none" style="--i:60"></li><li class="bub bub--none" style="--i:61"></li><li class="bub bub--none" style="--i:62"></li><li class="bub bub--none" style="--i:63"></li><li class="bub bub--none" style="--i:64"></li><li class="bub bub--none" style="--i:65"></li><li class="bub bub--none" style="--i:66"></li><li class="bub bub--none" style="--i:67"></li><li class="bub bub--none" style="--i:68"></li><li class="bub bub--none" style="--i:69"></li><li class="bub bub--none" style="--i:70"></li><li class="bub bub--none" style="--i:71"></li><li class="bub bub--none" style="--i:72"></li><li class="bub bub--none" style="--i:73"></li><li class="bub bub--none" style="--i:74"></li><li class="bub bub--none" style="--i:75"></li><li class="bub bub--none" style="--i:76"></li><li class="bub bub--none" style="--i:77"></li><li class="bub bub--none" style="--i:78"></li><li class="bub bub--none" style="--i:79"></li><li class="bub bub--none" style="--i:80"></li><li class="bub bub--none" style="--i:81"></li><li class="bub bub--none" style="--i:82"></li><li class="bub bub--none" style="--i:83"></li><li class="bub bub--none" style="--i:84"></li><li class="bub bub--none" style="--i:85"></li><li class="bub bub--none" style="--i:86"></li><li class="bub bub--none" style="--i:87"></li><li class="bub bub--none" style="--i:88"></li><li class="bub bub--none" style="--i:89"></li><li class="bub bub--none" style="--i:90"></li><li class="bub bub--none" style="--i:91"></li><li class="bub bub--none" style="--i:92"></li><li class="bub bub--none" style="--i:93"></li><li class="bub bub--none" style="--i:94"></li><li class="bub bub--none" style="--i:95"></li><li class="bub bub--none" style="--i:96"></li><li class="bub bub--none" style="--i:97"></li><li class="bub bub--none" style="--i:98"></li><li class="bub bub--none" style="--i:99"></li><li class="bub bub--none" style="--i:100"></li><li class="bub bub--none" style="--i:101"></li><li class="bub bub--none" style="--i:102"></li><li class="bub bub--none" style="--i:103"></li><li class="bub bub--none" style="--i:104"></li><li class="bub bub--none" style="--i:105"></li><li class="bub bub--none" style="--i:106"></li><li class="bub bub--none" style="--i:107"></li><li class="bub bub--none" style="--i:108"></li><li class="bub bub--none" style="--i:109"></li><li class="bub bub--none" style="--i:110"></li><li class="bub bub--none" style="--i:111"></li><li class="bub bub--none" style="--i:112"></li><li class="bub bub--none" style="--i:113"></li><li class="bub bub--none" style="--i:114"></li><li class="bub bub--none" style="--i:115"></li><li class="bub bub--none" style="--i:116"></li><li class="bub bub--none" style="--i:117"></li><li class="bub bub--none" style="--i:118"></li><li class="bub bub--none" style="--i:119"></li><li class="bub bub--none" style="--i:120"></li><li class="bub bub--none" style="--i:121"></li><li class="bub bub--none" style="--i:122"></li><li class="bub bub--none" style="--i:123"></li><li class="bub bub--none" style="--i:124"></li><li class="bub bub--none" style="--i:125"></li><li class="bub bub--none" style="--i:126"></li><li class="bub bub--none" style="--i:127"></li><li class="bub bub--none" style="--i:128"></li><li class="bub bub--none" style="--i:129"></li><li class="bub bub--none" style="--i:130"></li><li class="bub bub--none" style="--i:131"></li><li class="bub bub--none" style="--i:132"></li><li class="bub bub--none" style="--i:133"></li><li class="bub bub--none" style="--i:134"></li><li class="bub bub--none" style="--i:135"></li><li class="bub bub--none" style="--i:136"></li><li class="bub bub--none" style="--i:137"></li><li class="bub bub--none" style="--i:138"></li><li class="bub bub--none" style="--i:139"></li><li class="bub bub--none" style="--i:140"></li><li class="bub bub--none" style="--i:141"></li><li class="bub bub--none" style="--i:142"></li><li class="bub bub--none" style="--i:143"></li><li class="bub bub--none" style="--i:144"></li><li class="bub bub--none" style="--i:145"></li>
+    </ol>
+    <ul class="legend">
+      <li><span class="key key--none"></span><b>146</b> öğrenci</li>
+      <li><span class="key key--top"></span><b>24</b> öğrenci %1’lik dilimde</li>
+      <li><span class="key key--perfect"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-star"/></svg></span><b>2</b> öğrenci tam puan yaptı</li>
+    </ul>
+  </div>
+</figure>
+
+  </div>
+</section>
 
 
-    <script>
-        var counter = 1;
-        setInterval(function(){
-            document.getElementById("radio"+counter).checked = true;
-            counter++;
-            if(counter>2){
-                counter = 1;
-            }
-        }, 6500);
-        var isMobileMenuOpen = false;
-    </script>
-    <script src="languageTranslationJS/index.js"></script>
-    <script src="languageTranslationJS/global.js"></script>
-    
+<div class="ticker">
+  <div class="ticker__track">
+    <ul class="ticker__list">
+      <li>Türkiye’nin en büyük LGS projesi</li><li>Tamamen gönüllülük esasıyla</li><li>4 Milyon TL değerinde kitap desteği</li><li>Bire bir mentörlük</li><li>Haftalık online denemeler</li><li>Kazanım analizleri</li><li>2021’den beri</li><li>Türkiye’nin dört bir yanından öğrenciler</li>
+    </ul>
+    <ul class="ticker__list" aria-hidden="true">
+      <li>Türkiye’nin en büyük LGS projesi</li><li>Tamamen gönüllülük esasıyla</li><li>4 Milyon TL değerinde kitap desteği</li><li>Bire bir mentörlük</li><li>Haftalık online denemeler</li><li>Kazanım analizleri</li><li>2021’den beri</li><li>Türkiye’nin dört bir yanından öğrenciler</li>
+    </ul>
+  </div>
+</div>
+
+
+<section class="section impact" aria-labelledby="impact-h">
+  <div class="wrap impact__grid">
+    <div class="impact__lead">
+      <h2 id="impact-h" class="display">Geçen sene 146 öğrenci arasından 24 öğrenci %1’lik dilime girdi.</h2>
+      
+      <p class="impact__perfect"><span class="medal"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-star"/></svg></span>2 öğrencimiz de tam puan yaptı.</p>
+      
+    </div>
+    <div class="compare" data-compare>
+      <h3 class="compare__title">%1’lik dilime girme oranı</h3>
+      <div class="bar">
+        <span class="bar__label">Türkiye geneli</span>
+        <span class="bar__track"><span class="bar__fill bar__fill--nat" style="--w:6.08%"></span></span>
+        <span class="bar__val" data-count="1" data-locale="tr-TR">%1</span>
+      </div>
+      <div class="bar bar--us">
+        <span class="bar__label">LGS Arkadaşım öğrencileri</span>
+        <span class="bar__track"><span class="bar__fill bar__fill--us" style="--w:100.00%"></span></span>
+        <span class="bar__val" data-count="16.44" data-locale="tr-TR">%16,4</span>
+      </div>
+      <p class="compare__note">LGS 2026, 146 öğrencimiz</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="section section--black books" id="kitap-destegi" aria-labelledby="bk-h">
+  <div class="wrap books__grid">
+    <div class="books__main">
+      <p class="books__label"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-library"/></svg>Toplam kitap desteği</p>
+      <p class="books__amount" aria-hidden="true">4 Milyon TL</p>
+      <h2 id="bk-h" class="display display--s">Bugüne kadar 4 Milyon TL değerinde kitap desteği aldık.</h2>
+      <p class="lead">Sponsorlarımız olan yayınevleri projemize kitap ve kaynak desteği sağlıyor. Bu destek sayesinde öğrencilerimizin kaynaklara ulaşmasına katkıda bulunuyoruz. Emeği geçen tüm yayınevlerine teşekkür ederiz.</p>
+      <a class="btn btn--orange btn--lg" href="./sponsorlarimiz/index.html"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-handshake"/></svg>Sponsorlarımızı gör</a>
+    </div>
+    <aside class="books__card">
+      <div class="spines" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <p class="books__card-label">Yalnızca geçen yıl</p>
+      <p class="books__card-amount">1.500.000 TL</p>
+      <p class="books__card-text">değerinde kitap desteğinin tamamı Eksen Yayın Grubu’ndan geldi.</p>
+    </aside>
+  </div>
+</section>
+
+
+
+<section class="section section--paper mv" id="misyon" aria-labelledby="mv-h">
+  <div class="wrap">
+    <div class="section__head">
+      <h2 id="mv-h" class="display display--m">Misyonumuz ve vizyonumuz</h2>
+    </div>
+    <div class="mv__cards">
+      <article class="mvcard mvcard--mission">
+        <span class="mvcard__ico"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-target"/></svg></span>
+        <h3 class="mvcard__h">Misyonumuz</h3>
+        <p>LGS öğrencilerine bire bir mentörlük, ücretsiz kaynak, soru çözümü ve çok daha fazlasını gönüllülük esasıyla ulaştırmak. Hangi şehirde yaşadığına ya da hangi imkânlara sahip olduğuna bakılmaksızın her öğrencinin kaliteli, planlı ve düzenli takip edilen bir LGS hazırlığı yapabilmesini sağlamak; öğrencilerimize bu yolculukta tam potansiyellerine ulaşmaları için eşlik etmek.</p>
+      </article>
+      <article class="mvcard mvcard--vision">
+        <span class="mvcard__ico"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-eye"/></svg></span>
+        <h3 class="mvcard__h">Vizyonumuz</h3>
+        <p>LGS’ye hazırlanan her öğrencinin yanında, deneyimini paylaşmaya hazır bir arkadaşının bulunduğu bir Türkiye hayal ediyoruz. Fırsat eşitliğine ve gönüllülüğe dayanan bu dayanışma ağını her yıl büyüterek Türkiye’nin en kapsamlı ve en güvenilir LGS mentörlük programı olmayı; gönüllü gençlerimizin de topluma değer katan bireyler olarak yetişmesine katkı sağlamayı hedefliyoruz.</p>
+      </article>
+    </div>
+    <h3 class="values__h">Çalışma ilkelerimiz</h3>
+    <ul class="values">
+      
+      <li>
+        <span class="ico"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-scale"/></svg></span>
+        <h4>Fırsat eşitliği</h4>
+        <p>Nitelikli bir hazırlık süreci, öğrencinin yaşadığı şehre ya da ailesinin imkânlarına bağlı olmamalı. Programımız bu yüzden tamamen ücretsizdir.</p>
+      </li>
+      
+      <li>
+        <span class="ico"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-heart-handshake"/></svg></span>
+        <h4>Gönüllülük</h4>
+        <p>LGS Arkadaşım’da emek veren herkes gönüllüdür. Hiç kimse bu çalışmadan maddi kazanç sağlamaz; tek amacımız öğrencilerimize destek olmaktır.</p>
+      </li>
+      
+      <li>
+        <span class="ico"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-users"/></svg></span>
+        <h4>Arkadaşlık</h4>
+        <p>Mentörlerimiz bu yoldan birkaç yıl önce geçmiş, sınav heyecanını ve stresini çok iyi bilen gençlerdir. Öğrencilerimizle aynı dili konuşarak, yan yana ilerleriz.</p>
+      </li>
+      
+      <li>
+        <span class="ico"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-list-checks"/></svg></span>
+        <h4>Düzen ve takip</h4>
+        <p>Haftalık denemeler, kazanım analizleri ve ödevlerle her öğrencinin çalışması düzenli olarak takip edilir; hiçbir öğrenci yolda yalnız kalmaz.</p>
+      </li>
+      
+    </ul>
+  </div>
+</section>
+
+
+
+<section class="section section--white what" id="ne-yapiyoruz" aria-labelledby="what-h">
+  <div class="wrap">
+    <div class="section__head section__head--wide">
+      <h2 id="what-h" class="display display--m">Tam olarak ne yapıyoruz?</h2>
+      <p class="lead lead--wide">LGS Arkadaşım, 8. sınıf öğrencilerini bir eğitim yılı boyunca LGS’ye hazırlayan, tamamen gönüllülerle yürütülen bir mentörlük ve destek programıdır. Her öğrenciyi Türkiye’nin seçkin liselerinde okuyan bir mentörle eşleştirir; haftalık denemeler, kazanım analizleri, ödevler ve soru çözüm sınıfları sayesinde çalışmayı düzenli ve ölçülebilir hale getiririz. Sınavdan sonra da öğrencilerimizi bırakmaz, tercih döneminde yanlarında oluruz. Yıl boyunca öğrenci psikolojisine yönelik seminerler de düzenleriz. LGS Arkadaşım bir özel ders ya da kurs programı değildir; odağımız bire bir mentörlük, ücretsiz kaynaklar ve soru çözümüdür.</p>
+    </div>
+    <ul class="what-grid">
+      
+      <li>
+        <span class="ico"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-compass"/></svg></span>
+        <h3>Bire bir mentörlük</h3>
+        <p>Her öğrencinin kendi mentörü vardır. Mentörler öğrencileriyle düzenli olarak iletişim kurar, sorularını cevaplar ve çalışma düzeni konusunda tavsiyelerde bulunur.</p>
+      </li>
+      
+      <li>
+        <span class="ico"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-monitor-play"/></svg></span>
+        <h3>Haftalık online denemeler</h3>
+        <p>Her hafta çeşitli yayınlardan deneme olunur. Böylece öğrenciler farklı soru tarzlarını tanır, sınav temposuna ve süre yönetimine alışır.</p>
+      </li>
+      
+      <li>
+        <span class="ico"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-clipboard-list"/></svg></span>
+        <h3>Kazanım analizleri</h3>
+        <p>Online sistemimizde her denemenin kazanım analizi hazırlanır. Öğrencinin hangi konularda güçlü, hangi konularda desteğe ihtiyacı olduğu net biçimde görülür.</p>
+      </li>
+      
+      <li>
+        <span class="ico"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-book-open"/></svg></span>
+        <h3>Kişiye özel ödevler</h3>
+        <p>Mentörler kazanım analizlerine bakarak öğrencilerine eksik oldukları konularda soru ve ödev verir. Çalışma, her öğrencinin ihtiyacına göre şekillenir.</p>
+      </li>
+      
+      <li>
+        <span class="ico"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-users"/></svg></span>
+        <h3>WhatsApp üzerinden soru çözüm sınıfları</h3>
+        <p>Her ders için WhatsApp üzerinden bir sınıf açılır. Mentörlerimiz öğrencilerin yapamadıkları soruları çözerek onlara yardımcı olur.</p>
+      </li>
+      
+      <li>
+        <span class="ico"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-thumbs-up"/></svg></span>
+        <h3>Moral ve motivasyon</h3>
+        <p>LGS uzun ve yorucu bir yolculuktur. Mentörler her hafta öğrencileriyle iletişim kurar; zor günlerde moral, iyi günlerde motivasyon verir.</p>
+      </li>
+      
+      <li>
+        <span class="ico"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-brain"/></svg></span>
+        <h3>Öğrenci psikolojisi seminerleri</h3>
+        <p>Eğitim yılı boyunca öğrencilerimiz için öğrenci psikolojisine yönelik seminerler düzenliyoruz. LGS’nin uzun ve yorucu yolculuğunda öğrencilerin ruhsal olarak da desteklenmesini önemsiyoruz.</p>
+      </li>
+      
+      <li>
+        <span class="ico"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-route"/></svg></span>
+        <h3>Tercih sürecinde destek</h3>
+        <p>Sınav bittikten sonra mentörler tercih döneminde de öğrencilerinin yanındadır ve hangi liseyi seçecekleri konusunda yol gösterir.</p>
+      </li>
+      
+      <li>
+        <span class="ico"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-library"/></svg></span>
+        <h3>Kaynak desteği</h3>
+        <p>Yayınevi sponsorlarımızın sağladığı kitap desteğiyle, öğrencilerimizin kaynaklara ulaşmasına katkıda bulunuyoruz.</p>
+      </li>
+      
+    </ul>
+    <p class="section__more"><a class="link" href="./egitim-yili-sureci/index.html">Programın yıl boyunca işleyişini gör</a></p>
+  </div>
+</section>
+
+
+
+<section class="section section--paper who" id="kimler" aria-labelledby="who-h">
+  <div class="wrap who__grid">
+    <div class="who__copy">
+      <h2 id="who-h" class="display display--m">Kimler başvurabilir?</h2>
+      <p class="lead">LGS Arkadaşım, LGS’ye hazırlanan ve nitelikli bir hazırlık sürecine destek arayan 8. sınıf öğrencileri için tasarlandı.</p>
+      <p class="who__note"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-calendar-days"/></svg><span>Öğrenci başvuruları her eğitim yılı Eylül ayında alınır; tarihler ve başvuru bağlantısı Instagram hesabımızdan duyurulur. Güncel takvim için program süreci sayfamıza göz atabilirsiniz.</span></p>
+    </div>
+    <ul class="who__list">
+      
+      <li>
+        <span class="ico"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-graduation-cap"/></svg></span>
+        <div><h3>8. sınıf öğrencileri</h3><p>Programımız, o yıl LGS’ye girecek 8. sınıf öğrencilerine yöneliktir.</p></div>
+      </li>
+      
+      <li>
+        <span class="ico"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-school"/></svg></span>
+        <div><h3>Devlet okulu ya da tam burslu özel okul</h3><p>Devlet okullarında okuyan öğrencilerin yanı sıra özel okullarda tam burslu okuyan öğrenciler de başvurabilir.</p></div>
+      </li>
+      
+      <li>
+        <span class="ico"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-map-pin"/></svg></span>
+        <div><h3>Türkiye’nin her yerinden</h3><p>Dersler ve denemeler online yürütüldüğü için yaşadığınız şehir fark etmez; Türkiye’nin dört bir yanından öğrenci kabul ediyoruz.</p></div>
+      </li>
+      
+      <li>
+        <span class="ico"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-wallet"/></svg></span>
+        <div><h3>Tamamen ücretsiz</h3><p>Programa katılmak için öğrencilerimizden ve ailelerinden herhangi bir ücret talep edilmez.</p></div>
+      </li>
+      
+    </ul>
+  </div>
+</section>
+
+
+<section class="section section--black schools" id="liseler" aria-labelledby="sch-h">
+  <div class="wrap">
+    <div class="section__head">
+      <h2 id="sch-h" class="display display--m">Mentörlerimiz hangi liselerden?</h2>
+      <p class="lead">Mentörlerimiz, yapılan mülakatlar sonucunda Türkiye’nin en seçkin liselerinden seçilen öğrencilerdir. Ekibimizde şu okullardan gönüllüler yer alıyor:</p>
+    </div>
+    <ul class="school-list">
+      <li><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-school"/></svg><span>Koç Lisesi</span></li><li><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-school"/></svg><span>Galatasaray Lisesi</span></li><li><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-school"/></svg><span>Robert Koleji</span></li><li><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-school"/></svg><span>İstanbul Erkek Lisesi</span></li><li><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-school"/></svg><span>Kabataş Erkek Lisesi</span></li><li><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-school"/></svg><span>Üsküdar Amerikan Lisesi</span></li>
+      <li class="school-list__more"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg><span>ve İstanbul’daki diğer seçkin liseler</span></li>
+    </ul>
+    <div class="schools__cols">
+      <div>
+        <h3>Mentörler nasıl seçiliyor?</h3>
+        <p>Her yıl İstanbul’daki büyük liselerin öğrencilerinden mentör başvurusu alınır. Adaylar mülakatla seçilir; amacımız öğrencilerine zaman ayırabilecek, onları motive edebilecek ve alanında başarılı gönüllülerden oluşan bir ekip kurmaktır.</p>
+      </div>
+      <div>
+        <h3>Öğrencilerimiz nereden geliyor?</h3>
+        <p>Öğrencilerimiz ise Türkiye’nin dört bir yanından, devlet okullarından ve özel okullarda tam burslu okuyanlar arasından programa katılır. Dersler ve denemeler online yapıldığı için coğrafi bir sınır yoktur.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section volunteer" aria-labelledby="vol-h">
+  <div class="wrap volunteer__grid">
+    <div class="volunteer__copy">
+      <h2 id="vol-h" class="display display--m">Tamamen gönüllülük esasına göre çalışıyoruz.</h2>
+      <p class="lead">LGS Arkadaşım’da emek veren herkes gönüllü. Mentörlerimiz, yapılan mülakatlar sonucunda Türkiye’nin en seçkin liselerinden seçilen öğrencilerdir. Ne öğrencilerimizden ne de ailelerinden herhangi bir ücret talep etmiyoruz; bu program, gönüllülerin emeği ve sponsorlarımızın desteğiyle yürüyor.</p>
+    </div>
+    <div class="collage">
+      
+      <figure class="collage__ph collage__ph--0"><img src="./assets/photos/team-4.webp" alt="" width="1400" height="1050" loading="lazy"></figure>
+      
+      <figure class="collage__ph collage__ph--1"><img src="./assets/photos/team-5.webp" alt="" width="768" height="1024" loading="lazy"></figure>
+      
+      <figure class="collage__ph collage__ph--2"><img src="./assets/photos/team-8.webp" alt="" width="1400" height="1050" loading="lazy"></figure>
+      
+    </div>
+  </div>
+</section>
+
+<section class="section social" aria-labelledby="social-h">
+  <div class="wrap social__grid">
+    <div class="social__copy">
+      <h2 id="social-h" class="display">Bizi sosyal medyada takip edin.</h2>
+      <p class="lead">Duyurular, başvuru takvimi, program güncellemeleri ve ekibimizden haberler için Instagram ve LinkedIn hesaplarımızı takip edin.</p>
+      <a class="handle" href="https://www.instagram.com/lgsarkadasimprojesi/" target="_blank" rel="noopener">@lgsarkadasimprojesi</a>
+      <div class="social__btns">
+        <a class="btn btn--black btn--lg" href="https://www.instagram.com/lgsarkadasimprojesi/" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-instagram"/></svg>Instagram’da takip et</a>
+        <a class="btn btn--line btn--lg" href="https://www.linkedin.com/company/99830699/" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-linkedin"/></svg>LinkedIn’de takip et</a>
+      </div>
+    </div>
+    <a class="igcard" href="https://www.instagram.com/lgsarkadasimprojesi/" target="_blank" rel="noopener" aria-label="Instagram’da takip et">
+      <span class="igcard__top">
+        <img class="igcard__avatar" src="./assets/brand/favicon.png" alt="" width="56" height="56" loading="lazy">
+        <span class="igcard__id"><strong>lgsarkadasimprojesi</strong><span>Birlikte Başaralım!</span></span>
+        <span class="igcard__follow">Takip et</span>
+      </span>
+      <span class="igcard__grid">
+        <img src="./assets/photos/team-4.webp" alt="" loading="lazy" width="300" height="300"><img src="./assets/photos/team-1.webp" alt="" loading="lazy" width="300" height="300"><img src="./assets/photos/team-8.webp" alt="" loading="lazy" width="300" height="300"><img src="./assets/photos/team-5.webp" alt="" loading="lazy" width="300" height="300"><img src="./assets/photos/team-6.webp" alt="" loading="lazy" width="300" height="300"><img src="./assets/photos/team-7.webp" alt="" loading="lazy" width="300" height="300">
+      </span>
+    </a>
+  </div>
+</section>
+
+
+<section class="section sponsors" aria-labelledby="sp-h">
+  <div class="wrap">
+    <div class="section__head">
+      <h2 id="sp-h" class="display display--m">Bize destek olan yayınevleri</h2>
+      <p class="lead">Bugüne kadar toplam 4 Milyon TL değerinde kitap desteği aldık. Eksen Yayın Grubu, Paraf Yayın Grubu, Hız Yayınları ve önceki yıllarda yanımızda olan tüm yayınevlerine içtenlikle teşekkür ederiz.</p>
+    </div>
+    <ul class="sponsor-grid">
+  
+  <li>
+    <div class="sponsor-tile">
+      
+        <img src="./assets/sponsors/eksen_yayin_grubu.png" alt="Eksen Yayın Grubu" width="444" height="150" loading="eager" decoding="async">
+      
+    </div>
+  </li>
+  
+  <li>
+    <div class="sponsor-tile">
+      
+        <img src="./assets/sponsors/paraf_yayinlari.png" alt="Paraf Yayın Grubu" width="503" height="323" loading="eager" decoding="async">
+      
+    </div>
+  </li>
+  
+  <li>
+    <div class="sponsor-tile">
+      
+        <img src="./assets/sponsors/hiz_yayinlari.svg" alt="Hız Yayınları" width="400" height="100" loading="eager" decoding="async">
+      
+    </div>
+  </li>
+  
+  <li>
+    <div class="sponsor-tile">
+      
+        <img src="./assets/sponsors/okyanus_yayinlari.png" alt="Okyanus Yayınları" width="528" height="233" loading="eager" decoding="async">
+      
+    </div>
+  </li>
+  
+  <li>
+    <div class="sponsor-tile">
+      
+        <img src="./assets/sponsors/yanit_yayinlari.png" alt="Yanıt Yayınları" width="511" height="172" loading="eager" decoding="async">
+      
+    </div>
+  </li>
+  
+  <li>
+    <div class="sponsor-tile">
+      
+        <img src="./assets/sponsors/strateji_yayinlari.png" alt="Strateji Yayınları" width="507" height="342" loading="lazy" decoding="async">
+      
+    </div>
+  </li>
+  
+  <li>
+    <div class="sponsor-tile">
+      
+        <img src="./assets/sponsors/vip_yayinlari.png" alt="VIP Yayınları" width="418" height="332" loading="lazy" decoding="async">
+      
+    </div>
+  </li>
+  
+  <li>
+    <div class="sponsor-tile">
+      
+        <img src="./assets/sponsors/paylasim_yayinlari.png" alt="Paylaşım Yayınları" width="493" height="310" loading="lazy" decoding="async">
+      
+    </div>
+  </li>
+  
+  <li>
+    <div class="sponsor-tile">
+      
+        <img src="./assets/sponsors/adrenalin_yayinlari.png" alt="Adrenalin Yayınları" width="470" height="394" loading="lazy" decoding="async">
+      
+    </div>
+  </li>
+  
+  <li>
+    <div class="sponsor-tile">
+      
+        <img src="./assets/sponsors/aspiring_publishing.png" alt="Aspiring Publishing" width="476" height="383" loading="lazy" decoding="async">
+      
+    </div>
+  </li>
+  
+  <li>
+    <div class="sponsor-tile">
+      
+        <img src="./assets/sponsors/dijital_egitim_sistemi.png" alt="Dijital Eğitim Sistemi" width="470" height="250" loading="lazy" decoding="async">
+      
+    </div>
+  </li>
+  
+  <li>
+    <div class="sponsor-tile">
+      
+        <img src="./assets/sponsors/pakodemy.png" alt="Pakodemy" width="425" height="100" loading="lazy" decoding="async">
+      
+    </div>
+  </li>
+  
+  <li>
+    <div class="sponsor-tile">
+      
+        <img src="./assets/sponsors/kosebilgi_yayinlari.png" alt="Köşe Bilgi Yayınları" width="422" height="124" loading="lazy" decoding="async">
+      
+    </div>
+  </li>
+  
+  <li>
+    <div class="sponsor-tile">
+      
+        <img src="./assets/sponsors/en_yayinlari.png" alt="EN Yayınları" width="686" height="200" loading="lazy" decoding="async">
+      
+    </div>
+  </li>
+  
+  <li>
+    <div class="sponsor-tile">
+      
+        <img src="./assets/sponsors/yanitelt_yayinlari.png" alt="Yanıt ELT" width="233" height="97" loading="lazy" decoding="async">
+      
+    </div>
+  </li>
+  
+  <li>
+    <div class="sponsor-tile">
+      
+        <img src="./assets/sponsors/aday_yayinlari.png" alt="Aday Yayınları" width="363" height="120" loading="lazy" decoding="async">
+      
+    </div>
+  </li>
+  
+  <li>
+    <div class="sponsor-tile">
+      
+        <img src="./assets/sponsors/erisim_yayinlari.png" alt="Erişim Yayınları" width="213" height="139" loading="lazy" decoding="async">
+      
+    </div>
+  </li>
+  
+  <li>
+    <div class="sponsor-tile">
+      
+        <img src="./assets/sponsors/gunvegun_yayinlari.png" alt="Gün ve Gün Yayınları" width="244" height="84" loading="lazy" decoding="async">
+      
+    </div>
+  </li>
+  
+  <li>
+    <div class="sponsor-tile">
+      
+        <img src="./assets/sponsors/kafadengi_yayinlari.png" alt="Kafa Dengi Yayınları" width="420" height="165" loading="lazy" decoding="async">
+      
+    </div>
+  </li>
+  
+</ul>
+
+    <p class="section__more"><a class="link" href="./sponsorlarimiz/index.html">Sponsorlarımız sayfasına git</a></p>
+  </div>
+</section>
+
+<section class="section section--black process" aria-labelledby="pr-h">
+  <div class="wrap">
+    <div class="section__head">
+      <h2 id="pr-h" class="display display--m">2026-2027 Eğitim Yılı Süreci</h2>
+      <p class="lead">Mentör başvurularından LGS gününe kadar program adım adım ilerler.</p>
+    </div>
+    <ol class="tl" data-timeline>
+  
+  <li class="tl__item">
+    <span class="tl__node" aria-hidden="true"></span>
+    <p class="tl__when">Temmuz 2026</p>
+    <h3 class="tl__title">Mentör başvuruları</h3>
+    <p class="tl__text">Program için İstanbul’daki büyük liselere mentör başvuruları açılır. Adaylar mülakatla seçilir.</p>
+  </li>
+  
+  <li class="tl__item">
+    <span class="tl__node" aria-hidden="true"></span>
+    <p class="tl__when">20 Eylül – 1 Ekim 2026</p>
+    <h3 class="tl__title">Öğrenci başvuruları</h3>
+    <p class="tl__text">Türkiye’nin dört bir yanındaki LGS öğrencileri için başvurular açılır. Başvuru bağlantısı Instagram hesabımızdan duyurulur.</p>
+  </li>
+  
+  <li class="tl__item">
+    <span class="tl__node" aria-hidden="true"></span>
+    <p class="tl__when">Ekim 2026 sonu</p>
+    <h3 class="tl__title">LGS Arkadaşım başlangıcı!</h3>
+    <p class="tl__text">Mentör-Öğrenci Eşleşmesi. Başvurular tamamlanınca her öğrenci kendi mentörüyle eşleşir ve program Ekim sonunda resmen başlar.</p>
+  </li>
+  
+  <li class="tl__item">
+    <span class="tl__node" aria-hidden="true"></span>
+    <p class="tl__when">Ekim 2026 – Haziran 2027</p>
+    <h3 class="tl__title">Haftalık program</h3>
+    <p class="tl__text">Eğitim yılı boyunca, sınava kadar her hafta aşağıdaki döngü tekrar eder.</p>
+  </li>
+  
+  <li class="tl__item">
+    <span class="tl__node" aria-hidden="true"></span>
+    <p class="tl__when">Haziran 2027</p>
+    <h3 class="tl__title">Sınav günü! LGS 2027</h3>
+    <p class="tl__text">Mentorlar öğrencilerine sınavdan sonra tercih döneminde de yardım ederler.</p>
+  </li>
+  
+</ol>
+
+    <p class="section__more"><a class="link link--light" href="./egitim-yili-sureci/index.html">Tüm süreci gör</a></p>
+  </div>
+</section>
+
+<section class="section duties" aria-labelledby="du-h">
+  <div class="wrap duties__grid">
+    <h2 id="du-h" class="display display--m">Mentor Görevleri Nelerdir?</h2>
+    <ul class="duty-list">
+      
+      <li><span class="ico"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-phone"/></svg></span><p>Öğrencisi ile her hafta iletişim kuracak.</p></li>
+      
+      <li><span class="ico"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-clipboard-list"/></svg></span><p>Haftalık yapılacak olan online denemelerin online sistemimiz üzerinden hazırlanan kazanım analizlerine bakarak öğrencilerine ödev verirler.</p></li>
+      
+      <li><span class="ico"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-thumbs-up"/></svg></span><p>Öğrencisine moral ve motivasyon verecektir.</p></li>
+      
+    </ul>
+  </div>
+</section>
+
+<section class="section section--paper lessons" aria-labelledby="le-h">
+  <div class="wrap">
+    <div class="section__head">
+      <h2 id="le-h" class="display display--m">Öğrencilerin Destek Alabileceği Dersler</h2>
+      <p class="lead">Liseye Geçiş Sınavı’nın içinde olan bütün derslerden programda destek alabiliyorsunuz.</p>
+    </div>
+    <ul class="lesson-list">
+      
+      <li><span class="ico"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-book-open"/></svg></span><span>Türkçe</span></li>
+      
+      <li><span class="ico"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-calculator"/></svg></span><span>Matematik</span></li>
+      
+      <li><span class="ico"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-flask-conical"/></svg></span><span>Fen Bilimleri</span></li>
+      
+      <li><span class="ico"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-landmark"/></svg></span><span>T.C. İnkılap Tarihi ve Atatürkçülük</span></li>
+      
+      <li><span class="ico"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-moon-star"/></svg></span><span>Din Kültürü ve Ahlak Bilgisi</span></li>
+      
+      <li><span class="ico"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-languages"/></svg></span><span>İngilizce</span></li>
+      
+    </ul>
+  </div>
+</section>
+
+
+<section class="section section--white faq" id="sss" aria-labelledby="faq-h">
+  <div class="wrap faq__grid">
+    <div class="faq__intro">
+      <h2 id="faq-h" class="display display--m">Sıkça sorulan sorular</h2>
+      <p class="lead">Programımız hakkında en çok merak edilenleri burada topladık. Aradığınızı bulamazsanız bize yazabilirsiniz.</p>
+      <p class="section__more"><a class="link" href="./egitim-yili-sureci/index.html#sss">Tüm soruları gör</a></p>
+    </div>
+    <div class="faq__list">
+      
+      <details class="faq__item" open>
+        <summary><span>LGS Arkadaşım nedir?</span><span class="faq__ico"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg></span></summary>
+        <div class="faq__a"><p>LGS Arkadaşım, 2021’de kurulan ve tamamen gönüllülük esasıyla yürütülen bir LGS mentörlük programıdır. Türkiye’nin dört bir yanındaki 8. sınıf öğrencilerine bire bir mentörlük, haftalık denemeler, kazanım analizleri, soru çözüm sınıfları ve tercih dönemi desteği sunar. Ayrıca yıl boyunca öğrenci psikolojisine yönelik seminerler düzenler.</p></div>
+      </details>
+      
+      <details class="faq__item">
+        <summary><span>Program ücretli mi?</span><span class="faq__ico"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg></span></summary>
+        <div class="faq__a"><p>Hayır. Programımız tamamen gönüllülerle yürütüldüğü için öğrencilerimizden ve ailelerinden herhangi bir ücret talep edilmez.</p></div>
+      </details>
+      
+      <details class="faq__item">
+        <summary><span>Özel ders veriyor musunuz?</span><span class="faq__ico"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg></span></summary>
+        <div class="faq__a"><p>Hayır. LGS Arkadaşım özel ders ya da kurs hizmeti sunmaz. Sunduğumuz destek bire bir mentörlük, ücretsiz kaynak ve soru çözümüdür: her öğrencinin kendi mentörü vardır; mentör haftalık deneme analizlerine bakarak öğrencisine yol gösterir ve öğrencinin yapamadığı soruların çözümünde ona yardımcı olur.</p></div>
+      </details>
+      
+      <details class="faq__item">
+        <summary><span>Kimler başvurabilir?</span><span class="faq__ico"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg></span></summary>
+        <div class="faq__a"><p>O yıl LGS’ye girecek 8. sınıf öğrencileri başvurabilir. Başvuru yapacak öğrencinin devlet okulunda okuyor olması ya da özel okulda tam burslu okuyor olması gerekir.</p></div>
+      </details>
+      
+      <details class="faq__item">
+        <summary><span>Başvurular ne zaman alınıyor?</span><span class="faq__ico"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg></span></summary>
+        <div class="faq__a"><p>Öğrenci başvuruları her eğitim yılı Eylül ayında alınır. 2026-2027 döneminde öğrenci başvuruları 20 Eylül – 1 Ekim 2026 tarihleri arasındaydı. Gelecek dönemin duyurularını Instagram hesabımızdan yapıyoruz. Program, Ekim sonunda resmen başlar.</p></div>
+      </details>
+      
+    </div>
+  </div>
+</section>
+
+
+<section class="section section--paper cta" aria-labelledby="cta-h">
+  <div class="wrap cta__in">
+    <div>
+      <h2 id="cta-h" class="display display--s">Sorunuz mu var?</h2>
+      <p class="lead">Herhangi bir sorunuz olursa iletişim formunu doldurabilirsiniz.</p>
+    </div>
+    <a class="btn btn--black btn--lg" href="./iletisim/index.html"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-send"/></svg>İletişim Formu</a>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap footer__grid">
+    <div class="footer__brand">
+      <img src="./assets/brand/logo-light.png" alt="LGS Arkadaşım" width="410" height="108" loading="lazy">
+      <p class="footer__blurb">LGS Arkadaşım, 2021’den beri Türkiye’nin dört bir yanındaki LGS öğrencilerine gönüllülük esasıyla bire bir mentörlük sunan, Türkiye’nin en büyük LGS projesidir.</p>
+      <a class="footer__mail" href="mailto:lgsarkadasimprojesi@gmail.com"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-mail"/></svg><span>lgsarkadasimprojesi@gmail.com</span></a>
+      <ul class="social-icons">
+        <li><a href="https://www.instagram.com/lgsarkadasimprojesi/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-instagram"/></svg></a></li>
+        <li><a href="https://www.linkedin.com/company/99830699/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-linkedin"/></svg></a></li>
+      </ul>
+    </div>
+    <nav class="footer__nav" aria-label="Sayfalar">
+      <h2 class="footer__h">Sayfalar</h2>
+      <ul>
+        
+        <li><a href="./index.html">Ana Sayfa</a></li>
+        
+        <li><a href="./hakkimizda/index.html">Hakkımızda</a></li>
+        
+        <li><a href="./egitim-yili-sureci/index.html">2026-2027 Eğitim Yılı Süreci</a></li>
+        
+        <li><a href="./sponsorlarimiz/index.html">Sponsorlarımız</a></li>
+        
+      </ul>
+    </nav>
+    <div class="footer__contact">
+      <h2 class="footer__h">Bize Ulaşın:</h2>
+      <p>Herhangi bir sorunuz olursa iletişim formunu doldurabilirsiniz.</p>
+      <a class="btn btn--orange" href="./iletisim/index.html">İletişim Formu</a>
+    </div>
+  </div>
+  <div class="wrap footer__base">
+    <p>&copy; 2026 LGS Arkadaşım. Tüm hakları saklıdır.</p>
+  </div>
+</footer>
+<a class="fab" href="https://www.instagram.com/lgsarkadasimprojesi/" target="_blank" rel="noopener" aria-label="Instagram’da takip et" data-fab>
+  <svg class="ic" aria-hidden="true" focusable="false"><use href="#i-instagram"/></svg><span>Instagram</span>
+</a>
+<script src="./js/main.js" defer></script>
 </body>
 </html>
+
