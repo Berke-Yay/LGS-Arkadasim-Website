@@ -835,6 +835,7 @@ html.motion:not(.motion-ready) :is(.hero__badge, .wm__lgs, .wm__arkwrap, .hero__
 [data-rv="wipe"].is-in { clip-path: inset(-0.3em -0.3em -0.3em -0.05em); transform: var(--rest, none); opacity: 1; }
 /* Optik form: düz başlar, yavaşça kendi eğimine yatar */
 .hero .sheet[data-rv="up"] { transform: translateY(40px) rotate(0deg); }
+.hero :is(.hero__lead, .mission li, .hero__cta, .hero__tagline)[data-rv].is-in { transition-duration: 0.6s, 0.75s, 0.6s, 0.8s; }
 .hero .sheet[data-rv="up"].is-in { transform: var(--rest, rotate(2.4deg)); transition-duration: 0.9s, 2s, 0.95s, 1.2s; }
 
 /* Başlıklar: kelimeler (hero'da harfler) maskenin içinden yükselir */

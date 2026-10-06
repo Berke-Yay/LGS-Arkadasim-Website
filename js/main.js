@@ -246,11 +246,11 @@
         mark(hero.querySelector('.hero__badge'), 'fade', 0);
         mark(hero.querySelector('.wm__lgs') || hero.querySelector('.hero__title'), 'chars', 140);
         mark(hero.querySelector('.wm__arkwrap'), 'brush', 480);
-        mark(hero.querySelector('.hero__tagline'), 'wipe', 760);
-        mark(hero.querySelector('.hero__lead'), 'fade', 900);
-        all('.hero .mission li', function (li, i) { mark(li, 'slide', 1000 + i * 90); });
-        mark(hero.querySelector('.hero__cta'), 'up', 1380);
-        mark(hero.querySelector('.hero__grid > :last-child'), 'up', 420);
+        mark(hero.querySelector('.hero__tagline'), 'wipe', 520);
+        mark(hero.querySelector('.hero__lead'), 'fade', 600);
+        all('.hero .mission li', function (li, i) { mark(li, 'slide', 680 + i * 60); });
+        mark(hero.querySelector('.hero__cta'), 'up', 940);
+        mark(hero.querySelector('.hero__grid > :last-child'), 'up', 360);
       }
       /* Açılış: iç sayfa başlıkları */
       mark(doc.querySelector('.page-hero__title'), 'split', 80);
@@ -308,6 +308,13 @@
         });
       }, { threshold: 0, rootMargin: '0px 0px -7% 0px' });
       marked.forEach(function (el) { io.observe(el); });
+      /* Açılış öğeleri (sabit gecikmeli) ekranın alt kenarına yakın dursa bile kaydırma beklemeden, sırasıyla girer */
+      marked.forEach(function (el) {
+        if (el.hasAttribute('data-fixed') && (el.closest('.hero') || el.getBoundingClientRect().top < window.innerHeight)) {
+          io.unobserve(el);
+          reveal(el, parseInt(el.style.getPropertyValue('--d'), 10) || 0, false);
+        }
+      });
       /* Güvenlik ağı: çok hızlı kaydırmada (End tuşu, bağlantı atlaması) gözlemcinin atladığı ve artık ekranın üstünde kalmış öğeler animasyonsuz, hemen görünür olur */
       var sweeping = false;
       function sweep() {
