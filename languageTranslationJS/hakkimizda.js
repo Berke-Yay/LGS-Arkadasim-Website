@@ -41,7 +41,7 @@ function configurePageLanguage(language){
 
         //Changing the language of the title and info section
         introductoryTitle.innerText = "Hakkımızda";
-        introductoryP.innerText = "2021'de kurulmuş bir proje olan ​LGS Arkadaşım, Türkiye'nin dört bir yanından aldığı 8. sınıf öğrencilerine bire bir mentorluk hizmeti sunarak ve deneme pratiği kazandırarak öğrencilerin LGS yolculuklarında tam potansiyellerine ulaşmalarını sağlıyor.";
+        introductoryP.innerText = "2022'de kurulmuş bir proje olan ​LGS Arkadaşım, Türkiye'nin dört bir yanından aldığı 8. sınıf öğrencilerine bire bir mentorluk hizmeti sunarak ve deneme pratiği kazandırarak öğrencilerin LGS yolculuklarında tam potansiyellerine ulaşmalarını sağlıyor.";
 
         //Changing the language of what makes us different section
         differentSectionTitle.innerText = "Bizi diğer programlardan neler ayırır?";
@@ -81,7 +81,7 @@ function configurePageLanguage(language){
 
         //Changing the language of the title and info section
         introductoryTitle.innerText = "About Us";
-        introductoryP.innerText = "Established in 2021, LGS Arkadaşım (My LGS Friend) is a project that aims to help 8th graders all around Turkey to reach their full potentials in their LGS(High School Entrance Exam) journey via offering students one-to-one mentorship and lots of exam practices.";
+        introductoryP.innerText = "Established in 2022, LGS Arkadaşım (My LGS Buddy) is a project that aims to help 8th graders all around Turkey to reach their full potentials in their LGS(High School Entrance Exam) journey via offering students one-to-one mentorship and lots of exam practices.";
 
         //Changing the language of what makes us different section
         differentSectionTitle.innerText = "What Seperates Us from Other Programs?";
@@ -121,7 +121,7 @@ function configurePageLanguage(language){
 
         //Changing the language of the title and info section
         introductoryTitle.innerText = "Über Uns";
-        introductoryP.innerText = "LGS Arkadaşım (Mein LGS Freund) wurde 2021 initiiert und ist ein Projekt, das Achtklässlern in der ganzen Türkei helfen soll, ihr volles Potenzial in ihrer High School Aufnahmeprüfung zu erreichen, indem sie den Schülern Mentorenschaft und viele Prüfungspraktiken anbieten.";
+        introductoryP.innerText = "LGS Arkadaşım (Mein LGS Freund) wurde 2022 initiiert und ist ein Projekt, das Achtklässlern in der ganzen Türkei helfen soll, ihr volles Potenzial in ihrer High School Aufnahmeprüfung zu erreichen, indem sie den Schülern Mentorenschaft und viele Prüfungspraktiken anbieten.";
 
         //Changing the language of what makes us different section
         differentSectionTitle.innerText = "Was unterscheidet uns von anderen Programmen?";
@@ -162,7 +162,7 @@ function configurePageLanguage(language){
 
         //Changing the language of the title and info section
         introductoryTitle.innerText = "Sobre Nosotros";
-        introductoryP.innerText = "My LGS Friend, un proyecto establecido en 2021, permite a los estudiantes alcanzar su máximo potencial en su viaje LGS al brindar un servicio de tutoría individual y práctica de prueba a estudiantes de octavo grado de toda Turquía.";
+        introductoryP.innerText = "My LGS Buddy, un proyecto establecido en 2022, permite a los estudiantes alcanzar su máximo potencial en su viaje LGS al brindar un servicio de tutoría individual y práctica de prueba a estudiantes de octavo grado de toda Turquía.";
 
         //Changing the language of what makes us different section
         differentSectionTitle.innerText = "Qué nos separa de otros programas?";
@@ -203,7 +203,7 @@ function configurePageLanguage(language){
 
         //Changing the language of the title and info section
         introductoryTitle.innerText = "Sur Nous";
-        introductoryP.innerText = "LGS Arkadaşım, un projet créé en 2021, permet aux étudiants d'atteindre leur plein potentiel dans leur parcours LGS en fournissant un service de mentorat individuel et des essais pratiques aux élèves de 8e année de toute la Turquie.";
+        introductoryP.innerText = "LGS Arkadaşım, un projet créé en 2022, permet aux étudiants d'atteindre leur plein potentiel dans leur parcours LGS en fournissant un service de mentorat individuel et des essais pratiques aux élèves de 8e année de toute la Turquie.";
 
         //Changing the language of what makes us different section
         differentSectionTitle.innerText = "Qu’est-ce Qui Nous Sépare des Autres Programmes?";
